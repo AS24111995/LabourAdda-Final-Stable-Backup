@@ -2648,70 +2648,72 @@ export default function HomePage() {
               
               <div className="flex flex-col items-center justify-center py-4 flex-1">
                 {/* Visual Passport Card */}
-                <div className="bg-gradient-to-br from-slate-900 via-slate-950 to-amber-950/20 border-2 border-amber-500/30 rounded-2xl p-5 shadow-2xl relative overflow-hidden w-full max-w-sm mx-auto">
+                <div className="bg-gradient-to-br from-slate-900 via-slate-950 to-amber-950/30 border-2 border-amber-500/40 rounded-2xl p-5 shadow-2xl relative overflow-hidden w-full max-w-sm mx-auto hover:scale-[1.02] hover:border-amber-500/60 hover:shadow-amber-500/5 transition-all duration-300 group">
                   {/* Flag Ribbon */}
-                  <div className="absolute top-0 right-0 flex h-1 w-16">
+                  <div className="absolute top-0 right-0 flex h-1.5 w-20">
                     <div className="bg-[#FF9933] flex-1" />
                     <div className="bg-white flex-1" />
                     <div className="bg-[#138808] flex-1" />
                   </div>
 
                   {/* Government Seal Silhouette background */}
-                  <div className="absolute -bottom-6 -right-6 text-slate-900 pointer-events-none opacity-20">
+                  <div className="absolute -bottom-6 -right-6 text-slate-900/40 pointer-events-none opacity-20 group-hover:scale-105 transition-transform duration-500">
                     <Award className="w-40 h-40" />
                   </div>
 
-                  <div className="flex justify-between items-start border-b border-slate-800/80 pb-2.5 mb-3.5">
+                  <div className="flex justify-between items-center border-b border-slate-800/80 pb-3 mb-4">
                     <div className="flex items-center gap-2">
-                      <div className="bg-amber-500 text-slate-950 px-1.5 py-1 rounded font-mono font-bold text-[10px] leading-none">
+                      <div className="bg-amber-500 text-slate-950 px-2 py-1 rounded-md font-sans font-black text-[11px] leading-none shadow-sm shadow-amber-500/20">
                         LA
                       </div>
                       <div>
-                        <h5 className="text-[10px] font-bold text-white tracking-wider uppercase font-mono leading-none">LabourAdda Grid</h5>
-                        <span className="text-[6px] text-slate-500 block font-mono uppercase mt-0.5">National Infrastructure</span>
+                        <h5 className="text-[11px] font-bold text-slate-100 tracking-wider uppercase font-mono leading-none">LabourAdda Grid</h5>
+                        <span className="text-[6px] text-slate-400 block font-mono uppercase mt-1 tracking-wider">National Infrastructure</span>
                       </div>
                     </div>
-                    <span className="text-[7px] bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded font-mono uppercase font-bold">
+                    <span className="text-[8px] bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 px-2.5 py-0.5 rounded-full font-sans tracking-wide uppercase font-extrabold shadow-sm shadow-emerald-500/5">
                       {activePassportWorker.status === "Verified" ? "✓ Aadhaar Verified" : "UNVERIFIED"}
                     </span>
                   </div>
 
-                  <div className="grid grid-cols-3 gap-3 relative z-10">
+                  <div className="grid grid-cols-3 gap-4 relative z-10">
                     <div className="col-span-1">
-                      <div className="w-full aspect-[4/5] bg-slate-900 border border-slate-800 rounded-lg overflow-hidden flex flex-col items-center justify-center relative">
-                        <div className="text-2xl font-black text-amber-500 font-mono">
+                      <div className="w-full aspect-[4/5] bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800/80 rounded-xl overflow-hidden flex flex-col items-center justify-center relative shadow-inner group-hover:border-slate-700/80 transition-colors duration-300">
+                        {/* Interactive scanning element backdrop */}
+                        <div className="absolute inset-0 opacity-[0.03] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-amber-500 via-transparent to-transparent pointer-events-none" />
+                        <div className="text-3xl font-black text-amber-500 font-sans tracking-wider relative z-10 filter drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
                           {activePassportWorker.photoLetter}
                         </div>
                         {activePassportWorker.aadhaarVerified && (
-                          <div className="absolute bottom-1 right-1 bg-emerald-500 text-slate-950 rounded-full p-0.5">
+                          <div className="absolute bottom-1.5 right-1.5 bg-emerald-500 text-slate-950 rounded-full p-0.5 shadow-md border border-slate-950 z-20">
                             <Check className="w-2.5 h-2.5 stroke-[3]" />
                           </div>
                         )}
                       </div>
                     </div>
 
-                    <div className="col-span-2 space-y-1.5 text-left text-xs">
+                    <div className="col-span-2 space-y-2 text-left">
                       <div>
-                        <span className="text-[6px] text-slate-500 uppercase tracking-widest block font-mono leading-none">नाम / Worker Name</span>
-                        <span className="font-extrabold text-white mt-0.5 block truncate text-xs">
+                        <span className="text-[7px] text-slate-400 font-medium uppercase tracking-widest block font-mono leading-none">नाम / Worker Name</span>
+                        <span className="font-extrabold text-white mt-1 block truncate text-sm tracking-tight leading-none">
                           {lang === "hi" ? activePassportWorker.nameHi : activePassportWorker.name}
                         </span>
                       </div>
                       <div>
-                        <span className="text-[6px] text-slate-500 uppercase tracking-widest block font-mono leading-none">पासपोर्ट आईडी / Passport ID</span>
-                        <span className="text-[10px] font-bold text-amber-400 font-mono mt-0.5 block">
+                        <span className="text-[7px] text-slate-400 font-medium uppercase tracking-widest block font-mono leading-none">पासपोर्ट आईडी / Passport ID</span>
+                        <span className="text-[10px] font-bold text-amber-400 font-mono mt-1 block tracking-wider leading-none">
                           {activePassportWorker.passportId}
                         </span>
                       </div>
                       <div>
-                        <span className="text-[6px] text-slate-500 uppercase tracking-widest block font-mono leading-none">सत्यापित कौशल / Trade</span>
-                        <span className="text-[9px] font-bold text-slate-200 mt-0.5 block truncate">
+                        <span className="text-[7px] text-slate-400 font-medium uppercase tracking-widest block font-mono leading-none">सत्यापित कौशल / Trade</span>
+                        <span className="text-[9px] font-bold text-slate-200 mt-1 block truncate leading-tight">
                           {lang === "hi" ? activePassportWorker.tradeHi : activePassportWorker.tradeEn}
                         </span>
                       </div>
                       <div>
-                        <span className="text-[6px] text-slate-500 uppercase tracking-widest block font-mono leading-none">अनुभव / Experience</span>
-                        <span className="text-[9px] font-bold text-emerald-400 mt-0.5 block truncate font-mono">
+                        <span className="text-[7px] text-slate-400 font-medium uppercase tracking-widest block font-mono leading-none">अनुभव / Experience</span>
+                        <span className="text-[9px] font-bold text-emerald-400 mt-1 block truncate font-mono leading-tight">
                           {lang === "hi" ? activePassportWorker.experienceHi : activePassportWorker.experienceEn}
                         </span>
                       </div>
@@ -2719,38 +2721,38 @@ export default function HomePage() {
                   </div>
 
                   {/* Core Metrics Grid */}
-                  <div className="grid grid-cols-3 gap-1.5 mt-3.5 pt-3 border-t border-slate-800/60 text-center font-mono text-[9px]">
-                    <div className="bg-slate-900/60 p-1.5 rounded-lg border border-slate-800/40">
-                      <span className="text-slate-500 block text-[6px] uppercase tracking-wider">{lang === "hi" ? "विश्वास स्कोर" : "Trust Score"}</span>
-                      <span className="font-extrabold text-emerald-400 block mt-0.5">🛡️ {activePassportWorker.trustScore}/100</span>
+                  <div className="grid grid-cols-3 gap-2 mt-4 pt-3.5 border-t border-slate-800/60 text-center font-mono">
+                    <div className="bg-slate-950/60 p-2 rounded-xl border border-slate-850 hover:border-slate-800 transition duration-150">
+                      <span className="text-slate-400 block text-[7px] uppercase tracking-wider leading-none">{lang === "hi" ? "विश्वास स्कोर" : "Trust Score"}</span>
+                      <span className="font-extrabold text-emerald-400 block mt-1.5 text-[10px] leading-tight">🛡️ {activePassportWorker.trustScore}/100</span>
                     </div>
-                    <div className="bg-slate-900/60 p-1.5 rounded-lg border border-slate-800/40">
-                      <span className="text-slate-500 block text-[6px] uppercase tracking-wider">{lang === "hi" ? "कार्य इतिहास" : "Jobs Done"}</span>
-                      <span className="font-extrabold text-white block mt-0.5">💼 {activePassportWorker.workHistoryCount}</span>
+                    <div className="bg-slate-950/60 p-2 rounded-xl border border-slate-850 hover:border-slate-800 transition duration-150">
+                      <span className="text-slate-400 block text-[7px] uppercase tracking-wider leading-none">{lang === "hi" ? "कार्य इतिहास" : "Jobs Done"}</span>
+                      <span className="font-extrabold text-white block mt-1.5 text-[10px] leading-tight">💼 {activePassportWorker.workHistoryCount}</span>
                     </div>
-                    <div className="bg-slate-900/60 p-1.5 rounded-lg border border-slate-800/40">
-                      <span className="text-slate-500 block text-[6px] uppercase tracking-wider">{lang === "hi" ? "हाजिरी दर" : "Attendance"}</span>
-                      <span className="font-extrabold text-amber-500 block mt-0.5">📊 {activePassportWorker.attendanceReliability}</span>
+                    <div className="bg-slate-950/60 p-2 rounded-xl border border-slate-850 hover:border-slate-800 transition duration-150">
+                      <span className="text-slate-400 block text-[7px] uppercase tracking-wider leading-none">{lang === "hi" ? "हाजिरी दर" : "Attendance"}</span>
+                      <span className="font-extrabold text-amber-500 block mt-1.5 text-[10px] leading-tight">📊 {activePassportWorker.attendanceReliability}</span>
                     </div>
                   </div>
 
-                  <div className="mt-3.5 pt-2.5 border-t border-slate-800/60 flex items-center justify-between gap-2 relative z-10">
-                    <div className="text-left space-y-0.5">
+                  <div className="mt-4 pt-3 border-t border-slate-800/60 flex items-center justify-between gap-3 relative z-10">
+                    <div className="text-left space-y-1.5">
                       <div>
-                        <span className="text-[5px] text-slate-500 block leading-none font-mono">STATE & DISTRICT / राज्य व जिला</span>
-                        <span className="text-[8px] font-bold text-slate-300 font-mono uppercase">
+                        <span className="text-[6px] text-slate-400 block leading-none font-mono tracking-widest uppercase">STATE & DISTRICT / राज्य व जिला</span>
+                        <span className="text-[9px] font-bold text-slate-200 font-mono uppercase mt-1 block leading-tight">
                           {lang === "hi" ? activePassportWorker.districtHi : `${activePassportWorker.district}, ${activePassportWorker.state}`}
                         </span>
                       </div>
-                      <div className="flex items-center gap-1">
-                        <span className="text-[6px] text-emerald-400 bg-emerald-500/10 px-1 py-0.5 rounded border border-emerald-500/20 font-bold uppercase tracking-wider font-mono">
+                      <div className="flex items-center">
+                        <span className="text-[7px] text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20 font-bold uppercase tracking-wider font-mono leading-none">
                           {activePassportWorker.disputeFree}
                         </span>
                       </div>
                     </div>
 
                     {/* QR Code Graphic representing local scanning block */}
-                    <div className="bg-white p-1 rounded-md shrink-0 border border-slate-200 shadow-sm relative group/qr">
+                    <div className="bg-white p-1 rounded-lg shrink-0 border border-slate-300 shadow-lg relative group/qr hover:scale-105 transition-transform duration-200 cursor-pointer">
                       <svg className="w-10 h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="24" height="24" fill="white" />
                         <rect x="1" y="1" width="6" height="6" fill="black" />
@@ -2787,7 +2789,7 @@ export default function HomePage() {
                     link.click();
                     URL.revokeObjectURL(url);
                   }}
-                  className="w-full py-2.5 bg-gradient-to-tr from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-extrabold text-xs font-mono rounded-xl transition duration-150 shadow-md flex items-center justify-center gap-2 cursor-pointer uppercase tracking-wider active:scale-[0.98]"
+                  className="w-full py-2.5 bg-gradient-to-tr from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 hover:shadow-lg hover:shadow-amber-500/10 text-slate-950 font-extrabold text-xs font-mono rounded-xl transition-all duration-150 shadow-md flex items-center justify-center gap-2 cursor-pointer uppercase tracking-wider active:scale-[0.98]"
                 >
                   <Download className="w-4 h-4" />
                   <span>{lang === "hi" ? "पासपोर्ट डाउनलोड करें" : "Download Passport Card"}</span>
