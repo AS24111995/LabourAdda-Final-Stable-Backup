@@ -1754,7 +1754,11 @@ export default function HomePage() {
   ], []);
 
   const activePassportWorker = useMemo(() => {
-    if (loggedInUser && loggedInUser.role === "worker") {
+    if (
+      selectedDemoPassport === "logged-in" &&
+      loggedInUser &&
+      loggedInUser.role === "worker"
+    ) {
       return {
         id: "logged-in",
         name: loggedInUser.name,
@@ -2494,6 +2498,49 @@ export default function HomePage() {
                 <span className="text-amber-500 hover:underline cursor-pointer" onClick={() => setSearchQuery("Rajmistri")}>Rajmistri / राजमिस्त्री</span>,{" "}
                 <span className="text-amber-500 hover:underline cursor-pointer" onClick={() => setSearchQuery("Electrician")}>Electrician / बिजली मिस्त्री</span>
               </p>
+
+              {/* Compact Inline Matching-Results Panel */}
+              {searchQuery.trim() !== "" && (
+                <div className="mt-4 bg-slate-900/90 border border-slate-800 rounded-xl p-4 space-y-3 shadow-xl">
+                  <div className="flex items-center justify-between border-b border-slate-800/60 pb-2">
+                    <span className="text-[10px] font-mono text-slate-400 uppercase tracking-wider font-bold">
+                      {lang === "hi" ? "त्वरित खोज परिणाम" : "Instant Search Results"}
+                    </span>
+                    <span className="text-[10px] font-mono text-amber-500 font-bold bg-amber-500/10 px-2 py-0.5 rounded-full">
+                      {filteredProfessions.length} {lang === "hi" ? "ट्रेड" : "Trades"}
+                    </span>
+                  </div>
+                  {filteredProfessions.length === 0 ? (
+                    <div className="text-xs text-slate-400 py-3 text-center font-mono">
+                      {lang === "hi" ? "कोई पेशा नहीं मिला" : "No trades found"}
+                    </div>
+                  ) : (
+                    <div className="space-y-1.5">
+                      {filteredProfessions.slice(0, 5).map((prof, index) => (
+                        <div
+                          key={`search-result-${prof.id}-${index}`}
+                          onClick={() => setSelectedProfession(prof)}
+                          className="flex items-center justify-between p-2.5 rounded-lg bg-slate-950/40 hover:bg-slate-950/80 border border-slate-850 hover:border-amber-500/50 cursor-pointer transition duration-150 group"
+                        >
+                          <div className="flex flex-col text-left">
+                            <span className="text-xs font-bold text-slate-100 group-hover:text-amber-400 transition-colors">
+                              {lang === "hi" ? prof.hindiName : prof.name}
+                            </span>
+                            <span className="text-[9px] text-slate-400 uppercase tracking-widest font-mono mt-1">
+                              {prof.category}
+                            </span>
+                          </div>
+                          {prof.wageRange && (
+                            <span className="text-xs font-mono font-bold text-emerald-400 bg-emerald-500/5 border border-emerald-500/10 px-2 py-0.5 rounded">
+                              ₹{prof.wageRange.min}-{prof.wageRange.max}/{lang === "hi" ? (prof.wageRange.unit === "day" ? "दिन" : "घंटा") : prof.wageRange.unit}
+                            </span>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              )}
             </div>
           </div>
 
@@ -9557,7 +9604,7 @@ export default function HomePage() {
       {/* 3. Profession Detail View Panel (Interactions Side Drawer / Backdrop) */}
       {selectedProfession && (
         <div id="modal-backdrop" className="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
-          <div id="profession-detail-panel" className="bg-slate-900 border border-slate-800 rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl transition duration-200">
+          <div id="profession-detail-panel" className="bg-slate-900 border border-slate-800 rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl transition duration-200 max-h-[90vh] overflow-y-auto">
             
             {/* Modal Image/Header */}
             <div className="relative bg-gradient-to-tr from-amber-500/10 to-amber-600/10 p-6 sm:p-8 border-b border-slate-800">
