@@ -535,6 +535,7 @@ const INITIAL_PROFESSIONS: Profession[] = [
 const LOCATIONS = [
   { type: "urban", label: "Delhi NCR (Central Hub)", sub: "Okhla, Narela, Bawana Industrial Areas" },
   { type: "urban", label: "Mumbai MMR", sub: "Dharavi, Kurla, Thane Hubs" },
+  { type: "urban", label: "Lucknow District (State Capital Hub)", sub: "Hazratganj, Gomti Nagar, Amausi Industrial Zones" },
   { type: "semi-urban", label: "Gorakhpur District", sub: "Sahjanwa Town & Industrial Area" },
   { type: "semi-urban", label: "Coimbatore", sub: "Peelamedu & Sulur Manufacturing Belts" },
   { type: "rural", label: "Harichandanpur Block", sub: "Keonjhar, Odisha (Mining & Agro Zone)" },
@@ -2300,7 +2301,7 @@ export default function HomePage() {
           </div>
 
           {/* Quick Interaction, Location Selector & Interactive Lang Switcher */}
-          <div className="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-end">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3 w-full sm:w-auto justify-center sm:justify-end">
             
             {/* 1. Global Language Toggle (HI | EN switch) - Accessible in One Tap */}
             <div className="hidden sm:flex items-center bg-slate-950 border border-slate-800 rounded-lg p-0.5 h-10">
