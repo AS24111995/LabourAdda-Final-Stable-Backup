@@ -2254,7 +2254,7 @@ export default function HomePage() {
     <div id="app-root" className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-amber-500 selection:text-slate-900 antialiased pb-24">
       
       {/* 1. App Header with LabourAdda v2.0 Branding & Language Switcher */}
-      <header id="app-header" className="sticky top-0 z-40 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 px-4 py-3.5 sm:px-6">
+      <header id="app-header" className="sticky top-0 z-40 bg-slate-950 border-b border-slate-800 px-4 py-3.5 sm:px-6 md:bg-slate-900/90 md:backdrop-blur-md">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           
           {/* Logo & Platform Tagline */}
