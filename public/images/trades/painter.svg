@@ -1,0 +1,72 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Painter (Rangsaaz) working with paint rollers, brushes and buckets">
+  <defs>
+    <linearGradient id="painter-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042f2e" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="paint-stroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2dd4bf" />
+      <stop offset="50%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <linearGradient id="steel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#64748b" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100" height="100" rx="16" fill="url(#painter-bg)" stroke="#0d9488" stroke-width="1" stroke-opacity="0.25" />
+
+  <!-- Splattered paint dots in background -->
+  <circle cx="15" cy="20" r="1.5" fill="#ec4899" fill-opacity="0.6" />
+  <circle cx="22" cy="15" r="2.5" fill="#2dd4bf" fill-opacity="0.5" />
+  <circle cx="85" cy="80" r="2" fill="#eab308" fill-opacity="0.5" />
+
+  <!-- Curved Painted Stripe -->
+  <path d="M10,42 Q40,15 80,35" fill="none" stroke="url(#paint-stroke)" stroke-width="12" stroke-linecap="round" stroke-opacity="0.85" />
+  <path d="M14,46 Q42,21 82,39" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-opacity="0.25" />
+
+  <!-- Paint Roller (Duster) -->
+  <g transform="translate(62, 10)">
+    <!-- Roller handle bar -->
+    <path d="M15,22 L15,35 L10,35" fill="none" stroke="#475569" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Wooden grip -->
+    <rect x="7" y="32" width="6" height="14" rx="1" fill="#b45309" stroke="#78350f" stroke-width="0.5" />
+    
+    <!-- Roller metal frame rod -->
+    <path d="M15,22 L26,22 L26,14 L20,14" fill="none" stroke="#cbd5e1" stroke-width="1.5" />
+    
+    <!-- Sponge/brush cylinder -->
+    <rect x="12" y="7" width="16" height="10" rx="1" fill="#ec4899" stroke="#db2777" stroke-width="0.5" />
+    <rect x="14" y="9" width="12" height="6" fill="#f472b6" />
+  </g>
+
+  <!-- Paint Bucket (Dabba) -->
+  <g transform="translate(14, 52)">
+    <!-- Bucket body -->
+    <path d="M4,12 L24,12 L21,34 C21,36 19,38 17,38 L11,38 C9,38 7,36 7,34 Z" fill="url(#steel)" stroke="#475569" stroke-width="1" />
+    <!-- Rim -->
+    <ellipse cx="14" cy="12" rx="10" ry="2.5" fill="#475569" />
+    <ellipse cx="14" cy="12" rx="8" ry="1.8" fill="#2dd4bf" /> <!-- Paint level -->
+    
+    <!-- Wire handle -->
+    <path d="M3,12 C3,2 25,2 25,12" fill="none" stroke="#cbd5e1" stroke-width="1" />
+    
+    <!-- Paint drip down side -->
+    <path d="M8,12 L8,24 C8,26 10,26 10,22 L10,12 Z" fill="#2dd4bf" />
+  </g>
+
+  <!-- Paint Brush -->
+  <g transform="translate(52, 54) rotate(15)">
+    <!-- Wooden handle -->
+    <path d="M4,34 L8,34 L10,14 L6,14 Z" fill="#d97706" stroke="#b45309" stroke-width="0.5" />
+    <circle cx="7" cy="30" r="1" fill="#020617" />
+    <!-- Steel ferrule -->
+    <rect x="5" y="8" width="12" height="6" fill="url(#steel)" stroke="#475569" stroke-width="0.5" />
+    <!-- Bristles -->
+    <rect x="4" y="1" width="14" height="7" rx="0.5" fill="#fbbf24" stroke="#d97706" stroke-width="0.5" />
+    <!-- Wet paint tip -->
+    <rect x="4" y="1" width="14" height="2.5" fill="#2dd4bf" />
+  </g>
+</svg>

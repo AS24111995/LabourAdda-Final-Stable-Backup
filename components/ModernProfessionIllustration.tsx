@@ -3,6 +3,37 @@ import React from "react";
 export function ModernProfessionIllustration({ id, className = "w-full h-full", alt = "Profession Illustration" }: { id: string; className?: string; alt?: string }) {
   const normId = id.toLowerCase();
   
+  // Custom safe local SVG mapping for low digital literacy visual accessibility
+  let localSvgSrc = "";
+  if (normId === "mason" || normId === "p1" || normId === "masonry") {
+    localSvgSrc = "/images/trades/mason.svg";
+  } else if (normId === "plumber" || normId === "p5" || normId === "plumbing") {
+    localSvgSrc = "/images/trades/plumber.svg";
+  } else if (normId === "electrician" || normId === "p4" || normId === "electrical") {
+    localSvgSrc = "/images/trades/electrician.svg";
+  } else if (normId === "painter" || normId === "p3" || normId === "painting") {
+    localSvgSrc = "/images/trades/painter.svg";
+  } else if (normId === "carpenter" || normId === "p2" || normId === "woodwork") {
+    localSvgSrc = "/images/trades/carpenter.svg";
+  } else if (normId === "welder" || normId === "welding" || normId === "p16" || normId === "p25") {
+    localSvgSrc = "/images/trades/welder.svg";
+  } else if (normId === "helper" || normId === "helper_role" || normId === "domestic helper" || normId === "labour" || normId === "general labourer") {
+    localSvgSrc = "/images/trades/helper.svg";
+  } else if (normId === "agricultural worker" || normId === "agri worker" || normId === "p7" || normId === "farming") {
+    localSvgSrc = "/images/trades/agricultural-worker.svg";
+  }
+
+  if (localSvgSrc) {
+    return (
+      <img 
+        src={localSvgSrc} 
+        alt={alt} 
+        className={`${className} object-contain`} 
+        style={{ aspectRatio: "1/1" }}
+      />
+    );
+  }
+
   // 1. Determine Category, Theme colors, Posture and Tools based on normId
   let bgGradient = "#291a0a";
   let themeColor = "#f59e0b"; // default amber

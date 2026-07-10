@@ -1,0 +1,65 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Mason (Rajmistri) working with brick walls and trowel">
+  <defs>
+    <linearGradient id="mason-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="brick-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <linearGradient id="steel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#64748b" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer Background -->
+  <rect width="100" height="100" rx="16" fill="url(#mason-bg)" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.25" />
+  
+  <!-- Wall Grid Background lines -->
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="0.5">
+    <line x1="0" y1="20" x2="100" y2="20" />
+    <line x1="0" y1="40" x2="100" y2="40" />
+    <line x1="0" y1="60" x2="100" y2="60" />
+    <line x1="0" y1="80" x2="100" y2="80" />
+    <line x1="30" y1="0" x2="30" y2="100" />
+    <line x1="70" y1="0" x2="70" y2="100" />
+  </g>
+  
+  <!-- Brick Wall representation -->
+  <g id="brick-wall">
+    <!-- Row 1 -->
+    <rect x="10" y="70" width="24" height="10" rx="1.5" fill="url(#brick-grad)" stroke="#78350f" stroke-width="1" />
+    <rect x="38" y="70" width="24" height="10" rx="1.5" fill="url(#brick-grad)" stroke="#78350f" stroke-width="1" />
+    <rect x="66" y="70" width="24" height="10" rx="1.5" fill="url(#brick-grad)" stroke="#78350f" stroke-width="1" />
+    
+    <!-- Row 2 (staggered) -->
+    <rect x="24" y="58" width="24" height="10" rx="1.5" fill="url(#brick-grad)" stroke="#78350f" stroke-width="1" fill-opacity="0.9" />
+    <rect x="52" y="58" width="24" height="10" rx="1.5" fill="url(#brick-grad)" stroke="#78350f" stroke-width="1" fill-opacity="0.9" />
+    
+    <!-- Active brick being placed -->
+    <g transform="translate(0, -3)">
+      <rect x="38" y="42" width="24" height="10" rx="1.5" fill="#f97316" stroke="#c2410c" stroke-width="1" />
+      <!-- Concrete/mortar paste under the active brick -->
+      <path d="M36,52 Q50,54 64,52" stroke="#94a3b8" stroke-width="3" stroke-linecap="round" fill="none" />
+    </g>
+  </g>
+  
+  <!-- Mason Trowel (Kanni) -->
+  <g transform="translate(14, 25) rotate(-15)">
+    <!-- Trowel metal plate -->
+    <path d="M22,25 L45,15 L32,35 Z" fill="url(#steel)" stroke="#475569" stroke-width="0.75" />
+    <path d="M22,25 L32,35" stroke="#94a3b8" stroke-width="1" />
+    
+    <!-- Handle shank/rod -->
+    <path d="M20,27 Q14,24 16,18" fill="none" stroke="#475569" stroke-width="2" stroke-linecap="round" />
+    <!-- Wooden handle -->
+    <rect x="10" y="10" width="12" height="5" rx="1" transform="rotate(-40 10 10)" fill="#b45309" stroke="#78350f" stroke-width="0.5" />
+  </g>
+  
+  <!-- Plumb Bob (Sahul) decorative wire -->
+  <line x1="82" y1="10" x2="82" y2="42" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2 2" />
+  <polygon points="82,42 78,35 86,35" fill="#f59e0b" stroke="#ca8a04" stroke-width="0.5" />
+  <circle cx="82" cy="45" r="1.5" fill="#ca8a04" />
+</svg>

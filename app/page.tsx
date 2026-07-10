@@ -2254,7 +2254,7 @@ export default function HomePage() {
     <div id="app-root" className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-amber-500 selection:text-slate-900 antialiased pb-24">
       
       {/* 1. App Header with LabourAdda v2.0 Branding & Language Switcher */}
-      <header id="app-header" className="sticky top-0 z-40 bg-slate-950 border-b border-slate-800 px-4 py-3.5 sm:px-6 md:bg-slate-900/90 md:backdrop-blur-md">
+      <header id="app-header" className="sticky top-0 z-40 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 px-4 py-3.5 sm:px-6">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           
           {/* Logo & Platform Tagline */}
@@ -2523,13 +2523,18 @@ export default function HomePage() {
                           onClick={() => setSelectedProfession(prof)}
                           className="flex items-center justify-between p-2.5 rounded-lg bg-slate-950/40 hover:bg-slate-950/80 border border-slate-850 hover:border-amber-500/50 cursor-pointer transition duration-150 group"
                         >
-                          <div className="flex flex-col text-left">
-                            <span className="text-xs font-bold text-slate-100 group-hover:text-amber-400 transition-colors">
-                              {lang === "hi" ? prof.hindiName : prof.name}
-                            </span>
-                            <span className="text-[9px] text-slate-400 uppercase tracking-widest font-mono mt-1">
-                              {prof.category}
-                            </span>
+                          <div className="flex items-center gap-3">
+                            <div className="w-10 h-10 rounded-lg overflow-hidden border border-slate-800 bg-slate-950 shrink-0 flex items-center justify-center">
+                              <ProfessionIllustration id={prof.imageSeed} className="w-full h-full" alt={`${prof.hindiName} / ${prof.name}`} />
+                            </div>
+                            <div className="flex flex-col text-left">
+                              <span className="text-xs font-bold text-slate-100 group-hover:text-amber-400 transition-colors">
+                                {lang === "hi" ? prof.hindiName : prof.name}
+                              </span>
+                              <span className="text-[9px] text-slate-400 uppercase tracking-widest font-mono mt-0.5">
+                                {prof.category}
+                              </span>
+                            </div>
                           </div>
                           {prof.wageRange && (
                             <span className="text-xs font-mono font-bold text-emerald-400 bg-emerald-500/5 border border-emerald-500/10 px-2 py-0.5 rounded">
@@ -9635,15 +9640,21 @@ export default function HomePage() {
                 </button>
               </div>
 
-              {/* Stacked Primary/Secondary trade title */}
-              <h3 className="text-2xl font-bold text-white tracking-tight mt-4">
-                {selectedProfession.hindiName.split(" (")[0]}
-              </h3>
-              <p className="text-sm text-amber-500 font-medium font-mono">
-                {selectedProfession.name}
-              </p>
+              <div className="flex items-center gap-4 mt-5">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 shrink-0 flex items-center justify-center shadow-md">
+                  <ProfessionIllustration id={selectedProfession.imageSeed} className="w-full h-full" alt={`${selectedProfession.hindiName} / ${selectedProfession.name}`} />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight leading-tight">
+                    {selectedProfession.hindiName.split(" (")[0]}
+                  </h3>
+                  <p className="text-sm text-amber-500 font-medium font-mono mt-0.5">
+                    {selectedProfession.name}
+                  </p>
+                </div>
+              </div>
               
-              <p className="text-xs text-slate-400 mt-2.5 italic leading-relaxed">
+              <p className="text-xs text-slate-400 mt-3 italic leading-relaxed">
                 {selectedProfession.description}
               </p>
             </div>

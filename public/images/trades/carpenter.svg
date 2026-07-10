@@ -1,0 +1,69 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Carpenter (Badhai) working with wooden planks and hand saw">
+  <defs>
+    <linearGradient id="carpenter-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d1500" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="wood-grain" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b45309" />
+      <stop offset="50%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#78350f" />
+    </linearGradient>
+    <linearGradient id="steel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#64748b" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100" height="100" rx="16" fill="url(#carpenter-bg)" stroke="#d97706" stroke-width="1" stroke-opacity="0.25" />
+
+  <!-- Wooden Planks -->
+  <g id="planks">
+    <!-- Horizontal wood plank -->
+    <rect x="5" y="55" width="90" height="15" rx="1" fill="url(#wood-grain)" stroke="#451a03" stroke-width="1" />
+    <!-- Wood grain lines -->
+    <path d="M10,60 C30,58 40,65 60,62 T90,60" fill="none" stroke="#451a03" stroke-width="0.75" stroke-opacity="0.4" />
+    <path d="M8,68 Q35,66 65,68 T85,67" fill="none" stroke="#451a03" stroke-width="0.75" stroke-opacity="0.4" />
+    <!-- Wood knot circle -->
+    <circle cx="32" cy="62" r="2" fill="none" stroke="#451a03" stroke-width="1" stroke-opacity="0.5" />
+  </g>
+
+  <!-- Wood Shavings / Sawdust -->
+  <g fill="#f59e0b" fill-opacity="0.6">
+    <ellipse cx="62" cy="74" rx="2" ry="1" transform="rotate(20 62 74)" />
+    <ellipse cx="66" cy="76" rx="2.5" ry="1.2" transform="rotate(-15 66 76)" />
+    <circle cx="58" cy="72" r="1" />
+    <circle cx="70" cy="73" r="0.8" />
+  </g>
+
+  <!-- Hand Saw (Aari) cutting through the plank -->
+  <g transform="translate(14, 18) rotate(15)">
+    <!-- Saw blade steel plate -->
+    <path d="M15,22 L48,32 L48,22 L15,10" fill="url(#steel)" stroke="#475569" stroke-width="0.5" />
+    
+    <!-- Saw teeth (jagged bottom edge of blade) -->
+    <path d="M15,22 L17,23 L19,22 L21,23 L23,22 L25,23 L27,22 L29,23 L31,22 L33,23 L35,22 L37,23 L39,22 L41,23 L43,22 L45,23 L47,22 L48,22.5" stroke="#334155" stroke-width="1.2" fill="none" />
+    
+    <!-- Wooden Handle -->
+    <path d="M5,5 C1,5 0,8 0,11 L0,22 C0,25 2,27 6,27 L16,23 L16,9 Z" fill="#78350f" stroke="#451a03" stroke-width="0.75" />
+    <!-- Handle inner finger cutout -->
+    <rect x="4" y="10" width="7" height="11" rx="2.5" fill="#2d1500" stroke="#451a03" stroke-width="0.5" />
+    <!-- Handle rivets -->
+    <circle cx="12" cy="8" r="1" fill="#fbbf24" />
+    <circle cx="12" cy="21" r="1" fill="#fbbf24" />
+  </g>
+
+  <!-- L-Square Architect Ruler (Guniya) -->
+  <g transform="translate(68, 22) rotate(-45)">
+    <polygon points="10,40 10,10 15,10 15,35 35,35 35,40" fill="#94a3b8" stroke="#475569" stroke-width="0.5" />
+    <!-- Ruler tick marks -->
+    <line x1="10" y1="15" x2="12" y2="15" stroke="#475569" stroke-width="0.5" />
+    <line x1="10" y1="20" x2="13" y2="20" stroke="#475569" stroke-width="0.5" />
+    <line x1="10" y1="25" x2="12" y2="25" stroke="#475569" stroke-width="0.5" />
+    <line x1="10" y1="30" x2="13" y2="30" stroke="#475569" stroke-width="0.5" />
+    <line x1="20" y1="38" x2="20" y2="40" stroke="#475569" stroke-width="0.5" />
+    <line x1="25" y1="37" x2="25" y2="40" stroke="#475569" stroke-width="0.5" />
+    <line x1="30" y1="38" x2="30" y2="40" stroke="#475569" stroke-width="0.5" />
+  </g>
+</svg>

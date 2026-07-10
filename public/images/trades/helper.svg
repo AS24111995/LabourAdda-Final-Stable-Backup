@@ -1,0 +1,68 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Helper (Helper) carrying a traditional mortar head pan with materials">
+  <defs>
+    <linearGradient id="helper-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="pan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#78350f" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="steel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#475569" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100" height="100" rx="16" fill="url(#helper-bg)" stroke="#e2e8f0" stroke-width="1" stroke-opacity="0.2" />
+
+  <!-- Support gridlines -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="0.5">
+    <line x1="50" y1="0" x2="50" y2="100" />
+    <line x1="0" y1="50" x2="100" y2="50" />
+    <circle cx="50" cy="50" r="30" fill="none" />
+  </g>
+
+  <!-- Heavy Cardboard Box / Material Package (Decorative background cargo) -->
+  <g transform="translate(62, 54)">
+    <polygon points="10,12 25,5 40,12 40,28 25,35 10,28" fill="#d97706" stroke="#b45309" stroke-width="0.5" fill-opacity="0.3" />
+    <polygon points="10,12 25,5 25,35 10,28" fill="#b45309" fill-opacity="0.2" />
+    <!-- Tape -->
+    <path d="M25,5 L25,35 M10,12 L40,12" stroke="#78350f" stroke-width="1" stroke-opacity="0.3" fill="none" />
+  </g>
+
+  <!-- Traditional Iron/Steel Mortar Head Pan (Tasla / Tagari) -->
+  <g transform="translate(20, 16)">
+    <!-- Flat bottom bowl shape -->
+    <path d="M12,20 C12,32 48,32 48,20 L52,14 C52,10 8,10 8,14 Z" fill="url(#steel)" stroke="#334155" stroke-width="1" />
+    <!-- Rim edge -->
+    <ellipse cx="30" cy="14" rx="22" ry="4" fill="#64748b" stroke="#334155" stroke-width="0.75" />
+    
+    <!-- Materials inside (Bricks/Sand pile) -->
+    <path d="M14,14 C18,2 42,2 46,14 Z" fill="url(#pan-grad)" stroke="#b45309" stroke-width="0.5" />
+    <!-- Brick outline stack details inside tagari -->
+    <rect x="22" y="6" width="16" height="6" rx="0.5" fill="#ea580c" stroke="#78350f" stroke-width="0.5" />
+    <rect x="18" y="10" width="14" height="4" rx="0.5" fill="#ea580c" stroke="#78350f" stroke-width="0.5" />
+    <rect x="30" y="10" width="12" height="4" rx="0.5" fill="#ea580c" stroke="#78350f" stroke-width="0.5" />
+  </g>
+
+  <!-- Lifting Hands supporting the pan -->
+  <g stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round" fill="none">
+    <!-- Left supportive arm -->
+    <path d="M25,65 L28,45 L32,32" />
+    <!-- Right supportive arm -->
+    <path d="M75,65 L72,45 L68,32" />
+  </g>
+  
+  <!-- Helper's Protective Gloves / Grips on the pan edges -->
+  <rect x="27" y="27" width="6" height="5" rx="1.5" fill="#475569" stroke="#334155" stroke-width="0.5" />
+  <rect x="67" y="27" width="6" height="5" rx="1.5" fill="#475569" stroke="#334155" stroke-width="0.5" />
+
+  <!-- Wheeled Handcart / Trolley Silhouette representation -->
+  <g transform="translate(16, 68)" stroke="#64748b" stroke-width="1.5" stroke-linejoin="round" fill="none">
+    <path d="M0,10 L30,10 L42,-2" />
+    <path d="M10,10 L10,2" />
+    <circle cx="28" cy="14" r="4" fill="#334155" stroke="#475569" stroke-width="1.2" />
+  </g>
+</svg>

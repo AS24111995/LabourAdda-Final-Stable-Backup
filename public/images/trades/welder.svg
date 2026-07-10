@@ -1,0 +1,68 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Welder (Welder) working with welding shield, torch and sparks">
+  <defs>
+    <linearGradient id="welder-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="spark-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+    <linearGradient id="steel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100" height="100" rx="16" fill="url(#welder-bg)" stroke="#6366f1" stroke-width="1" stroke-opacity="0.25" />
+
+  <!-- Abstract electronic grids -->
+  <circle cx="50" cy="50" r="32" fill="none" stroke="#818cf8" stroke-opacity="0.08" stroke-width="1" />
+  <circle cx="50" cy="50" r="22" fill="none" stroke="#818cf8" stroke-opacity="0.08" stroke-width="0.5" />
+
+  <!-- Welding Helmet / Shield Silhouette -->
+  <g transform="translate(18, 12)">
+    <!-- Helmet main body -->
+    <path d="M10,10 C10,3 24,3 24,10 L26,24 C26,28 23,32 17,32 L17,35 L12,35 L12,32 C6,32 4,28 4,24 Z" fill="#1e293b" stroke="#475569" stroke-width="1" />
+    <!-- Visor Viewport window -->
+    <rect x="9" y="12" width="12" height="6" rx="1" fill="#0284c7" stroke="#38bdf8" stroke-width="1.2" />
+    <!-- Glass reflection highlight -->
+    <path d="M18,13 L20,13 L15,17 L13,17 Z" fill="#ffffff" fill-opacity="0.5" />
+    <!-- Headgear side knobs -->
+    <circle cx="3" cy="18" r="1.5" fill="#475569" />
+    <circle cx="27" cy="18" r="1.5" fill="#475569" />
+  </g>
+
+  <!-- Welding Torch Gun -->
+  <g transform="translate(52, 48) rotate(-35)">
+    <!-- Insulated handle -->
+    <rect x="8" y="10" width="22" height="5" rx="1" fill="#0f172a" stroke="#334155" stroke-width="0.5" />
+    <path d="M6,12.5 C6,10 8,8 10,8" fill="none" stroke="#cbd5e1" stroke-width="1" />
+    
+    <!-- Metal nozzle -->
+    <polygon points="30,10 38,11 38,14 30,15" fill="url(#steel)" />
+    
+    <!-- Welding Electrode Stick -->
+    <line x1="38" y1="12.5" x2="62" y2="12.5" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="38" y1="12.5" x2="60" y2="12.5" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" />
+    
+    <!-- Cord trailing away -->
+    <path d="M8,12.5 C-5,15 -2,32 -10,35" fill="none" stroke="#0f172a" stroke-width="2" />
+  </g>
+
+  <!-- Electric Arc Flare and Sparks -->
+  <g transform="translate(70, 22)">
+    <!-- Flare blur halo -->
+    <circle cx="10" cy="10" r="12" fill="#38bdf8" fill-opacity="0.25" filter="blur(3px)" />
+    <!-- Central bright hot spot -->
+    <circle cx="10" cy="10" r="4.5" fill="#ffffff" />
+    
+    <!-- Angular Sparks/Spit rays -->
+    <path d="M10,10 L-2,4 M10,10 L2,18 M10,10 L18,15 M10,10 L5,-5 M10,10 L20,2" stroke="url(#spark-glow)" stroke-width="1.5" stroke-linecap="round" />
+    
+    <!-- Spark stars -->
+    <polygon points="10,0 12,8 20,10 12,12 10,20 8,12 0,10 8,8" fill="#ffffff" transform="scale(0.5) translate(10, 10)" />
+  </g>
+</svg>

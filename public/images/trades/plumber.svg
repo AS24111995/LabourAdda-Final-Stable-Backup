@@ -1,0 +1,63 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Plumber (Nalsaj) working with water pipes and wrench">
+  <defs>
+    <linearGradient id="plumber-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#082f49" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="pipe-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#94a3b8" />
+      <stop offset="50%" stop-color="#e2e8f0" />
+      <stop offset="100%" stop-color="#475569" />
+    </linearGradient>
+    <linearGradient id="copper" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#9a3412" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100" height="100" rx="16" fill="url(#plumber-bg)" stroke="#0ea5e9" stroke-width="1" stroke-opacity="0.25" />
+
+  <!-- Technical grid lines -->
+  <g stroke="#38bdf8" stroke-opacity="0.05" stroke-width="0.5">
+    <circle cx="50" cy="50" r="35" fill="none" />
+    <circle cx="50" cy="50" r="20" fill="none" />
+  </g>
+
+  <!-- Water droplets -->
+  <path d="M72,25 Q70,30 72,32 Q74,30 72,25" fill="#38bdf8" fill-opacity="0.6" />
+  <path d="M78,38 Q77,41 78,42 Q79,41 78,38" fill="#38bdf8" fill-opacity="0.4" />
+
+  <!-- Pipeline Network -->
+  <g id="pipes">
+    <!-- Main horizontal pipe -->
+    <rect x="5" y="45" width="90" height="10" rx="1" fill="url(#pipe-grad)" stroke="#334155" stroke-width="1" />
+    
+    <!-- Vertical copper bypass pipe -->
+    <rect x="50" y="15" width="8" height="30" fill="url(#copper)" stroke="#7c2d12" stroke-width="0.75" />
+    <rect x="47" y="12" width="14" height="4" rx="0.5" fill="#9a3412" />
+    
+    <!-- Pipe Elbow/Joint -->
+    <rect x="47" y="42" width="14" height="16" rx="2" fill="url(#pipe-grad)" stroke="#334155" stroke-width="1" />
+    
+    <!-- Red control wheel valve -->
+    <circle cx="54" cy="25" r="9" fill="#ef4444" stroke="#b91c1c" stroke-width="1.5" />
+    <circle cx="54" cy="25" r="3" fill="#cbd5e1" stroke="#475569" stroke-width="1" />
+    <line x1="45" y1="25" x2="63" y2="25" stroke="#b91c1c" stroke-width="1.5" />
+    <line x1="54" y1="16" x2="54" y2="34" stroke="#b91c1c" stroke-width="1.5" />
+  </g>
+
+  <!-- Classic Adjustable Wrench (Spanner) -->
+  <g transform="translate(18, 55) rotate(-25)">
+    <!-- Handle -->
+    <rect x="15" y="6" width="35" height="4" rx="1.5" fill="url(#pipe-grad)" stroke="#475569" stroke-width="0.75" />
+    <circle cx="48" cy="8" r="1.5" fill="#1e293b" />
+    
+    <!-- Wrench Head -->
+    <path d="M8,1 L18,1 L18,15 L8,15 Z" fill="url(#pipe-grad)" stroke="#475569" stroke-width="0.75" />
+    <!-- Lower jaw -->
+    <path d="M4,10 L10,10 L10,15 L4,15 Z" fill="#94a3b8" stroke="#475569" stroke-width="0.5" />
+    <!-- Adjustable knurl thumbwheel -->
+    <rect x="11" y="5" width="4" height="6" rx="0.5" fill="#f59e0b" />
+  </g>
+</svg>
