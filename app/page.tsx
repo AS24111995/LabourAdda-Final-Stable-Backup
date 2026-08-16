@@ -1468,7 +1468,7 @@ export default function HomePage() {
     {
       id: "inv-1",
       company: "Prasad Labour Supplies",
-      contractor: "Ankur Sahani",
+      contractor: "A. K. Verma (Sample)",
       location: "Sahjanwa Industrial Area",
       distance: "2.1 km",
       trade: "Mason",
@@ -1497,7 +1497,7 @@ export default function HomePage() {
   ]);
 
   const [workerSavedJobsList, setWorkerSavedJobsList] = useState([
-    { id: "sj-1", title: "Metro Station Tiling Work", contractor: "UP Metro Rail Corp", location: "Gorakhpur Center", wage: "₹800 / Day" }
+    { id: "sj-1", title: "Metro Station Tiling Work", contractor: "Metro Infrastructure Project (Sample)", location: "Gorakhpur Center", wage: "₹800 / Day" }
   ]);
 
   const [viewingTrustJobId, setViewingTrustJobId] = useState<string | null>(null);
@@ -3017,13 +3017,13 @@ export default function HomePage() {
                 <div className="flex items-center gap-2">
                   <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
                   <h3 className="text-lg font-bold text-white tracking-tight">
-                    {lang === "hi" ? "श्रमिक राष्ट्रीय डिजिटल डैशबोर्ड" : "National Worker Digital Dashboard"}
+                    {lang === "hi" ? "श्रमिक डिजिटल डैशबोर्ड (प्रोटोटाइप)" : "Worker Digital Dashboard (Prototype)"}
                   </h3>
                 </div>
                 <p className="text-xs text-slate-400 mt-1">
                   {lang === "hi" 
-                    ? "सत्यापित राष्ट्रीय श्रम अवसंरचना पोर्टल। आपका डिजिटल श्रम पासपोर्ट सक्रिय है।" 
-                    : "Verified National Labour Grid. Your portable Digital Passport is active and synchronized."}
+                    ? "प्रोटोटाइप डिजिटल श्रम पोर्टल। सैंपल पासपोर्ट सत्यापन और स्थानीय रोजगार मिलान वर्कफ़्लो का अन्वेषण करें।" 
+                    : "Prototype digital labour portal demonstrating sample passport verification and localized job-matching workflows."}
                 </p>
               </div>
 
@@ -3065,11 +3065,11 @@ export default function HomePage() {
                       </div>
                       <div>
                         <h5 className="text-[9px] font-bold text-white tracking-wider uppercase font-mono leading-none">LabourAdda v2.0</h5>
-                        <span className="text-[6px] text-slate-500 block font-mono uppercase mt-0.5">National Grid</span>
+                        <span className="text-[6px] text-slate-500 block font-mono uppercase mt-0.5">Prototype Grid</span>
                       </div>
                     </div>
                     <span className="text-[7px] bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded font-mono uppercase font-bold">
-                      VERIFIED (सत्यापित)
+                      VERIFIED — DEMO
                     </span>
                   </div>
 
@@ -3247,13 +3247,13 @@ export default function HomePage() {
                   </div>
                   <div>
                     <h4 className="text-base font-extrabold text-white font-sans tracking-tight flex items-center gap-2">
-                      {lang === "hi" ? "राष्ट्रीय डिजिटल श्रम पासपोर्ट" : "National Digital Labour Passport"}
-                      <span className="text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-0.5 rounded font-mono font-bold uppercase">LIVE INFRA</span>
+                      {lang === "hi" ? "डिजिटल श्रम पासपोर्ट (प्रोटोटाइप)" : "Digital Labour Passport (Prototype)"}
+                      <span className="text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-0.5 rounded font-mono font-bold uppercase">DEMO WORKFLOW</span>
                     </h4>
                     <p className="text-xs text-slate-400 mt-0.5">
                       {lang === "hi"
-                        ? "असंगठित कामगारों के लिए भारत की पोर्टेबल, डिजिटल रूप से सत्यापित पहचान और क्रेडेंशियल।"
-                        : "India's portable, digitally verified identity & credentials for informal sector workforce participants."}
+                        ? "असंगठित कामगारों के लिए पोर्टेबल पहचान, कौशल और कार्य-रिकॉर्ड अवधारणाओं को प्रदर्शित करने वाला प्रोटोटाइप डिजिटल क्रेडेंशियल वर्कफ़्लो।"
+                        : "Prototype digital credential workflow demonstrating portable identity, skills, and work-record concepts for informal-sector workers."}
                     </p>
                   </div>
                 </div>
@@ -3373,7 +3373,7 @@ export default function HomePage() {
                         </div>
                         <div>
                           <h5 className="text-[9px] font-bold text-white tracking-wider uppercase font-mono leading-none">DIGITAL PASSPORT</h5>
-                          <span className="text-[6px] text-slate-500 block font-mono uppercase mt-0.5">MIGRANT LABOUR AUTHORITY</span>
+                          <span className="text-[6px] text-slate-500 block font-mono uppercase mt-0.5">LABOURADDA PROTOTYPE GRID</span>
                         </div>
                       </div>
                       <span className="text-[7px] bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 px-2 py-0.5 rounded font-mono uppercase font-bold flex items-center gap-1">
@@ -3624,8 +3624,8 @@ export default function HomePage() {
                     id: "aim-1",
                     titleEn: `${regSelectedSkills.length > 0 ? regSelectedSkills[0] : "Mason"} Specialist Work`,
                     titleHi: `विशेषज्ञ ${regSelectedSkills.length > 0 ? regSelectedSkills[0] : "राजमिस्त्री"} कार्य`,
-                    employerEn: "L&T Infrastructure",
-                    employerHi: "एलएंडटी इंफ्रास्ट्रक्चर",
+                    employerEn: "Sample Infrastructure Co.",
+                    employerHi: "सैंपल इंफ्रास्ट्रक्चर कंपनी",
                     locationEn: "Sahjanwa Industrial Area",
                     locationHi: "सहजनवा औद्योगिक क्षेत्र",
                     matchPercentage: 98,
@@ -3702,8 +3702,8 @@ export default function HomePage() {
                     id: "aim-3",
                     titleEn: `Urgent Repair & Maintenance`,
                     titleHi: `त्वरित मरम्मत और रखरखाव`,
-                    employerEn: "Gorakhpur Civic Hub",
-                    employerHi: "गोरखपुर सिविक हब",
+                    employerEn: "Gorakhpur Commercial Project (Sample)",
+                    employerHi: "गोरखपुर कमर्शियल प्रोजेक्ट (सैंपल)",
                     locationEn: "Medical College Road",
                     locationHi: "मेडिकल कॉलेज रोड",
                     matchPercentage: 88,
@@ -3727,12 +3727,12 @@ export default function HomePage() {
                     reasons: {
                       skillAlignedHi: "सटीक कार्य मेल (Job Aligned)",
                       skillAlignedEn: "Job aligned",
-                      wageHighHi: "मानक सरकारी दर मजदूरी",
-                      wageHighEn: "Standard government rate wage",
+                      wageHighHi: "मानक बाजार दर मजदूरी (सैंपल)",
+                      wageHighEn: "Standard market rate wage (Sample)",
                       nearbyHi: "कनेक्टेड मार्ग पर (4.8 किमी)",
                       nearbyEn: "On connected route (4.8 km)",
-                      verifiedHi: "सत्यापित सरकारी ठेकेदार",
-                      verifiedEn: "Verified govt contractor",
+                      verifiedHi: "सत्यापित स्थानीय ठेकेदार (डेमो)",
+                      verifiedEn: "Verified local contractor (Demo)",
                       fastJoiningHi: "तत्काल आज ही शामिल हों",
                       fastJoiningEn: "Immediate joining available"
                     }
@@ -3826,20 +3826,20 @@ export default function HomePage() {
                           <div className="bg-slate-900/90 p-3 rounded-xl border border-teal-500/30 text-[11px] space-y-2 animate-fadeIn font-mono">
                             <div className="flex items-center gap-1 text-teal-400 font-bold border-b border-slate-800 pb-1 uppercase text-[9px]">
                               <ShieldCheck className="w-3.5 h-3.5 animate-pulse" />
-                              <span>{lang === "hi" ? "सत्यापित नियोक्ता प्रोफ़ाइल" : "Verified Employer Profile"}</span>
+                              <span>{lang === "hi" ? "सत्यापित नियोक्ता प्रोफ़ाइल (डेमो)" : "Verified Employer Profile (Demo)"}</span>
                             </div>
                             <div className="space-y-1 text-slate-300">
                               <div className="flex justify-between">
-                                <span>Aadhaar/GSTIN Status:</span>
-                                <span className="text-emerald-400 font-bold">100% VERIFIED</span>
+                                <span>Identity / GSTIN Signal:</span>
+                                <span className="text-emerald-400 font-bold">100% MATCH (SIMULATED)</span>
                               </div>
                               <div className="flex justify-between">
                                 <span>Timely Wage Payout Rate:</span>
                                 <span className="text-emerald-400 font-bold">98.7% (Excellent)</span>
                               </div>
                               <div className="flex justify-between">
-                                <span>Site Safety Compliance:</span>
-                                <span className="text-amber-400 font-bold">Grade A (Certified)</span>
+                                <span>Site Safety Grade:</span>
+                                <span className="text-amber-400 font-bold">A (Sample)</span>
                               </div>
                               <div className="flex justify-between">
                                 <span>Worker Retention Index:</span>
@@ -3848,8 +3848,8 @@ export default function HomePage() {
                             </div>
                             <p className="text-[9px] text-slate-500 italic leading-snug pt-1">
                               {lang === "hi" 
-                                ? "यह डेटा राष्ट्रीय लेबर इंटेलिजेंस ग्रिड द्वारा सुरक्षित है।" 
-                                : "Employer verification tracked and synced by National Labour Intelligence Grid."}
+                                ? "नियोक्ता सत्यापन संकेत लेबरअड्डा प्रोटोटाइप ग्रिड में सिम्युलेट किए गए हैं।" 
+                                : "Employer verification signals simulated within the LabourAdda Prototype Grid."}
                             </p>
                           </div>
                         )}
@@ -3967,7 +3967,7 @@ export default function HomePage() {
                   </h4>
                 </div>
                 <span className="text-[9px] bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 px-2.5 py-0.5 rounded font-mono uppercase font-bold">
-                  Verified Labour Grid Connection
+                  Prototype Labour Grid Connection
                 </span>
               </div>
 
@@ -4034,9 +4034,9 @@ export default function HomePage() {
                               
                               handleVoiceSpeak(
                                 "बधाई हो, आपने कार्य निमंत्रण स्वीकार कर लिया है। आपका डिजिटल पासपोर्ट अद्यतन हो गया है और एक नया काम का आदेश जारी किया गया है।",
-                                "Congratulations, you have accepted the work invitation. Your portable labour passport is now active on this job order."
+                                "Congratulations, you have accepted the work invitation. Simulated work order linked to your prototype Digital Labour Passport."
                               );
-                              alert("बधाई हो! कार्य निमंत्रण स्वीकार किया गया। डिजिटल काम का आदेश आपके राष्ट्रीय श्रम पासपोर्ट से लिंक हो चुका है। / Work invitation accepted.");
+                              alert(lang === "hi" ? "बधाई हो! कार्य निमंत्रण स्वीकार किया गया। सिम्युलेटेड वर्क ऑर्डर आपके डिजिटल लेबर पासपोर्ट (डेमो) से लिंक हो गया है।" : "Work invitation accepted. Simulated work order linked to your prototype Digital Labour Passport.");
                             }}
                             className="flex-1 py-2 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-extrabold rounded-xl text-[10px] font-mono uppercase tracking-wider transition cursor-pointer flex items-center justify-center gap-1"
                           >
