@@ -9828,12 +9828,12 @@ export default function HomePage() {
               </button>
               <h3 className="text-xl font-bold text-white font-mono flex items-center gap-2">
                 <ShieldCheck className="w-5 h-5 text-amber-500" />
-                {lang === "hi" ? "राष्ट्रीय श्रम पंजीकरण गेटवे" : "National Labour Registration Gateway"}
+                {lang === "hi" ? "लेबरअड्डा पंजीकरण पोर्टल (प्रोटोटाइप)" : "LabourAdda Registration Portal (Prototype)"}
               </h3>
               <p className="text-xs text-slate-400 mt-1">
                 {lang === "hi" 
-                  ? "भारत के राष्ट्रीय डिजिटल सार्वजनिक बुनियादी ढांचे में आपका स्वागत है।" 
-                  : "Welcome to India's national digital public infrastructure."}
+                  ? "प्रोटोटाइप पंजीकरण पोर्टल — अनौपचारिक श्रम बाजारों के लिए डिजिटल ऑनबोर्डिंग वर्कफ़्लो का प्रदर्शन।" 
+                  : "Prototype registration portal demonstrating digital onboarding workflows for informal labour markets."}
               </p>
             </div>
 
@@ -9899,7 +9899,7 @@ export default function HomePage() {
                       {lang === "hi" ? "सत्यापित मोबाइल नंबर दर्ज करें" : "Provide Mobile for Verification"}
                     </h4>
                     <p className="text-xs text-slate-400 mt-1">
-                      {lang === "hi" ? "आधार से लिंक मोबाइल नंबर का उपयोग करना अनुशंसित है।" : "Using an Aadhaar-linked mobile number is highly recommended."}
+                      {lang === "hi" ? "प्रोटोटाइप प्रमाणीकरण के लिए 10 अंकों का मोबाइल नंबर दर्ज करें (डेमो)।" : "Enter any 10-digit mobile number for prototype authentication (Demo)."}
                     </p>
                   </div>
 
@@ -10032,7 +10032,7 @@ export default function HomePage() {
                       <div className="text-center">
                         <span className="text-[10px] text-amber-500 uppercase tracking-widest font-mono font-bold block mb-1">चरण १ / STEP 1</span>
                         <h4 className="text-lg font-bold text-white uppercase tracking-tight">
-                          {lang === "hi" ? "राष्ट्रीय पहचान एवं भाषा की पुष्टि" : "National Identity & Language Confirmation"}
+                          {lang === "hi" ? "पहचान एवं भाषा चयन (प्रोटोटाइप)" : "Identity & Language Confirmation (Prototype)"}
                         </h4>
                       </div>
 
@@ -10573,11 +10573,16 @@ export default function HomePage() {
                       <div className="text-center">
                         <span className="text-[10px] text-amber-500 uppercase tracking-widest font-mono font-bold block mb-1">चरण ८ / STEP 8</span>
                         <h4 className="text-lg font-bold text-white uppercase tracking-tight">
-                          {lang === "hi" ? "राष्ट्रीय पहचान दस्तावेज (वैकल्पिक)" : "National Identity Documents (Optional)"}
+                          {lang === "hi" ? "पहचान दस्तावेज विवरण (वैकल्पिक — डेमो)" : "Sample Identity Documents (Optional — Demo)"}
                         </h4>
                         <p className="text-xs text-slate-400 mt-1">
                           {lang === "hi" ? "पहचान को मजबूत बनाने के लिए भरें अथवा बाद में भरने के लिए छोड़ें (Skip)" : "Provide any ID to secure your profile, or skip to continue"}
                         </p>
+                        <div className="bg-amber-500/10 border border-amber-500/20 rounded-lg p-2.5 text-[10px] text-amber-300 font-mono text-left mt-2">
+                          {lang === "hi"
+                            ? "केवल सैंपल/डेमो विवरण का उपयोग करें। इस प्रोटोटाइप में आधार, पैन, ड्राइविंग लाइसेंस, वोटर आईडी या किसी सरकारी डेटाबेस का सत्यापन नहीं किया जाता।"
+                            : "Use sample/demo values only. No Aadhaar, PAN, driving licence, voter-ID or government database verification is performed."}
+                        </div>
                       </div>
 
                       <div className="space-y-3.5 max-h-[260px] overflow-y-auto p-1 pr-2">
@@ -10682,12 +10687,12 @@ export default function HomePage() {
                             </div>
                             <div>
                               <h5 className="text-[10px] font-bold text-white tracking-wider uppercase font-mono leading-none">LabourAdda v2.0</h5>
-                              <span className="text-[7px] text-slate-400 block font-mono uppercase mt-0.5">National Labour Grid</span>
+                              <span className="text-[7px] text-slate-400 block font-mono uppercase mt-0.5">LabourAdda Prototype Grid</span>
                             </div>
                           </div>
                           <div className="text-right">
                             <span className="text-[8px] bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded font-mono uppercase font-extrabold tracking-wider">
-                              VERIFIED (सत्यापित)
+                              VERIFIED — DEMO
                             </span>
                           </div>
                         </div>
@@ -10786,8 +10791,8 @@ export default function HomePage() {
                         </h4>
                         <p className="text-xs text-slate-400 max-w-sm mx-auto">
                           {lang === "hi" 
-                            ? "डिजिटल श्रम पासपोर्ट सफलतापूर्वक तैयार कर लिया गया है। आपका प्रोफ़ाइल अब भारत के राष्ट्रीय श्रम ग्रिड में सक्रिय है।" 
-                            : "Digital Labour Passport has been created successfully. Your profile is now active in India's National Labour Grid."}
+                            ? "डिजिटल लेबर पासपोर्ट (प्रोटोटाइप) सफलतापूर्वक तैयार हो गया है। आपका डेमो प्रोफाइल LabourAdda Prototype Grid में सक्रिय है।" 
+                            : "Digital Labour Passport (Prototype) created successfully. Your demo profile is now active in the LabourAdda Prototype Grid."}
                         </p>
                       </div>
 
@@ -12045,8 +12050,8 @@ export default function HomePage() {
 
             {/* Modal Footer */}
             <div className="bg-slate-950 px-6 py-4 border-t border-slate-800 flex items-center justify-between text-[10px] text-slate-500 font-mono">
-              <span>National Public Infrastructure Act 2026</span>
-              <span>Secure Encrypted Transport Layer</span>
+              <span>LabourAdda Prototype Architecture</span>
+              <span>Demo Workflow — No Government Verification</span>
             </div>
 
           </div>
