@@ -923,7 +923,7 @@ const INITIAL_DISCOVERABLE_WORKERS: DiscoverableWorker[] = [
   }
 ];
 
-// Animated counter component for jury impact metrics
+// Animated counter component for impact metrics
 function AnimatedCounter({ targetValue, suffix = "", duration = 1500 }: { targetValue: number; suffix?: string; duration?: number }) {
   const [count, setCount] = useState(0);
 
@@ -1921,7 +1921,7 @@ export default function HomePage() {
     }
   };
 
-  // National Jury Guided Walkthrough States
+  // Interactive Product Tour States
   const [p17bModalOpen, setP17bModalOpen] = useState(false);
   const [showWelcomeModal, setShowWelcomeModal] = useState(false);
   const [isWalkthroughOpen, setIsWalkthroughOpen] = useState(false);
@@ -2022,9 +2022,9 @@ export default function HomePage() {
       titleHi: "राष्ट्रीय श्रम पासपोर्ट रजिस्ट्री",
       descEn: "Integrated nationwide monitoring of biometric verification logs, fraud blocks, and identity security registries.",
       descHi: "बायोमेट्रिक सत्यापन लॉग, धोखाधड़ी अवरोधों और पहचान सुरक्षा रजिस्ट्रियों की एकीकृत देशव्यापी निगरानी।",
-      impactEn: "Deters identity duplication and guarantees sovereign-level record security.",
-      impactHi: "पहचान के दोहरेपन को रोकता है और संप्रभु-स्तरीय रिकॉर्ड सुरक्षा की गारंटी देता है।",
-      voiceEn: "The National Labour Passport Registry provides cryptographic identity verification, fraud detection, and nationwide skill tracking.",
+      impactEn: "Deters identity duplication and guarantees robust record security.",
+      impactHi: "पहचान के दोहरेपन को रोकता है और उच्च स्तरीय रिकॉर्ड सुरक्षा की गारंटी देता है।",
+      voiceEn: "The National Labour Passport Registry demonstrates identity verification, fraud detection, and nationwide skill tracking.",
       voiceHi: "राष्ट्रीय श्रम पासपोर्ट रजिस्ट्री देशव्यापी स्तर पर क्रेडेंशियल सत्यापन और धोखाधड़ी नियंत्रण की लाइव निगरानी करती है।"
     },
     {
@@ -2032,8 +2032,8 @@ export default function HomePage() {
       id: "admin-control-section",
       titleEn: "Admin Intelligence Dashboard",
       titleHi: "व्यवस्थापक इंटेलिजेंस कंसोल",
-      descEn: "Sovereign oversight analytics and administrative controls to manage active trades, district compliance, and regional demands.",
-      descHi: "सक्रिय ट्रेडों, जिला अनुपालन और क्षेत्रीय मांगों को प्रबंधित करने के लिए संप्रभु निगरानी विश्लेषण और प्रशासनिक नियंत्रण।",
+      descEn: "Central oversight analytics and administrative controls to manage active trades, district compliance, and regional demands.",
+      descHi: "सक्रिय ट्रेडों, जिला अनुपालन और क्षेत्रीय मांगों को प्रबंधित करने के लिए केंद्रीय निगरानी विश्लेषण और प्रशासनिक नियंत्रण।",
       impactEn: "Empowers rural and urban governance bodies to plan infrastructure dynamically.",
       impactHi: "ग्रामीण और शहरी शासन निकायों को गतिशील रूप से बुनियादी ढांचे की योजना बनाने की शक्ति देता है।",
       voiceEn: "The Admin Intelligence Console displays real-time national analytics, district intelligence, and live infrastructure monitoring.",
@@ -2154,7 +2154,7 @@ export default function HomePage() {
       }
       handleVoiceSpeak(
         "बधाई हो, आपने डिजिटल श्रम बुनियादी ढांचा गाइड को सफलतापूर्वक पूरा कर लिया है।",
-        "Congratulations, you have successfully completed India's digital labor infrastructure guide."
+        "Congratulations, you have successfully completed India's digital labour infrastructure guide."
       );
       localStorage.setItem("labouradda_walkthrough_completed", "true");
       return;
@@ -2403,7 +2403,7 @@ export default function HomePage() {
               <span className="text-[9px] opacity-85 leading-none mt-0.5">{isAdminMode ? "Exit Admin" : "Admin Panel"}</span>
             </button>
 
-            {/* National Jury Guided Walkthrough Toggle */}
+            {/* Interactive Product Tour Toggle */}
             <button
               id="btn-walkthrough-toggle"
               onClick={() => {
@@ -2412,14 +2412,14 @@ export default function HomePage() {
               }}
               className="flex flex-col items-center justify-center px-4 py-1.5 rounded-xl text-xs font-mono transition duration-150 border cursor-pointer min-h-[48px] bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border-emerald-500/30 hover:border-emerald-500/50"
             >
-              <span className="text-xs font-bold leading-none">🇮🇳 वॉकथ्रू</span>
-              <span className="text-[9px] opacity-85 leading-none mt-0.5">Jury Walkthrough</span>
+              <span className="text-xs font-bold leading-none">{lang === "hi" ? "उत्पाद टूर" : "Product Tour"}</span>
+              <span className="text-[9px] opacity-85 leading-none mt-0.5">Product Tour</span>
             </button>
           </div>
         </div>
       </header>
 
-      {/* 5. Jury Visibility Requirement: India-first Language & Accessibility Layer Indicator Banner */}
+      {/* India-first Language & Accessibility Layer Indicator Banner */}
       <section id="accessibility-layer-banner" className="bg-gradient-to-r from-amber-500/10 via-amber-600/15 to-amber-500/10 border-b border-amber-500/25 px-4 py-3">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
           <div className="flex items-center gap-3">
@@ -2453,7 +2453,7 @@ export default function HomePage() {
             {/* Trust and Safety Badge */}
             <div className="inline-flex items-center gap-2 bg-slate-800/80 border border-slate-700 rounded-full px-3.5 py-1 mb-4 text-xs text-slate-300">
               <ShieldCheck className="w-4 h-4 text-emerald-500" />
-              <span>National Startup Advisory Showcase — JURY DEMO</span>
+              <span>LabourAdda v2.0</span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
@@ -2464,8 +2464,8 @@ export default function HomePage() {
             </h2>
             <p className="mt-3 text-slate-400 text-sm sm:text-base leading-relaxed max-w-2xl">
               {lang === "hi" 
-                ? "निर्माण, कृषि और सामान्य श्रमिकों के शोषण को समाप्त करना। भारत के ग्रामीण ब्लॉकों से लेकर मेट्रो हब तक फैले श्रम बाजारों के लिए तैयार किया गया एक शून्य-कमीशन, पहचान-सत्यापित बुनियादी ढांचा।"
-                : "Eliminating exploitation of construction, agricultural, and general workers. A zero-commission, identity-verified infrastructure tailored for Indian labor markets spanning rural blocks to metro hubs."
+                ? "निर्माण, कृषि और सामान्य श्रमिकों के लिए एक प्रोटोटाइप डिजिटल श्रम बुनियादी ढांचा, जिसे पारदर्शी खोज, सत्यापन वर्कफ़्लो और स्थानीय भर्ती के माध्यम से कामगारों और नियोक्ताओं को जोड़ने के लिए डिज़ाइन किया गया है।"
+                : "A prototype digital labour infrastructure designed to connect workers and employers through transparent discovery, verification workflows, and localized hiring."
               }
             </p>
 
@@ -2558,12 +2558,12 @@ export default function HomePage() {
               </div>
               <div>
                 <h4 className="font-semibold text-white text-sm">
-                  {lang === "hi" ? "पहचान और केवाईसी सत्यापित" : "Identity & KYC Verified"}
+                  {lang === "hi" ? "पहचान और प्रोफाइल सत्यापन — डेमो" : "Identity & Profile Verification — Demo"}
                 </h4>
                 <p className="text-xs text-slate-400 mt-1">
                   {lang === "hi" 
-                    ? "स्थानीय ग्राम पंचायत और नगर निगम वार्डों के साथ जुड़े आधार-सत्यापित प्रोफाइल।" 
-                    : "Aadhaar-authenticated profiles connected with local village & city council registers."
+                    ? "भविष्य के पहचान सत्यापन वर्कफ़्लो के लिए डिज़ाइन किए गए प्रोटोटाइप प्रोफाइल।" 
+                    : "Prototype worker profiles designed for future identity verification workflows."
                   }
                 </p>
               </div>
@@ -2597,7 +2597,7 @@ export default function HomePage() {
                 <p className="text-xs text-slate-400 mt-1">
                   {lang === "hi" 
                     ? "दैनिक श्रम, प्रति घंटे काम, या निश्चित मूल्य अनुबंध के आधार पर तत्काल सेवाएं।" 
-                    : "Seamless daily wage hiring, hourly assistance, or custom lump-sum labor contracts."
+                    : "Seamless daily wage hiring, hourly assistance, or custom lump-sum labour contracts."
                   }
                 </p>
               </div>
@@ -2612,15 +2612,15 @@ export default function HomePage() {
               </div>
               <div className="text-left">
                 <span className="text-[10px] font-mono text-amber-400 font-bold uppercase tracking-wider block">
-                  {lang === "hi" ? "वंदे भारतम इम्पैक्ट इंटेलिजेंस" : "Vande Bharatam Impact Intelligence Layer"}
+                  {lang === "hi" ? "राष्ट्रीय श्रम इंटेलिजेंस" : "National Labour Intelligence"}
                 </span>
                 <h4 className="text-base font-bold text-white font-mono mt-0.5">
                   {lang === "hi" ? "राष्ट्रीय लेबर इंटेलिजेंस" : "National Labour Intelligence"}
                 </h4>
                 <p className="text-xs text-slate-300 mt-0.5 max-w-xl">
                   {lang === "hi" 
-                    ? "भारत के सत्यापित श्रम बल के लिए वास्तविक समय जिला-वार मांग और कौशल अंतर विश्लेषण।" 
-                    : "Real-time district-wise demand, wage visibility, and skill gap insights for India’s verified workforce."}
+                    ? "जिला-वार मांग, मजदूरी दृश्यता और कौशल अंतराल अंतर्दृष्टि प्रदर्शित करने वाला प्रोटोटाइप लेबर इंटेलिजेंस डैशबोर्ड।" 
+                    : "Prototype labour intelligence dashboard demonstrating district-wise demand, wage visibility, and skill-gap insights."}
                 </p>
               </div>
             </div>
@@ -2654,13 +2654,13 @@ export default function HomePage() {
                 <span className="w-2.5 h-2.5 rounded-full bg-amber-500 animate-pulse" />
                 <h3 className="text-xl font-bold text-white tracking-tight flex items-center gap-2">
                   <ShieldCheck className="w-5 h-5 text-amber-500" />
-                  {lang === "hi" ? "वंदे भारतम डिजिटल लेबर पासपोर्ट और क्यूआर सत्यापन" : "Vande Bharatam Digital Labour Passport & QR Verification Engine"}
+                  {lang === "hi" ? "डिजिटल लेबर पासपोर्ट और QR वेरिफिकेशन इंजन" : "Digital Labour Passport & QR Verification Engine"}
                 </h3>
               </div>
               <p className="text-xs text-slate-400 mt-1 max-w-3xl">
                 {lang === "hi"
-                  ? "ग्राम पंचायत और शहरी वार्ड एकीकृत प्रमाणीकरण इंजन। काम पर रखने से पहले किसी भी कामगार की पहचान, कौशल रिकॉर्ड और विश्वास रेटिंग का त्वरित सत्यापन करें।"
-                  : "Integrated village council & municipal ward authentication engine. Instantly verify any worker's identity, skill records, and trust rating before dispatching contracts."}
+                  ? "भविष्य के स्थानीय प्राधिकरण एकीकरण के लिए डिज़ाइन किया गया प्रोटोटाइप सत्यापन वर्कफ़्लो। अनुबंध जारी करने से पहले कामगार पहचान, कौशल रिकॉर्ड और विश्वास रेटिंग सत्यापन प्रदर्शित करता है।"
+                  : "Prototype verification workflow designed for future local-authority integrations. Demonstrates worker identity, skill records, and trust signal validation before dispatching contracts."}
               </p>
             </div>
 
@@ -2725,7 +2725,7 @@ export default function HomePage() {
                       </div>
                     </div>
                     <span className="text-[8px] bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 px-2.5 py-0.5 rounded-full font-sans tracking-wide uppercase font-extrabold shadow-sm shadow-emerald-500/5">
-                      {activePassportWorker.status === "Verified" ? "✓ Aadhaar Verified" : "UNVERIFIED"}
+                      {activePassportWorker.status === "Verified" ? "Identity Verification — Demo" : "UNVERIFIED"}
                     </span>
                   </div>
 
@@ -2776,15 +2776,15 @@ export default function HomePage() {
                   {/* Core Metrics Grid */}
                   <div className="grid grid-cols-3 gap-2 mt-4 pt-3.5 border-t border-slate-800/60 text-center font-mono">
                     <div className="bg-slate-950/60 p-2 rounded-xl border border-slate-850 hover:border-slate-800 transition duration-150">
-                      <span className="text-slate-400 block text-[7px] uppercase tracking-wider leading-none">{lang === "hi" ? "विश्वास स्कोर" : "Trust Score"}</span>
+                      <span className="text-slate-400 block text-[7px] uppercase tracking-wider leading-none">{lang === "hi" ? "विश्वास स्कोर (डेमो)" : "Trust Score — Demo"}</span>
                       <span className="font-extrabold text-emerald-400 block mt-1.5 text-[10px] leading-tight">🛡️ {activePassportWorker.trustScore}/100</span>
                     </div>
                     <div className="bg-slate-950/60 p-2 rounded-xl border border-slate-850 hover:border-slate-800 transition duration-150">
-                      <span className="text-slate-400 block text-[7px] uppercase tracking-wider leading-none">{lang === "hi" ? "कार्य इतिहास" : "Jobs Done"}</span>
+                      <span className="text-slate-400 block text-[7px] uppercase tracking-wider leading-none">{lang === "hi" ? "पूर्ण कार्य (सैंपल)" : "Jobs Completed — Sample"}</span>
                       <span className="font-extrabold text-white block mt-1.5 text-[10px] leading-tight">💼 {activePassportWorker.workHistoryCount}</span>
                     </div>
                     <div className="bg-slate-950/60 p-2 rounded-xl border border-slate-850 hover:border-slate-800 transition duration-150">
-                      <span className="text-slate-400 block text-[7px] uppercase tracking-wider leading-none">{lang === "hi" ? "हाजिरी दर" : "Attendance"}</span>
+                      <span className="text-slate-400 block text-[7px] uppercase tracking-wider leading-none">{lang === "hi" ? "हाजिरी संकेत (डेमो)" : "Attendance Signal — Demo"}</span>
                       <span className="font-extrabold text-amber-500 block mt-1.5 text-[10px] leading-tight">📊 {activePassportWorker.attendanceReliability}</span>
                     </div>
                   </div>
@@ -2855,7 +2855,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right Column: QR Verification Flow & Jury Highlight */}
+            {/* Right Column: QR Verification Flow & Platform Highlight */}
             <div id="qr-verification-console-section" className="lg:col-span-7 bg-slate-950/60 p-5 rounded-2xl border border-slate-850 flex flex-col justify-between space-y-4">
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
@@ -2872,12 +2872,12 @@ export default function HomePage() {
                     </div>
                     <div className="space-y-1">
                       <p className="text-sm font-bold text-white">
-                        {lang === "hi" ? "दस्तावेज़ सत्यापन के लिए तैयार" : "Ready for Cryptographic Verification"}
+                        {lang === "hi" ? "सत्यापन वर्कफ़्लो — डेमो सिमुलेशन" : "Verification Workflow — Demo Simulation"}
                       </p>
                       <p className="text-xs text-slate-400 max-w-md mx-auto">
                         {lang === "hi"
-                          ? "क्यूआर कोड स्कैनिंग और ग्राम-स्तरीय राष्ट्रीय रजिस्ट्री डेटाबेस प्रश्न को सिम्युलेट करने के लिए नीचे बटन पर क्लिक करें।"
-                          : "Press the action button below to trigger secure public ledger verification for this passport."}
+                          ? "लेबरअड्डा प्रोटोटाइप के लिए सिम्युलेटेड सत्यापन प्रक्रिया शुरू करने के लिए नीचे बटन पर क्लिक करें।"
+                          : "Simulated verification flow for the LabourAdda prototype."}
                       </p>
                     </div>
 
@@ -2885,7 +2885,7 @@ export default function HomePage() {
                       type="button"
                       onClick={() => {
                         setQrScanningState("scanning");
-                        handleVoiceSpeak("सत्यापन आरंभ किया गया।", "Cryptographic verification process initiated.");
+                        handleVoiceSpeak("सत्यापन आरंभ किया गया।", "Verification process initiated.");
                         setTimeout(() => {
                           setQrScanningState("done");
                           const now = new Date();
@@ -2961,7 +2961,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <span className="text-slate-500 block uppercase text-[9px]">{lang === "hi" ? "सुरक्षित क्रेडेंशियल" : "SECURITY METADATA"}:</span>
-                        <span className="text-white font-bold block truncate">AES-255 SHA-GRID</span>
+                        <span className="text-white font-bold block truncate">QR Verification Simulation</span>
                       </div>
                     </div>
 
@@ -2981,8 +2981,8 @@ export default function HomePage() {
                         <ShieldAlert className="w-4 h-4 shrink-0 text-emerald-400" />
                         <span className="leading-snug">
                           {lang === "hi"
-                            ? "सफल जेएमयू-प्रौद्योगिकी डेमो सत्यापन। यह कामगार सुरक्षित रोजगार के लिए योग्य है।"
-                            : "Jury Demo: Cryptographic compliance is perfect. This worker is ready for immediate deployment."}
+                            ? "वेरिफिकेशन डेमो: वर्कर पासपोर्ट स्टेटस और QR वैलिडेशन फ्लो।"
+                            : "Verification Demo: Worker passport status and QR validation flow."}
                         </span>
                       </div>
                     </div>
@@ -2990,18 +2990,18 @@ export default function HomePage() {
                 )}
               </div>
 
-              {/* JURY DEMO HIGHLIGHT PANEL */}
+              {/* PLATFORM HIGHLIGHT PANEL */}
               <div className="bg-gradient-to-r from-amber-500/5 to-amber-600/10 border border-amber-500/20 p-4 rounded-xl text-xs space-y-1">
                 <div className="flex items-center gap-2">
                   <Award className="w-4 h-4 text-amber-500 animate-pulse" />
                   <span className="font-extrabold text-white uppercase tracking-wider font-mono text-[10px]">
-                    {lang === "hi" ? "जूरी डेमो हाइलाइट / Jury Demo Highlight" : "Jury Demo Highlight / जूरी डेमो हाइलाइट"}
+                    {lang === "hi" ? "प्रमुख विशेषता" : "Platform Highlight / प्रमुख विशेषता"}
                   </span>
                 </div>
                 <p className="text-slate-300 text-[11px] leading-relaxed">
                   {lang === "hi"
-                    ? "कोई भी ठेकेदार या नियोक्ता कामगार के डिजिटल पासपोर्ट पर बने क्यूआर कोड को स्कैन करके काम पर रखने से पहले उसकी पहचान, कौशल रिकॉर्ड, कार्य इतिहास और विश्वास स्कोर को तुरंत सत्यापित कर सकता है।"
-                    : "Any contractor or employer can scan a worker’s LabourAdda Digital Passport and instantly verify identity, skills, work history, and trust score before hiring."}
+                    ? "यह प्रदर्शित करता है कि ठेकेदार और नियोक्ता लेबरअड्डा डिजिटल पासपोर्ट वर्कफ़्लो के माध्यम से काम पर रखने से पहले कामगार पहचान, कौशल, कार्य इतिहास और विश्वास संकेतों को कैसे सत्यापित कर सकते हैं।"
+                    : "Demonstrates how contractors and employers could verify worker identity, skills, work history, and trust signals through a LabourAdda Digital Passport workflow."}
                 </p>
               </div>
             </div>
@@ -3023,7 +3023,7 @@ export default function HomePage() {
                 <p className="text-xs text-slate-400 mt-1">
                   {lang === "hi" 
                     ? "सत्यापित राष्ट्रीय श्रम अवसंरचना पोर्टल। आपका डिजिटल श्रम पासपोर्ट सक्रिय है।" 
-                    : "Verified National Labor Grid. Your portable Digital Passport is active and synchronized."}
+                    : "Verified National Labour Grid. Your portable Digital Passport is active and synchronized."}
                 </p>
               </div>
 
@@ -3262,11 +3262,11 @@ export default function HomePage() {
                 </span>
               </div>
 
-              {/* JURY DEMO HIGHLIGHT */}
+              {/* PASSPORT CAPABILITY HIGHLIGHT */}
               <div className="bg-amber-500/5 border border-amber-500/20 rounded-2xl p-4 flex items-start gap-3">
                 <Sparkles className="w-5 h-5 text-amber-500 shrink-0 mt-0.5 animate-pulse" />
                 <div className="text-xs">
-                  <p className="text-amber-400 font-bold font-mono uppercase tracking-wide text-[10px]">Jury Demo Highlight / जूरी डेमो विशेषता:</p>
+                  <p className="text-amber-400 font-bold font-mono uppercase tracking-wide text-[10px]">{lang === "hi" ? "पासपोर्ट विशेषता:" : "Passport Capability / पासपोर्ट विशेषता:"}</p>
                   <p className="text-slate-300 mt-1 leading-relaxed">
                     <strong>English:</strong> “Digital Labour Passport transforms informal workers into verified, portable, bankable workforce participants.”
                   </p>
@@ -3377,7 +3377,7 @@ export default function HomePage() {
                         </div>
                       </div>
                       <span className="text-[7px] bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 px-2 py-0.5 rounded font-mono uppercase font-bold flex items-center gap-1">
-                        <ShieldCheck className="w-3 h-3 text-emerald-400" /> AADHAAR KYC VERIFIED
+                        <ShieldCheck className="w-3 h-3 text-emerald-400" /> IDENTITY VERIFICATION — DEMO
                       </span>
                     </div>
 
@@ -3396,13 +3396,13 @@ export default function HomePage() {
                         </div>
                       </div>
                       <span className="text-[10px] font-mono font-bold text-emerald-400 uppercase tracking-widest animate-pulse flex items-center gap-1">
-                        <span className="w-2 h-2 bg-emerald-500 rounded-full animate-ping inline-block" /> QR AUTHENTICATION ACTIVE
+                        <span className="w-2 h-2 bg-emerald-500 rounded-full animate-ping inline-block" /> QR VERIFICATION SIMULATION
                       </span>
                     </div>
 
                     <div className="text-[10px] text-slate-500 font-mono text-center border-t border-slate-900 pt-2 flex justify-between">
-                      <span>VERIFIED: 06 JULY 2026</span>
-                      <span className="text-emerald-400 font-bold">SECURE ENCRYPTED QR</span>
+                      <span>SAMPLE PROFILE</span>
+                      <span className="text-emerald-400 font-bold">DEMO VERIFICATION QR</span>
                     </div>
                   </div>
                 </div>
@@ -3427,15 +3427,15 @@ export default function HomePage() {
                       <span className="font-bold text-slate-300 block mt-0.5">Gorakhpur, UP</span>
                     </div>
                     <div className="bg-slate-950 p-3 rounded-xl border border-slate-850">
-                      <span className="text-[9px] text-slate-500 block uppercase">{lang === "hi" ? "उपस्थिति विश्वसनीयता" : "ATTENDANCE RELIABILITY"}</span>
+                      <span className="text-[9px] text-slate-500 block uppercase">{lang === "hi" ? "उपस्थिति विश्वसनीयता (डेमो)" : "ATTENDANCE RELIABILITY — DEMO"}</span>
                       <span className="font-bold text-emerald-400 block mt-0.5">📊 99%</span>
                     </div>
                     <div className="bg-slate-950 p-3 rounded-xl border border-slate-850">
-                      <span className="text-[9px] text-slate-500 block uppercase">{lang === "hi" ? "ट्रस्ट स्कोर" : "TRUST SCORE"}</span>
+                      <span className="text-[9px] text-slate-500 block uppercase">{lang === "hi" ? "ट्रस्ट स्कोर (डेमो)" : "TRUST SCORE — DEMO"}</span>
                       <span className="font-bold text-emerald-400 block mt-0.5">🛡️ 98%</span>
                     </div>
                     <div className="bg-slate-950 p-3 rounded-xl border border-slate-850">
-                      <span className="text-[9px] text-slate-500 block uppercase">{lang === "hi" ? "कार्य इतिहास" : "WORK HISTORY"}</span>
+                      <span className="text-[9px] text-slate-500 block uppercase">{lang === "hi" ? "कार्य इतिहास (सैंपल)" : "WORK HISTORY — SAMPLE"}</span>
                       <span className="font-bold text-white block mt-0.5">💼 156 Jobs</span>
                     </div>
                     <div className="bg-slate-950 p-3 rounded-xl border border-slate-850">
@@ -3446,7 +3446,7 @@ export default function HomePage() {
 
                   {/* Compliance Warning */}
                   <div className="bg-slate-900/40 p-2.5 rounded-lg border border-slate-850 text-[10px] text-slate-500 text-left font-mono leading-snug">
-                    🛡️ <strong>Demo Compliance Note:</strong> No real Aadhaar, banking, or government API is connected. This module demonstrates cryptographic passport-based verification workflow only.
+                    🛡️ <strong>Demo Compliance Note:</strong> No real Aadhaar, banking, or government API is connected. This module demonstrates prototype passport-based verification workflow only.
                   </div>
 
                   {/* Actions Row */}
@@ -3480,7 +3480,7 @@ export default function HomePage() {
                       onClick={() => {
                         setPrompt16Downloaded(true);
                         setTimeout(() => setPrompt16Downloaded(false), 3000);
-                        handleVoiceSpeak("श्रम पहचान डाउनलोड हो रही है।", "Downloading portable Labor ID card template.");
+                        handleVoiceSpeak("श्रम पहचान डाउनलोड हो रही है।", "Downloading portable Labour ID card template.");
                       }}
                       className="p-2.5 bg-slate-900 hover:bg-slate-850 border border-slate-800 text-slate-300 hover:text-white rounded-xl transition font-bold font-mono text-[11px] flex items-center justify-center gap-1 cursor-pointer min-h-[38px]"
                     >
@@ -3600,13 +3600,13 @@ export default function HomePage() {
                 </div>
               </div>
 
-              {/* JURY DEMO HIGHLIGHT */}
+              {/* HIRING ADVANTAGE HIGHLIGHT */}
               <div className="bg-gradient-to-r from-amber-500/10 via-amber-600/5 to-slate-950 p-4 rounded-2xl border border-amber-500/20 text-left">
                 <div className="flex items-start gap-2.5">
                   <Award className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
                   <div>
                     <span className="text-[9px] font-mono text-amber-500 uppercase tracking-wider font-bold block">
-                      {lang === "hi" ? "जूरी डेमो हाइलाइट" : "Jury Demo Highlight"}
+                      {lang === "hi" ? "भर्ती लाभ" : "Hiring Advantage"}
                     </span>
                     <p className="text-xs text-slate-200 leading-relaxed mt-1 font-sans">
                       {lang === "hi"
@@ -3692,8 +3692,8 @@ export default function HomePage() {
                       wageHighEn: "Competitive daily wage",
                       nearbyHi: "शहर के केंद्र में (3.2 किमी)",
                       nearbyEn: "In city center (3.2 km)",
-                      verifiedHi: "सत्यापित नियोक्ता (Aadhaar Verified)",
-                      verifiedEn: "Verified employer (Aadhaar Verified)",
+                      verifiedHi: "सत्यापित नियोक्ता (पहचान सत्यापित — डेमो)",
+                      verifiedEn: "Verified employer (Identity Verified — Demo)",
                       fastJoiningHi: "सप्ताह के भीतर जॉइनिंग",
                       fastJoiningEn: "Fast joining available"
                     }
@@ -3967,7 +3967,7 @@ export default function HomePage() {
                   </h4>
                 </div>
                 <span className="text-[9px] bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 px-2.5 py-0.5 rounded font-mono uppercase font-bold">
-                  Verified Labor Grid Connection
+                  Verified Labour Grid Connection
                 </span>
               </div>
 
@@ -4034,7 +4034,7 @@ export default function HomePage() {
                               
                               handleVoiceSpeak(
                                 "बधाई हो, आपने कार्य निमंत्रण स्वीकार कर लिया है। आपका डिजिटल पासपोर्ट अद्यतन हो गया है और एक नया काम का आदेश जारी किया गया है।",
-                                "Congratulations, you have accepted the work invitation. Your portable labor passport is now active on this job order."
+                                "Congratulations, you have accepted the work invitation. Your portable labour passport is now active on this job order."
                               );
                               alert("बधाई हो! कार्य निमंत्रण स्वीकार किया गया। डिजिटल काम का आदेश आपके राष्ट्रीय श्रम पासपोर्ट से लिंक हो चुका है। / Work invitation accepted.");
                             }}
@@ -4236,7 +4236,7 @@ export default function HomePage() {
                 <p className="text-xs text-slate-400 mt-1">
                   {lang === "hi" 
                     ? "सत्यापित राष्ट्रीय श्रम आवंटन नेटवर्क। आपका डिजिटल नियोक्ता पासपोर्ट सक्रिय है।" 
-                    : "Verified National Labor Grid. Your portable Employer Passport is active and synchronized."}
+                    : "Verified National Labour Grid. Your portable Employer Passport is active and synchronized."}
                 </p>
               </div>
 
@@ -4600,7 +4600,7 @@ export default function HomePage() {
                   </div>
 
                   <div className="pt-2 border-t border-slate-900 flex items-center justify-between text-[10px] text-slate-500 font-mono">
-                    <span>ZERO-COMMISSION DIRECT NETWORK</span>
+                    <span>ZERO WORKER COMMISSION DIRECT NETWORK</span>
                     <span className="text-emerald-400">100% SECURE</span>
                   </div>
                 </div>
@@ -4610,7 +4610,7 @@ export default function HomePage() {
                   <div>
                     <span className="text-[9px] text-amber-500 font-mono uppercase tracking-widest block font-bold">GORAKHPUR CORRIDOR DIRECT MATCHMAKER</span>
                     <p className="text-xs text-slate-400 mt-1 leading-normal">
-                      {lang === "hi" ? "तत्काल कामगारों की आवश्यकता है? कौशल के अनुसार खोजें:" : "Need on-demand labor instantly? Select skill block for active matches:"}
+                      {lang === "hi" ? "तत्काल कामगारों की आवश्यकता है? कौशल के अनुसार खोजें:" : "Need on-demand labour instantly? Select skill block for active matches:"}
                     </p>
                   </div>
 
@@ -5144,7 +5144,7 @@ export default function HomePage() {
                         <div>
                           <div className="flex items-center gap-2">
                             <span className="text-[10px] bg-amber-500/15 border border-amber-500/20 text-amber-500 px-2.5 py-0.5 rounded-full font-mono uppercase font-bold">
-                              {lang === "hi" ? "राष्ट्रीय श्रम ग्रिड" : "NATIONAL LABOR GRID"}
+                              {lang === "hi" ? "राष्ट्रीय श्रम ग्रिड" : "NATIONAL LABOUR GRID"}
                             </span>
                             <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse" />
                             <span className="text-[9px] font-mono text-emerald-400 uppercase font-bold">{lang === "hi" ? "सिस्टम ऑनलाइन" : "System Live"}</span>
@@ -5219,10 +5219,10 @@ export default function HomePage() {
 
                         <div className="bg-slate-950 p-3.5 rounded-2xl border border-slate-900 flex flex-col justify-between hover:border-slate-850 transition">
                           <div>
-                            <span className="text-[9px] text-slate-500 block uppercase tracking-wider">{lang === "hi" ? "सरकारी सत्यापित" : "GOVT VERIFIED"}</span>
+                            <span className="text-[9px] text-slate-500 block uppercase tracking-wider">{lang === "hi" ? "सत्यापित प्रोफाइल (डेमो)" : "VERIFIED PROFILES (DEMO)"}</span>
                             <span className="font-extrabold text-white text-base block mt-0.5">100%</span>
                           </div>
-                          <span className="text-[8px] text-emerald-400 mt-1 block">✓ {lang === "hi" ? "आधार लिंक सुरक्षित" : "Aadhaar Link Secured"}</span>
+                          <span className="text-[8px] text-emerald-400 mt-1 block">✓ {lang === "hi" ? "सत्यापित प्रोफाइल (डेमो)" : "Verified Profiles (Demo)"}</span>
                         </div>
                       </div>
 
@@ -5364,7 +5364,7 @@ export default function HomePage() {
                             <span className="text-xs text-slate-400 font-bold block">{lang === "hi" ? "सत्यापन और सुरक्षा स्थिति" : "Verification & Safety Badges"}</span>
                             <div className="space-y-2 font-mono text-[11px] text-slate-300">
                               {[
-                                { checked: discoverAadhaar, setChecked: setDiscoverAadhaar, labelHi: "आधार सत्यापित (100% UIDAI)", labelEn: "Aadhaar Verified" },
+                                { checked: discoverAadhaar, setChecked: setDiscoverAadhaar, labelHi: "पहचान सत्यापित (डेमो)", labelEn: "Identity Verified (Demo)" },
                                 { checked: discoverPassport, setChecked: setDiscoverPassport, labelHi: "पासपोर्ट/आईडी धारक", labelEn: "Passport Verified" },
                                 { checked: discoverGPS, setChecked: setDiscoverGPS, labelHi: "सक्रिय जीपीएस ट्रैकिंग", labelEn: "GPS Active" },
                                 { checked: discoverPolice, setChecked: setDiscoverPolice, labelHi: "पुलिस सत्यापन सुरक्षित", labelEn: "Police Verified" },
@@ -5570,7 +5570,7 @@ export default function HomePage() {
                                       <div className="flex flex-wrap items-center gap-1.5 pt-0.5">
                                         {worker.aadhaar && (
                                           <span className="text-[8px] bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 px-1.5 py-0.5 rounded font-mono">
-                                            ✓ Aadhaar
+                                            ✓ ID Verified (Demo)
                                           </span>
                                         )}
                                         {worker.passport && (
@@ -5872,20 +5872,20 @@ export default function HomePage() {
                               </div>
                               <div className="grid grid-cols-2 gap-3 text-[10px] font-mono pt-2 border-t border-slate-900 text-left">
                                 <div>
-                                  <span className="text-slate-500 block">AADHAAR SECURED</span>
-                                  <span className="text-emerald-400 font-bold">✓ VERIFIED LINKAGE</span>
+                                  <span className="text-slate-500 block">IDENTITY VERIFICATION</span>
+                                  <span className="text-emerald-400 font-bold">✓ DEMO VERIFIED</span>
                                 </div>
                                 <div>
-                                  <span className="text-slate-500 block">POLICE VERIFICATION</span>
-                                  <span className="text-emerald-400 font-bold">✓ COMPLETED</span>
+                                  <span className="text-slate-500 block">BACKGROUND SIGNAL</span>
+                                  <span className="text-emerald-400 font-bold">✓ DEMO SIGNAL</span>
                                 </div>
                                 <div>
-                                  <span className="text-slate-500 block">SKILL CERTIFICATION</span>
-                                  <span className="text-amber-400 font-bold">✓ NSTI LEVEL-1</span>
+                                  <span className="text-slate-500 block">SKILL SIGNAL</span>
+                                  <span className="text-amber-400 font-bold">✓ SAMPLE LEVEL-1</span>
                                 </div>
                                 <div>
-                                  <span className="text-slate-500 block">CURRENT STATUS</span>
-                                  <span className="text-emerald-400 font-bold">● ONLINE ACTIVE</span>
+                                  <span className="text-slate-500 block">SIMULATION STATUS</span>
+                                  <span className="text-emerald-400 font-bold">● DEMO ACTIVE</span>
                                 </div>
                               </div>
                             </div>
@@ -5894,7 +5894,7 @@ export default function HomePage() {
                                 type="button"
                                 onClick={() => {
                                   handleVoiceSpeak("लेबर पासपोर्ट विवरण सत्यापित किया गया है।", "Labour Passport details verified successfully.");
-                                  alert("Labour Passport Verified Offline / Cryptographic signatures checked.");
+                                  alert("Labour Passport Verified / Demo verification check complete.");
                                   setDiscoverPassportModal(null);
                                 }}
                                 className="flex-1 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 text-xs font-bold rounded-xl transition cursor-pointer"
@@ -6020,9 +6020,9 @@ export default function HomePage() {
                           setContractorActionModal(null);
                           handleVoiceSpeak(
                             "आवश्यकता सफलतापूर्वक पोस्ट कर दी गई है।",
-                            "Requirement has been published to National labor grid."
+                            "Requirement has been published to National labour grid."
                           );
-                          alert("सफलतापूर्वक श्रम मांग पोस्ट की गई! / Labor demand posted successfully!");
+                          alert("सफलतापूर्वक श्रम मांग पोस्ट की गई! / Labour demand posted successfully!");
                         }}
                         className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs"
                       >
@@ -6131,7 +6131,7 @@ export default function HomePage() {
                           <div>
                             <span className="font-bold text-white">राम सिंह (Rajmistri)</span>
                             <span className="text-[10px] text-slate-400 block font-mono mt-0.5">Passport: LP-IND-99201-A | Exp: 8 Years</span>
-                            <span className="text-[9px] text-emerald-400 block mt-1">Verification Status: Aadhaar Verified Profile</span>
+                            <span className="text-[9px] text-emerald-400 block mt-1">Verification Status: Verified Profile (Demo)</span>
                           </div>
                           <div className="flex gap-1.5">
                             <button
@@ -6162,7 +6162,7 @@ export default function HomePage() {
                     <div className="space-y-4 text-left font-mono">
                       <div className="border-b border-slate-900 pb-2">
                         <h5 className="text-sm font-bold text-white">{lang === "hi" ? "सक्रिय कार्यबल प्रबंधन पोर्टल" : "Manage Dispatched Workforce"}</h5>
-                        <p className="text-[11px] text-slate-400 mt-0.5">{lang === "hi" ? "आपके सभी प्रोजेक्ट्स के सक्रिय मजदूर" : "Live telemetry, logs, and communication with dispatched laborers"}</p>
+                        <p className="text-[11px] text-slate-400 mt-0.5">{lang === "hi" ? "आपके सभी प्रोजेक्ट्स के सक्रिय मजदूर" : "Live telemetry, logs, and communication with dispatched labourers"}</p>
                       </div>
                       <div className="space-y-2 text-xs">
                         {[
@@ -6302,7 +6302,7 @@ export default function HomePage() {
                     titleEn: "Worker Retention",
                     value: "91.5%",
                     descHi: "दोबारा बुलाए गए कामगार",
-                    descEn: "Repeat hired labor",
+                    descEn: "Repeat hired labour",
                     color: "text-blue-400",
                     trend: "35 workers"
                   }
@@ -6843,7 +6843,7 @@ export default function HomePage() {
                 {/* Future Backend Connector Anchor Indicator */}
                 <div className="w-full pt-3 border-t border-slate-900 flex justify-between items-center text-[9px] text-slate-500 font-mono tracking-widest uppercase">
                   <span>[REST/GraphQL Endpoint Connection Ready]</span>
-                  <span className="text-emerald-500">Zero-Commission Direct Grid Network</span>
+                  <span className="text-emerald-500">Zero Worker Commission Direct Grid Network</span>
                 </div>
 
               </div>
@@ -7842,13 +7842,13 @@ export default function HomePage() {
                   </div>
                   <div className="bg-slate-950 p-3 rounded-xl border border-slate-900 flex flex-col justify-between min-h-[72px]">
                     <span className="block text-slate-400 font-bold uppercase text-[8px]">Digital Contracts</span>
-                    <span className="block mt-1 font-bold text-slate-500">Aadhaar e-Sign gateway</span>
-                    <span className="text-[7px] bg-amber-500/5 text-amber-500/40 px-1.5 py-0.5 rounded mt-2 uppercase font-bold">Placeholder</span>
+                    <span className="block mt-1 font-bold text-slate-500">Digital e-Sign workflow</span>
+                    <span className="text-[7px] bg-amber-500/5 text-amber-500/40 px-1.5 py-0.5 rounded mt-2 uppercase font-bold">Future Architecture</span>
                   </div>
                   <div className="bg-slate-950 p-3 rounded-xl border border-slate-900 flex flex-col justify-between min-h-[72px]">
-                    <span className="block text-slate-400 font-bold uppercase text-[8px]">Gov Verification</span>
-                    <span className="block mt-1 font-bold text-slate-500">Shram Suvidha cross sync</span>
-                    <span className="text-[7px] bg-amber-500/5 text-amber-500/40 px-1.5 py-0.5 rounded mt-2 uppercase font-bold">Placeholder</span>
+                    <span className="block text-slate-400 font-bold uppercase text-[8px]">Portal Verification</span>
+                    <span className="block mt-1 font-bold text-slate-500">Labour portal cross sync</span>
+                    <span className="text-[7px] bg-amber-500/5 text-amber-500/40 px-1.5 py-0.5 rounded mt-2 uppercase font-bold">Future Architecture</span>
                   </div>
                   <div className="bg-slate-950 p-3 rounded-xl border border-slate-900 flex flex-col justify-between min-h-[72px]">
                     <span className="block text-slate-400 font-bold uppercase text-[8px]">Video Verification</span>
@@ -8223,7 +8223,7 @@ export default function HomePage() {
               <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-amber-500 via-amber-600 to-amber-700" />
               <div className="space-y-1">
                 <span className="text-[9px] font-mono text-amber-500 font-black tracking-widest block uppercase">
-                  {lang === "hi" ? "वंदे भारतम इम्पैक्ट इंटेलिजेंस" : "Vande Bharatam Impact Intelligence Layer"}
+                  {lang === "hi" ? "राष्ट्रीय श्रम इंटेलिजेंस" : "National Labour Intelligence"}
                 </span>
                 <h4 className="text-base font-bold text-white font-mono flex items-center gap-2">
                   <TrendingUp className="w-5 h-5 text-amber-500" />
@@ -8232,7 +8232,7 @@ export default function HomePage() {
                 <p className="text-xs text-slate-300 max-w-2xl leading-relaxed">
                   {lang === "hi" 
                     ? "भारत के डिजिटल लेबर इन्फ्रास्ट्रक्चर के जिला-वार मांग संकेतों, कौशल अंतराल और श्रम गतिशीलता को ट्रैक करें।"
-                    : "Track district-wise demand signals, skill gaps, and labor mobility across India’s digital labor infrastructure."}
+                    : "Track district-wise demand signals, skill gaps, and labour mobility across India’s digital labour infrastructure."}
                 </p>
               </div>
               <button
@@ -8717,7 +8717,7 @@ export default function HomePage() {
                     </div>
                   </div>
 
-                  {/* Jury Explanation Box */}
+                  {/* System Architecture Explanation Box */}
                   <div className="bg-slate-950 p-5 rounded-2xl border border-slate-850 space-y-4">
                     <div className="flex items-center gap-2 border-b border-slate-900 pb-2.5">
                       <ShieldCheck className="w-5 h-5 text-emerald-400" />
@@ -8923,7 +8923,7 @@ export default function HomePage() {
 
                   {/* Compliance Warning */}
                   <div className="bg-slate-900/40 p-2.5 rounded-lg border border-slate-850 text-[10px] text-slate-500 font-mono leading-snug">
-                    🛡️ <strong>Demo Compliance Note:</strong> No real Aadhaar, banking, or government API is connected. This module demonstrates contractor-side cryptographic passport verification workflow only.
+                    🛡️ <strong>Demo Compliance Note:</strong> No real Aadhaar, banking, or government API is connected. This module demonstrates contractor-side passport verification workflow only.
                   </div>
                 </div>
 
@@ -9089,7 +9089,7 @@ export default function HomePage() {
             <div className="flex items-center gap-2 mb-6">
               <Settings className="w-5 h-5 text-amber-500" />
               <div>
-                <h3 className="text-lg font-bold text-white font-mono">Admin Control Console (Ankur Sahani Portal)</h3>
+                <h3 className="text-lg font-bold text-white font-mono">Admin Control Console</h3>
                 <p className="text-xs text-slate-400 mt-0.5">Simulate digital infrastructure adaptability. Dynamically add custom or region-specific trades.</p>
               </div>
             </div>
@@ -9257,7 +9257,7 @@ export default function HomePage() {
                     </div>
                   </div>
                   <span className="text-[10px] bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 px-2.5 py-1 rounded-full font-mono font-bold uppercase self-start sm:self-center">
-                    {lang === "hi" ? "वित्तीय स्थिरता" : "SUSTAINABLE MODEL"}
+                    {lang === "hi" ? "सिम्युलेटेड व्यवसाय मेट्रिक्स — प्रोटोटाइप" : "SIMULATED BUSINESS METRICS — PROTOTYPE"}
                   </span>
                 </div>
 
@@ -9465,7 +9465,7 @@ export default function HomePage() {
                 })}
               </div>
 
-              {/* Jury Explanation Card: Why Dynamic Fees Matter */}
+              {/* System Explanation Card: Why Dynamic Fees Matter */}
               <div className="bg-slate-950 p-5 rounded-2xl border border-slate-850 space-y-4">
                 <div className="flex items-center gap-2 border-b border-slate-900 pb-2.5">
                   <ShieldCheck className="w-5 h-5 text-emerald-400" />
@@ -9498,7 +9498,7 @@ export default function HomePage() {
                     <p className="text-[11px] leading-relaxed text-slate-400">
                       {lang === "hi"
                         ? "प्रीमियम ट्रेडों से प्राप्त शुल्क सामान्य श्रमिकों के मुफ्त डिजिटल प्रशिक्षण और निशुल्क बुनियादी सुविधाओं के वित्तपोषण में काम आता है।"
-                        : "Premium trade fees directly fund free digital training classes and infrastructure for general laborers."}
+                        : "Premium trade fees directly fund free digital training classes and infrastructure for general labourers."}
                     </p>
                   </div>
                 </div>
@@ -9517,46 +9517,46 @@ export default function HomePage() {
                       </h4>
                       <p className="text-xs text-slate-400 mt-0.5">
                         {lang === "hi"
-                          ? "क्रिप्टोग्राफिक पहचान सत्यापन और राष्ट्रीय स्तर पर धोखाधड़ी का पता लगाने की वास्तविक समय निगरानी।"
-                          : "Real-time monitoring of cryptographic identity verification and nation-wide spoofing detection layers."}
+                          ? "पहचान सत्यापन और धोखाधड़ी का पता लगाने की प्रोटोटाइप निगरानी।"
+                          : "Monitoring prototype identity verification and nation-wide spoofing detection layers."}
                       </p>
                     </div>
                   </div>
                   <span className="text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-3 py-1 rounded-full font-mono font-bold uppercase tracking-wider">
-                    REGISTRY MONITOR ACTIVE
+                    DEMO SIMULATION
                   </span>
                 </div>
 
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 font-mono">
                   <div className="bg-slate-950 p-4 rounded-xl border border-slate-850">
-                    <span className="text-[9px] text-slate-500 block uppercase tracking-wider">{lang === "hi" ? "कुल डिजिटल पासपोर्ट" : "Total Passports"}</span>
+                    <span className="text-[9px] text-slate-500 block uppercase tracking-wider">{lang === "hi" ? "सिम्युलेटेड पासपोर्ट रिकॉर्ड" : "Simulated Passport Records"}</span>
                     <span className="text-lg font-black text-amber-500 mt-1 block">82.4 L</span>
-                    <span className="text-[8px] text-slate-500 mt-0.5 block">8,240,000 active</span>
+                    <span className="text-[8px] text-slate-500 mt-0.5 block">Simulated records</span>
                   </div>
                   <div className="bg-slate-950 p-4 rounded-xl border border-slate-850">
-                    <span className="text-[9px] text-slate-500 block uppercase tracking-wider">{lang === "hi" ? "आधार केवाईसी सत्यापित" : "Aadhaar Verified"}</span>
+                    <span className="text-[9px] text-slate-500 block uppercase tracking-wider">{lang === "hi" ? "पहचान सत्यापन संकेत — सिम्युलेटेड" : "Identity Verification Signals — Simulated"}</span>
                     <span className="text-lg font-black text-white mt-1 block">76.8 L</span>
-                    <span className="text-[8px] text-emerald-400 mt-0.5 block">● 93% rate</span>
+                    <span className="text-[8px] text-emerald-400 mt-0.5 block">● Simulated signal</span>
                   </div>
                   <div className="bg-slate-950 p-4 rounded-xl border border-slate-850">
-                    <span className="text-[9px] text-slate-500 block uppercase tracking-wider">{lang === "hi" ? "क्यूआर प्रमाणीकरण आज" : "QR Auths Today"}</span>
+                    <span className="text-[9px] text-slate-500 block uppercase tracking-wider">{lang === "hi" ? "क्यूआर सत्यापन घटनाएं — सिम्युलेटेड" : "QR Verification Events — Simulated"}</span>
                     <span className="text-lg font-black text-white mt-1 block">1.86 L</span>
-                    <span className="text-[8px] text-slate-500 mt-0.5 block">Direct scans</span>
+                    <span className="text-[8px] text-slate-500 mt-0.5 block">Simulated events</span>
                   </div>
                   <div className="bg-slate-950 p-4 rounded-xl border border-slate-850">
-                    <span className="text-[9px] text-slate-500 block uppercase tracking-wider">{lang === "hi" ? "अवरुद्ध धोखाधड़ी प्रयास" : "Fraud Blocked"}</span>
+                    <span className="text-[9px] text-slate-500 block uppercase tracking-wider">{lang === "hi" ? "धोखाधड़ी रोकथाम घटनाएं — सिम्युलेटेड" : "Fraud Detection Events — Simulated"}</span>
                     <span className="text-lg font-black text-rose-500 mt-1 block">12,480</span>
                     <span className="text-[8px] text-rose-500 mt-0.5 block">Auto-isolated</span>
                   </div>
                   <div className="bg-slate-950 p-4 rounded-xl border border-slate-850">
-                    <span className="text-[9px] text-slate-500 block uppercase tracking-wider">{lang === "hi" ? "लिंक्ड कौशल प्रमाणपत्र" : "Linked Skills"}</span>
+                    <span className="text-[9px] text-slate-500 block uppercase tracking-wider">{lang === "hi" ? "कौशल सत्यापन संकेत — सिम्युलेटेड" : "Skill Verification Signals — Simulated"}</span>
                     <span className="text-lg font-black text-emerald-400 mt-1 block">41.2 L</span>
-                    <span className="text-[8px] text-emerald-400 mt-0.5 block">MSDE verified</span>
+                    <span className="text-[8px] text-emerald-400 mt-0.5 block">Simulated signal</span>
                   </div>
                   <div className="bg-slate-950 p-4 rounded-xl border border-slate-850">
-                    <span className="text-[9px] text-slate-500 block uppercase tracking-wider">{lang === "hi" ? "कार्य इतिहास रिकॉर्ड" : "Work Histories"}</span>
+                    <span className="text-[9px] text-slate-500 block uppercase tracking-wider">{lang === "hi" ? "कार्य इतिहास रिकॉर्ड — सिम्युलेटेड" : "Work History Records — Simulated"}</span>
                     <span className="text-lg font-black text-emerald-400 mt-1 block">3.8 Cr</span>
-                    <span className="text-[8px] text-slate-500 mt-0.5 block">Ledger recorded</span>
+                    <span className="text-[8px] text-slate-500 mt-0.5 block">Simulated ledger</span>
                   </div>
                 </div>
 
@@ -9565,7 +9565,7 @@ export default function HomePage() {
                   <div className="flex items-center gap-2 border-b border-slate-900 pb-2.5">
                     <ShieldAlert className="w-4.5 h-4.5 text-amber-500" />
                     <h5 className="text-xs font-mono text-slate-400 uppercase tracking-widest font-bold">
-                      {lang === "hi" ? "सुरक्षा एवं धोखाधड़ी का पता लगाने की परत" : "Fraud Detection Layer Status"}
+                      {lang === "hi" ? "सिम्युलेटेड धोखाधड़ी पहचान परत स्थिति" : "Simulated Fraud Detection Layer Status"}
                     </h5>
                   </div>
                   
@@ -9573,25 +9573,25 @@ export default function HomePage() {
                     <div className="bg-slate-900/50 p-3 rounded-xl border border-slate-900 flex items-center justify-between">
                       <span className="text-slate-400">{lang === "hi" ? "दोहरा पासपोर्ट की जांच" : "Duplicate Passport Check"}</span>
                       <span className="text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-0.5 rounded font-bold uppercase">
-                        ACTIVE
+                        DEMO SIMULATION
                       </span>
                     </div>
                     <div className="bg-slate-900/50 p-3 rounded-xl border border-slate-900 flex items-center justify-between">
                       <span className="text-slate-400">{lang === "hi" ? "फर्जी कांट्रेक्टर ध्वजांकन" : "Fake Contractor Flagging"}</span>
                       <span className="text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-0.5 rounded font-bold uppercase">
-                        ACTIVE
+                        DEMO SIMULATION
                       </span>
                     </div>
                     <div className="bg-slate-900/50 p-3 rounded-xl border border-slate-900 flex items-center justify-between">
                       <span className="text-slate-400">{lang === "hi" ? "उपस्थिति स्पूपिंग का पता लगाना" : "Attendance Spoofing Detection"}</span>
                       <span className="text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-0.5 rounded font-bold uppercase">
-                        ACTIVE
+                        DEMO SIMULATION
                       </span>
                     </div>
                     <div className="bg-slate-900/50 p-3 rounded-xl border border-slate-900 flex items-center justify-between">
                       <span className="text-slate-400">{lang === "hi" ? "सेटलमेंट रसीद सत्यापन" : "Settlement Receipt Verification"}</span>
                       <span className="text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-0.5 rounded font-bold uppercase">
-                        ACTIVE
+                        DEMO SIMULATION
                       </span>
                     </div>
                   </div>
@@ -9714,7 +9714,7 @@ export default function HomePage() {
                   <strong className="text-white">{lang === "hi" ? "शोषण-विरोधी नियम: " : "Anti-Exploitation Rule: "}</strong> 
                   {lang === "hi" 
                     ? "बुनियादी ढांचे में पंजीकृत प्रत्येक श्रमिक ग्राम पंचायत या नगर निगम वार्ड के माध्यम से सत्यापित है। न्यूनतम मजदूरी राज्य दिशानिर्देशों के अनुरूप है।"
-                    : "Every registered worker under this trade category is verified directly with local village councils or municipal wards. Labor rates comply with legal state-level minimum guidelines."
+                    : "Every registered worker under this trade category is verified directly with local village councils or municipal wards. Labour rates comply with legal state-level minimum guidelines."
                   }
                 </p>
               </div>
@@ -9855,7 +9855,7 @@ export default function HomePage() {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {[
-                      { id: "worker", hi: "श्रमिक / कारीगर", en: "Worker / Tradesperson", desc: "राजमिस्त्री, पेंटर, मजदूर, कृषि श्रमिक आदि", descEn: "Masons, Painters, Helper, Ag Labor" },
+                      { id: "worker", hi: "श्रमिक / कारीगर", en: "Worker / Tradesperson", desc: "राजमिस्त्री, पेंटर, मजदूर, कृषि श्रमिक आदि", descEn: "Masons, Painters, Helper, Ag Labour" },
                       { id: "contractor", hi: "ठेकेदार / पेटी कांट्रेक्टर", en: "Contractor / Subcontractor", desc: "श्रम आपूर्ति, निर्माण ठेकेदार आदि", descEn: "Labour supplies, small works contractors" },
                       { id: "household", hi: "घरेलू नियोक्ता / गृहस्वामी", en: "Household User", desc: "घर पर निजी कार्यों के लिए सीधे काम देने वाले", descEn: "Direct hiring for private home repairs" },
                       { id: "builder", hi: "बिल्डर / नियोक्ता", en: "Builder / Corporate Employer", desc: "रियल एस्टेट, इंफ्रास्ट्रक्चर और वाणिज्यिक कंपनियाँ", descEn: "Real estate and major infra developers" },
@@ -12283,7 +12283,7 @@ export default function HomePage() {
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
                   <span className="text-[9px] font-mono text-amber-500 font-bold uppercase tracking-widest bg-amber-500/10 px-2 py-0.5 rounded">
-                    {lang === "hi" ? "वंदे भारतम इम्पैक्ट इंटेलिजेंस लेयर" : "Vande Bharatam Impact Intelligence Layer"}
+                    {lang === "hi" ? "राष्ट्रीय श्रम इंटेलिजेंस लेयर" : "National Labour Intelligence Layer"}
                   </span>
                 </div>
                 <h2 className="text-xl font-extrabold text-white font-mono mt-1">
@@ -12375,14 +12375,14 @@ export default function HomePage() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-amber-500/5 rounded-full blur-2xl group-hover:bg-amber-500/10 transition" />
                 <span className="text-[10px] font-mono text-slate-500 uppercase tracking-widest block">{lang === "hi" ? "सत्यापित डिजिटल पासपोर्ट" : "Verified Labour Passports"}</span>
                 <p className="text-2xl font-black text-white font-mono mt-2 tracking-tight">82.4 Lakh</p>
-                <span className="text-[10px] text-amber-500 font-mono mt-1 block">८२.४ लाख (Aadhaar KYC)</span>
+                <span className="text-[10px] text-amber-500 font-mono mt-1 block">८२.४ लाख (Simulated)</span>
               </div>
 
               <div className="bg-slate-900 border border-slate-800/80 p-5 rounded-2xl relative overflow-hidden group hover:border-amber-500/20 transition duration-200">
                 <div className="absolute top-0 right-0 w-24 h-24 bg-amber-500/5 rounded-full blur-2xl group-hover:bg-amber-500/10 transition" />
                 <span className="text-[10px] font-mono text-slate-500 uppercase tracking-widest block">{lang === "hi" ? "सक्रिय ठेकेदार" : "Active Contractors"}</span>
                 <p className="text-2xl font-black text-white font-mono mt-2 tracking-tight">3.2 Lakh</p>
-                <span className="text-[10px] text-amber-500 font-mono mt-1 block">३.२ लाख (GST/MCD Registered)</span>
+                <span className="text-[10px] text-amber-500 font-mono mt-1 block">३.२ लाख (Simulated)</span>
               </div>
 
               <div className="bg-slate-900 border border-slate-800/80 p-5 rounded-2xl relative overflow-hidden group hover:border-amber-500/20 transition duration-200">
@@ -12685,7 +12685,7 @@ export default function HomePage() {
 
                   <div className="grid grid-cols-2 gap-3">
                     {[
-                      { name: "Aadhaar-linked profiles", hi: "आधार-लिंक्ड प्रोफाइल" },
+                      { name: "Verified worker profiles", hi: "सत्यापित कामगार प्रोफाइल" },
                       { name: "Digital Labour Passport", hi: "डिजिटल लेबर पासपोर्ट" },
                       { name: "QR attendance", hi: "क्यूआर उपस्थिति" },
                       { name: "Verified employer history", hi: "सत्यापित नियोक्ता इतिहास" },
@@ -12896,7 +12896,7 @@ export default function HomePage() {
 
             </div>
 
-            {/* BENTO GRID: SECTION 4 - Why this matters for India & Jury Summary Card */}
+            {/* BENTO GRID: SECTION 4 - Why this matters for India & Impact Summary Card */}
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
               
               {/* Why this matters for India */}
@@ -12936,17 +12936,17 @@ export default function HomePage() {
                 </div>
               </div>
 
-              {/* JURY DEMO SUMMARY CARD */}
+              {/* SYSTEM ARCHITECTURE SUMMARY CARD */}
               <div className="lg:col-span-6 bg-gradient-to-br from-amber-500/10 via-amber-600/5 to-slate-950 border border-amber-500/30 p-6 rounded-3xl flex flex-col justify-between relative overflow-hidden">
                 <div className="absolute top-0 right-0 bg-amber-500 text-slate-950 font-mono text-[9px] font-black uppercase tracking-widest px-3 py-1 rounded-bl-xl border-l border-b border-amber-500/20">
-                  Jury View Mode
+                  System Overview
                 </div>
 
                 <div className="space-y-4">
                   <div className="flex items-center gap-2">
                     <Sparkles className="w-5 h-5 text-amber-500 animate-pulse" />
                     <h3 className="text-base font-black text-white uppercase font-mono tracking-wider">
-                      Vande Bharatam Jury View
+                      LabourAdda Impact Architecture
                     </h3>
                   </div>
 
@@ -12961,7 +12961,7 @@ export default function HomePage() {
                       {[
                         { num: "1", hi: "श्रमिक को पोर्टेबल राष्ट्रीय डिजिटल पहचान मिलती है।", en: "Worker gets portable verified digital identity." },
                         { num: "2", hi: "ठेकेदार को सत्यापित और कुशल भर्ती विकल्प मिलते हैं।", en: "Contractor gets friction-free, verified local hiring." },
-                        { num: "3", hi: "सरकार को जिला स्तर पर वास्तविक समय श्रम खुफिया प्राप्त होती है।", en: "Government receives real-time, district-level labor demand intelligence." }
+                        { num: "3", hi: "जिला स्तर पर श्रम मांग खुफिया अंतर्दृष्टि प्रदान करने के लिए डिज़ाइन किया गया।", en: "Designed to provide district-level labour demand intelligence." }
                       ].map((outcome, idx) => (
                         <div key={idx} className="flex gap-3 items-start bg-slate-950/40 p-2.5 rounded-xl border border-slate-850">
                           <div className="w-5 h-5 bg-amber-500 text-slate-950 rounded-full font-mono text-xs font-bold flex items-center justify-center shrink-0">
@@ -13034,13 +13034,13 @@ export default function HomePage() {
         </div>
       )}
 
-      {/* National Jury Guided Walkthrough Overlays & Components */}
+      {/* Interactive Product Tour Overlays & Components */}
       {isWalkthroughOpen && (
         <div className="fixed top-20 left-4 right-4 z-[49] bg-slate-900/90 backdrop-blur-md border-2 border-slate-800 rounded-2xl p-3 flex flex-wrap items-center justify-between gap-3 shadow-2xl max-w-7xl mx-auto">
           <div className="flex items-center gap-2">
             <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
             <span className="text-[10px] font-mono font-bold text-white uppercase tracking-wider">
-              {lang === "hi" ? "ज्यूरी गाइड सक्रिय" : "JURY WALKTHROUGH ACTIVE"}
+              {lang === "hi" ? "उत्पाद टूर सक्रिय" : "PRODUCT TOUR ACTIVE"}
             </span>
           </div>
 
@@ -13168,7 +13168,7 @@ export default function HomePage() {
 
           <div className="bg-slate-950/60 p-3 rounded-xl border border-slate-950 text-left space-y-1">
             <span className="text-[9px] text-emerald-400 uppercase tracking-widest font-mono font-bold block">
-              {lang === "hi" ? "सकारात्मक प्रभाव / JURY IMPACT" : "JURY IMPACT / सकारात्मक प्रभाव"}
+              {lang === "hi" ? "सकारात्मक प्रभाव / PLATFORM IMPACT" : "PLATFORM IMPACT / सकारात्मक प्रभाव"}
             </span>
             <p className="text-[11px] text-slate-400 leading-relaxed font-sans">
               {lang === "hi" ? walkthroughStepsData[walkthroughStep - 1].impactHi : walkthroughStepsData[walkthroughStep - 1].impactEn}
@@ -13305,8 +13305,8 @@ export default function HomePage() {
                 </h4>
                 <p className="text-slate-400 text-xs">
                   {lang === "hi" 
-                    ? "लाखों असंगठित कामगारों को प्रत्यक्ष वित्तीय समावेशन, धोखाधड़ी-मुक्त सुरक्षा, और कानूनी अनुबंध सुनिश्चित करने वाला भारत का प्रथम संप्रभु बुनियादी ढांचा।"
-                    : "India's premier sovereign-grade digital labor system delivering transparent micro-economies, biometric reliability, and absolute security for millions of workers."}
+                    ? "कामगारों के लिए पारदर्शी सूक्ष्म-अर्थव्यवस्था, सत्यापन योग्य प्रोफाइल और विवाद-मुक्त वर्कफ़्लो प्रदान करने वाला फुल-स्टैक डिजिटल लेबर प्रोटोटाइप।"
+                    : "A full-stack digital labour prototype delivering transparent micro-economies, verifiable profiles, and dispute-free workflows for workers."}
                 </p>
               </div>
 
@@ -13351,8 +13351,8 @@ export default function HomePage() {
                   {
                     titleEn: "Verified Workers",
                     titleHi: "सत्यापित कामगार",
-                    descEn: "100% Aadhaar authenticated workforce verification.",
-                    descHi: "सौ प्रतिशत आधार सत्यापित और अधिकृत कामगार।"
+                    descEn: "Designed for future verified workforce workflows.",
+                    descHi: "सत्यापित कार्यबल वर्कफ़्लो के लिए डिज़ाइन किया गया।"
                   },
                   {
                     titleEn: "Digital Passport",
@@ -13473,14 +13473,14 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
             <p className="text-xs text-slate-400 font-semibold font-mono">LabourAdda v2.0 Platform</p>
-            <p className="text-[10px] text-slate-600 mt-1">National Startup Program Finalist. Engineered for direct accountability and zero-exploitation of trade labor.</p>
+            <p className="text-[10px] text-slate-600 mt-1">Engineered for direct accountability, wage transparency, and zero-exploitation of trade labour.</p>
           </div>
           <div className="flex gap-4">
             <span className="text-[9px] text-slate-500 uppercase tracking-widest font-mono border border-slate-800/80 px-2 py-1 rounded">
-              UPI Pay compatible
+              Payment Flow — Demo
             </span>
             <span className="text-[9px] text-slate-500 uppercase tracking-widest font-mono border border-slate-800/80 px-2 py-1 rounded">
-              Aadhaar KYC linked
+              Identity Verification Workflow — Demo
             </span>
           </div>
         </div>
