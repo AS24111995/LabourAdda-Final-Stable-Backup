@@ -1703,7 +1703,7 @@ export default function HomePage() {
       trustScore: 98,
       workHistoryCount: 42,
       attendanceReliability: "99%",
-      disputeFree: "Dispute-Free Record (विवाद-रहित)",
+      disputeFree: "Sample Dispute Record — Clear",
       status: "Verified",
       photoLetter: "S",
       aadhaarVerified: true,
@@ -1724,7 +1724,7 @@ export default function HomePage() {
       trustScore: 96,
       workHistoryCount: 28,
       attendanceReliability: "97%",
-      disputeFree: "Dispute-Free Record (विवाद-रहित)",
+      disputeFree: "Sample Dispute Record — Clear",
       status: "Verified",
       photoLetter: "A",
       aadhaarVerified: true,
@@ -1745,7 +1745,7 @@ export default function HomePage() {
       trustScore: 95,
       workHistoryCount: 34,
       attendanceReliability: "96%",
-      disputeFree: "Dispute-Free Record (विवाद-रहित)",
+      disputeFree: "Sample Dispute Record — Clear",
       status: "Verified",
       photoLetter: "R",
       aadhaarVerified: true,
@@ -1774,7 +1774,7 @@ export default function HomePage() {
         trustScore: 99,
         workHistoryCount: 15,
         attendanceReliability: "100%",
-        disputeFree: "Dispute-Free Record (विवाद-रहित)",
+        disputeFree: "Sample Dispute Record — Clear",
         status: "Verified",
         photoLetter: loggedInUser?.name?.[0] || "W",
         aadhaarVerified: true,
@@ -2270,7 +2270,7 @@ export default function HomePage() {
                   </h1>
                 </div>
                 <p className="text-[9px] text-slate-400 font-mono tracking-wider uppercase mt-1">
-                  {lang === "hi" ? "भारत का डिजिटल श्रम बुनियादी ढांचा" : "India's Digital Labour Infrastructure"}
+                  {lang === "hi" ? "भारत के लिए डिजिटल श्रम बुनियादी ढांचा प्रोटोटाइप" : "Digital Labour Infrastructure Prototype for India"}
                 </p>
               </div>
             </div>
@@ -6459,7 +6459,7 @@ export default function HomePage() {
                       <span className="text-[9px] bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 px-2.5 py-0.5 rounded font-mono uppercase font-bold tracking-widest animate-pulse">Broadcaster Active</span>
                     </h4>
                     <p className="text-[11px] text-slate-400 mt-1">
-                      {lang === "hi" ? "राष्ट्रीय श्रम ग्रिड के लिए सत्यापित कार्यबल आवश्यकताओं का सृजन करें।" : "Create verified labour requirements for the National Labour Grid."}
+                      {lang === "hi" ? "राष्ट्रीय श्रम ग्रिड के लिए कार्यबल आवश्यकताओं का प्रोटोटाइप सृजन करें।" : "Create sample workforce requirements for the National Labour Grid simulation."}
                     </p>
                   </div>
                 </div>
@@ -7783,7 +7783,7 @@ export default function HomePage() {
                                   <rect x="9" y="9" width="6" height="6" fill="black" />
                                 </svg>
                               </div>
-                              <span className="text-[7px] text-slate-500 uppercase leading-normal">QR Verified Passport</span>
+                              <span className="text-[7px] text-slate-500 uppercase leading-normal">QR Demo Passport Profile</span>
                             </div>
 
                             <div className="flex gap-1.5">
@@ -12378,7 +12378,7 @@ export default function HomePage() {
 
               <div className="bg-slate-900 border border-slate-800/80 p-5 rounded-2xl relative overflow-hidden group hover:border-amber-500/20 transition duration-200">
                 <div className="absolute top-0 right-0 w-24 h-24 bg-amber-500/5 rounded-full blur-2xl group-hover:bg-amber-500/10 transition" />
-                <span className="text-[10px] font-mono text-slate-500 uppercase tracking-widest block">{lang === "hi" ? "सत्यापित डिजिटल पासपोर्ट" : "Verified Labour Passports"}</span>
+                <span className="text-[10px] font-mono text-slate-500 uppercase tracking-widest block">{lang === "hi" ? "डिजिटल पासपोर्ट प्रोफाइल (डेमो)" : "Demo Labour Passports"}</span>
                 <p className="text-2xl font-black text-white font-mono mt-2 tracking-tight">82.4 Lakh</p>
                 <span className="text-[10px] text-amber-500 font-mono mt-1 block">८२.४ लाख (Simulated)</span>
               </div>
@@ -12457,14 +12457,14 @@ export default function HomePage() {
                 <div className="lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-4">
                   <div className="bg-slate-900/80 p-3.5 rounded-xl border border-slate-800 text-left space-y-1">
                     <span className="text-[9px] text-slate-500 font-mono uppercase tracking-wider block">{lang === "hi" ? "सूक्ष्म-शुल्क राजस्व प्रवाह" : "Micro-Fee Stream"}</span>
-                    <span className="text-sm font-bold text-white font-mono block">100% {lang === "hi" ? "स्थिर" : "Stable"}</span>
+                    <span className="text-sm font-bold text-white font-mono block">{lang === "hi" ? "सिम्युलेटेड स्थिरता मॉडल" : "Simulated Stability Model"}</span>
                     <span className="text-[8px] text-slate-500 block font-mono">Simulated fee run rate</span>
                   </div>
 
                   <div className="bg-slate-900/80 p-3.5 rounded-xl border border-slate-800 text-left space-y-1">
-                    <span className="text-[9px] text-slate-500 font-mono uppercase tracking-wider block">{lang === "hi" ? "मजदूरी सुरक्षा दर" : "Wage Protection"}</span>
-                    <span className="text-sm font-bold text-emerald-400 font-mono block">100% {lang === "hi" ? "सुरक्षित" : "Protected"}</span>
-                    <span className="text-[8px] text-slate-500 block font-mono">No commission on wages</span>
+                    <span className="text-[9px] text-slate-500 font-mono uppercase tracking-wider block">{lang === "hi" ? "मजदूरी आवंटन मॉडल" : "Wage Allocation"}</span>
+                    <span className="text-sm font-bold text-emerald-400 font-mono block">{lang === "hi" ? "नमूना मजदूरी आवंटन" : "Sample Wage Allocation"}</span>
+                    <span className="text-[8px] text-slate-500 block font-mono">{lang === "hi" ? "डेमो मॉडल में मजदूरी पर कोई कमीशन नहीं" : "Demo model excludes wage commission"}</span>
                   </div>
 
                   <div className="bg-slate-900/80 p-3.5 rounded-xl border border-slate-800 text-left space-y-1">
@@ -12475,8 +12475,8 @@ export default function HomePage() {
 
                   <div className="bg-slate-900/80 p-3.5 rounded-xl border border-slate-800 text-left space-y-1">
                     <span className="text-[9px] text-slate-500 font-mono uppercase tracking-wider block">{lang === "hi" ? "विवाद दर में कमी" : "Dispute Reduction"}</span>
-                    <span className="text-sm font-bold text-emerald-400 font-mono block">-92% {lang === "hi" ? "कमी" : "Resolved"}</span>
-                    <span className="text-[8px] text-slate-500 block font-mono">Dispute-free settlements</span>
+                    <span className="text-sm font-bold text-emerald-400 font-mono block">{lang === "hi" ? "मॉडल आधारित कमी" : "Modelled Reduction"}</span>
+                    <span className="text-[8px] text-slate-500 block font-mono">{lang === "hi" ? "सिम्युलेटेड विवाद-कमी मॉडल" : "Simulated dispute-reduction model"}</span>
                   </div>
                 </div>
               </div>
@@ -12643,11 +12643,11 @@ export default function HomePage() {
                       <ul className="space-y-2 text-xs text-slate-300">
                         <li className="flex items-start gap-1.5">
                           <span className="text-amber-500 shrink-0 mt-0.5">✓</span>
-                          <span>{lang === "hi" ? "प्रत्यक्ष मजदूरी पारदर्शिता" : "Direct wage visibility"}</span>
+                          <span>{lang === "hi" ? "प्रत्यक्ष मजदूरी दृश्यता" : "Direct wage visibility"}</span>
                         </li>
                         <li className="flex items-start gap-1.5">
                           <span className="text-amber-500 shrink-0 mt-0.5">✓</span>
-                          <span>{lang === "hi" ? "सत्यापित श्रमिक पहचान" : "Verified worker identity"}</span>
+                          <span>{lang === "hi" ? "डेमो श्रमिक पहचान संकेत" : "Demo worker identity signals"}</span>
                         </li>
                         <li className="flex items-start gap-1.5">
                           <span className="text-amber-500 shrink-0 mt-0.5">✓</span>
@@ -12655,11 +12655,11 @@ export default function HomePage() {
                         </li>
                         <li className="flex items-start gap-1.5">
                           <span className="text-amber-500 shrink-0 mt-0.5">✓</span>
-                          <span>{lang === "hi" ? "न्यूनतम विवाद" : "Reduced disputes"}</span>
+                          <span>{lang === "hi" ? "मॉडल आधारित विवाद-कमी वर्कफ़्लो" : "Modelled dispute-reduction workflow"}</span>
                         </li>
                         <li className="flex items-start gap-1.5">
                           <span className="text-amber-500 shrink-0 mt-0.5">✓</span>
-                          <span>{lang === "hi" ? "एस्क्रो-तैयार भुगतान" : "Escrow-ready settlement"}</span>
+                          <span>{lang === "hi" ? "एस्क्रो-शैली सेटलमेंट अवधारणा" : "Escrow-style settlement concept"}</span>
                         </li>
                       </ul>
                     </div>
@@ -12690,10 +12690,10 @@ export default function HomePage() {
 
                   <div className="grid grid-cols-2 gap-3">
                     {[
-                      { name: "Verified worker profiles", hi: "सत्यापित कामगार प्रोफाइल" },
+                      { name: "Demo worker profile signals", hi: "डेमो कामगार प्रोफाइल संकेत" },
                       { name: "Digital Labour Passport", hi: "डिजिटल लेबर पासपोर्ट" },
                       { name: "QR attendance", hi: "क्यूआर उपस्थिति" },
-                      { name: "Verified employer history", hi: "सत्यापित नियोक्ता इतिहास" },
+                      { name: "Sample employer history", hi: "नमूना नियोक्ता इतिहास" },
                       { name: "Worker rating", hi: "श्रमिक रेटिंग" },
                       { name: "Dispute-free score", hi: "विवाद-मुक्त स्कोर" },
                       { name: "Repeat hiring score", hi: "पुनः नियुक्ति स्कोर" }
@@ -12883,7 +12883,7 @@ export default function HomePage() {
                         <div className="flex justify-between items-center text-xs font-mono">
                           <span className="text-white font-bold">{item.trade}</span>
                           <span className="text-emerald-400 font-bold bg-emerald-500/10 px-2 py-0.5 rounded text-[10px]">
-                            {item.premium} Premium
+                            {item.premium} {lang === "hi" ? "मॉडल आधारित प्रीमियम" : "Modelled Premium"}
                           </span>
                         </div>
                         <div className="grid grid-cols-2 gap-4 text-[10px] font-mono text-slate-400">
@@ -12892,7 +12892,7 @@ export default function HomePage() {
                             <span className="text-rose-400 line-through">{item.unverified}</span>
                           </div>
                           <div className="flex justify-between p-1.5 bg-slate-950/60 rounded border border-emerald-500/10">
-                            <span className="text-emerald-400 font-bold">{lang === "hi" ? "पासपोर्ट सत्यापित" : "Verified Passport"}:</span>
+                            <span className="text-emerald-400 font-bold">{lang === "hi" ? "डेमो पासपोर्ट प्रोफ़ाइल" : "Demo Passport Profile"}:</span>
                             <span className="text-emerald-400 font-black">{item.verified}</span>
                           </div>
                         </div>
@@ -12926,14 +12926,14 @@ export default function HomePage() {
 
                   <div className="grid grid-cols-2 gap-3 text-xs text-slate-300">
                     {[
-                      { title: "Formalizes informal workforce", desc: "असंगठित कार्यबल को व्यवस्थित पहचान देना" },
-                      { title: "Reduces exploitation", desc: "बिचौलियों और शोषण को समाप्त करना" },
-                      { title: "Enables direct hiring", desc: "सीधी सुरक्षित भर्ती प्रक्रिया" },
+                      { title: "Demonstrates informal-workforce formalization concepts", desc: "असंगठित कार्यबल औपचारिकरण की संकल्पना प्रदर्शित करना" },
+                      { title: "Could improve transparency and reduce dependency on intermediaries", desc: "पारदर्शिता बढ़ाना और बिचौलियों पर निर्भरता कम करने में सहायक होना" },
+                      { title: "Demonstrates direct hiring workflows", desc: "सीधी भर्ती वर्कफ़्लो का प्रदर्शन" },
                       { title: "Improves wage transparency", desc: "उचित मजदूरी पारदर्शिता बढ़ाना" },
                       { title: "Builds portable worker identity", desc: "पोर्टेबल डिजिटल लेबर पासपोर्ट (प्रोटोटाइप)" },
                       { title: "Supports financial inclusion (Concept)", desc: "डिजिटल वित्तीय रिकॉर्ड मॉडल (संकल्पना)" },
-                      { title: "Helps MSMEs access verified labour", desc: "एमएसएमई को सत्यापित श्रमिक प्रदान करना" },
-                      { title: "Creates district-level intelligence", desc: "जिला स्तर पर श्रम खुफिया का सृजन" }
+                      { title: "Demonstrates MSME access to sample worker profiles", desc: "एमएसएमई के लिए नमूना श्रमिक प्रोफ़ाइल एक्सेस का प्रदर्शन" },
+                      { title: "Demonstrates district-level labour insights", desc: "जिला स्तर पर श्रम रुझान अंतर्दृष्टि का प्रदर्शन" }
                     ].map((item, idx) => (
                       <div key={idx} className="bg-slate-950/30 p-2.5 rounded-lg border border-slate-850 flex flex-col justify-between">
                         <span className="text-white font-semibold font-mono text-[11px] block">{item.title}</span>
@@ -12967,9 +12967,9 @@ export default function HomePage() {
                     
                     <div className="space-y-2.5">
                       {[
-                        { num: "1", hi: "श्रमिक को पोर्टेबल डिजिटल पहचान का प्रोटोटाइप मिलता है।", en: "Worker gets portable verified digital identity." },
-                        { num: "2", hi: "ठेकेदार को सत्यापित और कुशल भर्ती विकल्प मिलते हैं।", en: "Contractor gets friction-free, verified local hiring." },
-                        { num: "3", hi: "जिला स्तर पर श्रम मांग खुफिया अंतर्दृष्टि प्रदान करने के लिए डिज़ाइन किया गया।", en: "Designed to provide district-level labour demand intelligence." }
+                        { num: "1", hi: "श्रमिक प्रोफ़ाइल एक पोर्टेबल डिजिटल पहचान अवधारणा को प्रदर्शित करती है।", en: "Worker profile demonstrates a portable digital identity concept." },
+                        { num: "2", hi: "ठेकेदार वर्कफ़्लो नमूना सत्यापन संकेतों के साथ सीधे स्थानीय भर्ती को प्रदर्शित करता है।", en: "Contractor workflow demonstrates direct local hiring with sample verification signals." },
+                        { num: "3", hi: "सिम्युलेटेड डेटा का उपयोग करके जिला स्तर पर श्रम मांग अंतर्दृष्टि प्रदर्शित करता है।", en: "Demonstrates district-level labour demand insights using simulated data." }
                       ].map((outcome, idx) => (
                         <div key={idx} className="flex gap-3 items-start bg-slate-950/40 p-2.5 rounded-xl border border-slate-850">
                           <div className="w-5 h-5 bg-amber-500 text-slate-950 rounded-full font-mono text-xs font-bold flex items-center justify-center shrink-0">
