@@ -2596,8 +2596,8 @@ export default function HomePage() {
                 </h4>
                 <p className="text-xs text-slate-400 mt-1">
                   {lang === "hi" 
-                    ? "दैनिक श्रम, प्रति घंटे काम, या निश्चित मूल्य अनुबंध के आधार पर तत्काल सेवाएं।" 
-                    : "Seamless daily wage hiring, hourly assistance, or custom lump-sum labour contracts."
+                    ? "दैनिक मजदूरी कार्य, प्रति घंटा सहायता, या अनुकूलित एकमुश्त कार्य व्यवस्था के लिए प्रोटोटाइप बुकिंग मॉडल।" 
+                    : "Prototype booking models for daily-wage work, hourly assistance, or custom lump-sum work arrangements."
                   }
                 </p>
               </div>
@@ -4139,7 +4139,7 @@ export default function HomePage() {
                       </div>
                       <span className="text-[8px] bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 px-2 py-1 rounded font-mono uppercase font-bold flex items-center gap-1">
                         <ShieldCheck className="w-3 h-3" />
-                        {lang === "hi" ? "सुरक्षित" : "Wage Protected"}
+                        {lang === "hi" ? "नमूना रिकॉर्ड" : "Sample Wage Record"}
                       </span>
                     </div>
 
@@ -9283,14 +9283,14 @@ export default function HomePage() {
                     <span className="text-[8px] text-slate-500 mt-0.5 block font-mono">Paid by contractor</span>
                   </div>
                   <div className="bg-slate-950 p-4 rounded-xl border border-slate-850">
-                    <span className="text-[9px] text-slate-500 block font-mono uppercase tracking-wider">{lang === "hi" ? "मजदूरी सुरक्षा" : "Wage Protected"}</span>
+                    <span className="text-[9px] text-slate-500 block font-mono uppercase tracking-wider">{lang === "hi" ? "मजदूरी आवंटन" : "Sample Wage Allocation"}</span>
                     <span className="text-lg font-black text-emerald-400 font-mono mt-1 block">{prompt14AdminRevenue.wageProtected}%</span>
-                    <span className="text-[8px] text-emerald-400 mt-0.5 block font-mono">No worker deduction</span>
+                    <span className="text-[8px] text-emerald-400 mt-0.5 block font-mono">{lang === "hi" ? "डेमो मॉडल में कोई श्रमिक कटौती नहीं" : "No worker-side platform deduction in this demo model"}</span>
                   </div>
                   <div className="bg-slate-950 p-4 rounded-xl border border-slate-850">
-                    <span className="text-[9px] text-slate-500 block font-mono uppercase tracking-wider">{lang === "hi" ? "विवाद मुक्त सेटलमेंट" : "Dispute-Free Rate"}</span>
+                    <span className="text-[9px] text-slate-500 block font-mono uppercase tracking-wider">{lang === "hi" ? "विवाद कमी संकेतक" : "Dispute-Reduction Indicator"}</span>
                     <span className="text-lg font-black text-emerald-400 font-mono mt-1 block">{prompt14AdminRevenue.disputeFreeRate}%</span>
-                    <span className="text-[8px] text-slate-500 mt-0.5 block font-mono">Direct verification</span>
+                    <span className="text-[8px] text-slate-500 mt-0.5 block font-mono">{lang === "hi" ? "सिम्युलेटेड / मॉडल आधारित" : "Simulated / Modelled"}</span>
                   </div>
                 </div>
 
@@ -12605,7 +12605,7 @@ export default function HomePage() {
                           {lang === "hi" ? "मजदूरी पारदर्शिता सूचकांक" : "Wage Transparency Index"}
                         </h3>
                         <p className="text-[11px] text-slate-400 mt-0.5">
-                          {lang === "hi" ? "बिचौलियों के बिना प्रत्यक्ष पारिश्रमिक प्रभाव" : "Direct economic benefit & elimination of commission leakage."}
+                          {lang === "hi" ? "कमीशन रिसाव में संभावित कमी दर्शाने वाला प्रोटोटाइप मजदूरी-पारदर्शिता मॉडल।" : "Prototype wage-transparency model illustrating potential reduction in commission leakage."}
                         </p>
                       </div>
                     </div>
@@ -12753,7 +12753,7 @@ export default function HomePage() {
                         { from: "Uttar Pradesh", to: "Maharashtra", active: "114k/mo" },
                         { from: "Rajasthan", to: "Gujarat", active: "65k/mo" },
                         { from: "Odisha", to: "Telangana", active: "41k/mo" },
-                        { from: "Local District Hiring", to: "Gorakhpur, Lucknow, Indore", active: "95% match" }
+                        { from: "Local District Hiring", to: "Gorakhpur, Lucknow, Indore", active: "95% modelled match" }
                       ].map((corridor, idx) => (
                         <div key={idx} className="bg-slate-950/60 p-2 rounded-lg border border-slate-850/50 flex items-center justify-between text-xs font-mono">
                           <div className="flex items-center gap-1.5 text-slate-200">
@@ -12790,7 +12790,7 @@ export default function HomePage() {
                     {[
                       { label: "Predicted next high-demand trade (भविष्यवाणी अगला उच्च मांग ट्रेड)", val: "Electrician", desc: "Based on climate & urbanization acceleration vectors." },
                       { label: "District requiring urgent workforce (त्वरित कार्यबल आवश्यकता जिला)", val: "Gorakhpur", desc: "Critical infrastructure pipelines facing seasonal deficit." },
-                      { label: "Most stable worker category (सबसे स्थिर कामगार श्रेणी)", val: "Mason", desc: "Highest year-round contract retention rate (82%)." },
+                      { label: "Most stable worker category (सबसे स्थिर कामगार श्रेणी)", val: "Mason", desc: "82% modelled retention in the sample dataset." },
                       { label: "Highest wage growth category (उच्चतम मजदूरी वृद्धि श्रेणी)", val: "Welder", desc: "Specialized metal infrastructure project demand." },
                       { label: "Best financial inclusion opportunity (वित्तीय समावेशन अवसर)", val: "Digital-payment-ready wage workflows (Concept)", desc: "Prototype digital payment records could support future financial-history workflows." },
                       { label: "Highest formalization opportunity (औपचारिकरण अवसर)", val: "Agricultural labour", desc: "Seasonal off-cycle shift matching directly with local MSMEs." }
@@ -13313,8 +13313,8 @@ export default function HomePage() {
                 </h4>
                 <p className="text-slate-400 text-xs">
                   {lang === "hi" 
-                    ? "कामगारों के लिए पारदर्शी सूक्ष्म-अर्थव्यवस्था, सत्यापन योग्य प्रोफाइल और विवाद-मुक्त वर्कफ़्लो प्रदान करने वाला फुल-स्टैक डिजिटल लेबर प्रोटोटाइप।"
-                    : "A full-stack digital labour prototype delivering transparent micro-economies, verifiable profiles, and dispute-free workflows for workers."}
+                    ? "कामगारों के लिए पारदर्शी सूक्ष्म-अर्थव्यवस्था, प्रोटोटाइप प्रोफाइल और विवाद-कमी वर्कफ़्लो प्रदान करने वाला फुल-स्टैक डिजिटल लेबर प्रोटोटाइप।"
+                    : "A full-stack digital labour prototype delivering transparent micro-economies, prototype profiles, and dispute-reduction workflows for workers."}
                 </p>
               </div>
 
