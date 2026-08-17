@@ -1940,8 +1940,8 @@ export default function HomePage() {
       descHi: "लेबरअड्डा में आपका स्वागत है। हम बिना किसी बिचौलिये के पूरे भारत में सत्यापित कामगारों को सीधे विश्वसनीय नियोक्ताओं से जोड़ते हैं।",
       impactEn: "Establishes a transparent, direct connection that eliminates commissions and increases worker daily wages.",
       impactHi: "एक पारदर्शी, सीधा जुड़ाव स्थापित करता है जो कमीशन को समाप्त करता है और कामगारों की दैनिक मजदूरी बढ़ाता है।",
-      voiceEn: "Welcome to LabourAdda. LabourAdda digitally connects verified workers with trusted employers.",
-      voiceHi: "लेबरअड्डा में आपका स्वागत है। लेबरअड्डा सत्यापित कामगारों को सीधे नियोक्ताओं और ठेकेदारों से जोड़ता है।"
+      voiceEn: "Welcome to LabourAdda. LabourAdda demonstrates worker-employer discovery through prototype verification and trust workflows.",
+      voiceHi: "लेबरअड्डा में आपका स्वागत है। लेबरअड्डा प्रोटोटाइप सत्यापन और विश्वास वर्कफ़्लो के माध्यम से कामगार-नियोक्ता जुड़ाव का प्रदर्शन करता है।"
     },
     {
       step: 2,
@@ -2431,7 +2431,7 @@ export default function HomePage() {
                 India-first Language & Accessibility Layer Active
               </h4>
               <p className="text-[11px] text-slate-300 mt-0.5">
-                This feature ensures inclusion of workers with low digital literacy, enabling nationwide adoption beyond metro cities.
+                This feature is designed to support workers with low digital literacy and broader adoption beyond metro cities.
               </p>
             </div>
           </div>
@@ -2579,8 +2579,8 @@ export default function HomePage() {
                 </h4>
                 <p className="text-xs text-slate-400 mt-1">
                   {lang === "hi" 
-                    ? "कोई बिचौलिया कमीशन नहीं। न्यूनतम सरकारी दिशानिर्देशों के अनुसार तय मजदूरी दरें।" 
-                    : "No middlemen commissions. Indicated market ranges protect both employers and workers."
+                    ? "प्रोटोटाइप मॉडल बिचौलिया कमीशन को हटाता है और पारदर्शिता बढ़ाने के लिए सांकेतिक मजदूरी दरें प्रदर्शित करता है।" 
+                    : "The prototype model excludes middleman commissions and displays indicative wage ranges to improve transparency."
                   }
                 </p>
               </div>
@@ -2604,7 +2604,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* National Labour Intelligence - Landing Highlight Card */}
+          {/* Labour Intelligence (Prototype) - Landing Highlight Card */}
           <div className="mt-8 bg-gradient-to-r from-amber-500/10 via-amber-600/15 to-transparent border border-amber-500/30 p-5 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-3.5">
               <div className="bg-amber-500 text-slate-950 p-2.5 rounded-xl shrink-0 shadow-lg shadow-amber-500/10">
@@ -2612,10 +2612,10 @@ export default function HomePage() {
               </div>
               <div className="text-left">
                 <span className="text-[10px] font-mono text-amber-400 font-bold uppercase tracking-wider block">
-                  {lang === "hi" ? "राष्ट्रीय श्रम इंटेलिजेंस" : "National Labour Intelligence"}
+                  {lang === "hi" ? "श्रम इंटेलिजेंस (प्रोटोटाइप)" : "Labour Intelligence (Prototype)"}
                 </span>
                 <h4 className="text-base font-bold text-white font-mono mt-0.5">
-                  {lang === "hi" ? "राष्ट्रीय लेबर इंटेलिजेंस" : "National Labour Intelligence"}
+                  {lang === "hi" ? "श्रम इंटेलिजेंस (प्रोटोटाइप)" : "Labour Intelligence (Prototype)"}
                 </h4>
                 <p className="text-xs text-slate-300 mt-0.5 max-w-xl">
                   {lang === "hi" 
@@ -2721,7 +2721,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <h5 className="text-[11px] font-bold text-slate-100 tracking-wider uppercase font-mono leading-none">LabourAdda Grid</h5>
-                        <span className="text-[6px] text-slate-400 block font-mono uppercase mt-1 tracking-wider">National Infrastructure</span>
+                        <span className="text-[6px] text-slate-400 block font-mono uppercase mt-1 tracking-wider">LabourAdda Prototype Grid</span>
                       </div>
                     </div>
                     <span className="text-[8px] bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 px-2.5 py-0.5 rounded-full font-sans tracking-wide uppercase font-extrabold shadow-sm shadow-emerald-500/5">
@@ -2927,7 +2927,7 @@ export default function HomePage() {
                       <div className="flex items-center gap-2">
                         <CheckCircle2 className="w-5 h-5 text-emerald-400" />
                         <span className="text-xs font-bold text-emerald-400 uppercase tracking-wider font-mono">
-                          PASSPORT SECURE & ACTIVE
+                          PASSPORT VERIFICATION — DEMO
                         </span>
                       </div>
                       <span className="text-[9px] text-slate-500 font-mono">
@@ -2938,26 +2938,26 @@ export default function HomePage() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-mono">
                       <div className="bg-slate-950 p-2.5 rounded-lg border border-slate-900 flex items-center justify-between">
                         <span className="text-slate-400">{lang === "hi" ? "पासपोर्ट स्थिति" : "Passport Status"}:</span>
-                        <span className="text-emerald-400 font-black uppercase">✓ VERIFIED</span>
+                        <span className="text-emerald-400 font-black uppercase">✓ DEMO ACTIVE</span>
                       </div>
                       <div className="bg-slate-950 p-2.5 rounded-lg border border-slate-900 flex items-center justify-between">
                         <span className="text-slate-400">{lang === "hi" ? "कामगार पहचान" : "Worker Identity"}:</span>
-                        <span className="text-emerald-400 font-black uppercase">✓ MATCHED</span>
+                        <span className="text-emerald-400 font-black uppercase">✓ DEMO MATCH</span>
                       </div>
                       <div className="bg-slate-950 p-2.5 rounded-lg border border-slate-900 flex items-center justify-between">
                         <span className="text-slate-400">{lang === "hi" ? "कौशल अभिलेख" : "Skill Records"}:</span>
-                        <span className="text-emerald-400 font-black uppercase">✓ CERTIFIED</span>
+                        <span className="text-emerald-400 font-black uppercase">✓ SAMPLE RECORDS</span>
                       </div>
                       <div className="bg-slate-950 p-2.5 rounded-lg border border-slate-900 flex items-center justify-between">
                         <span className="text-slate-400">{lang === "hi" ? "नियोक्ता इतिहास" : "Employer History"}:</span>
-                        <span className="text-emerald-400 font-black uppercase">✓ VERIFIED</span>
+                        <span className="text-emerald-400 font-black uppercase">✓ SAMPLE HISTORY</span>
                       </div>
                     </div>
 
                     <div className="grid grid-cols-2 gap-3 pt-1 text-[11px] font-mono">
                       <div>
                         <span className="text-slate-500 block uppercase text-[9px]">{lang === "hi" ? "धोखाधड़ी जोखिम" : "FRAUD RISK"}:</span>
-                        <span className="text-emerald-400 font-bold block">✓ LOW (न्यूनतम)</span>
+                        <span className="text-emerald-400 font-bold block">✓ SIMULATED LOW</span>
                       </div>
                       <div>
                         <span className="text-slate-500 block uppercase text-[9px]">{lang === "hi" ? "सुरक्षित क्रेडेंशियल" : "SECURITY METADATA"}:</span>
@@ -8218,7 +8218,7 @@ export default function HomePage() {
 
             </div>
 
-            {/* National Labour Intelligence Entry Card in Contractor Dashboard */}
+            {/* Labour Intelligence (Prototype) Entry Card in Contractor Dashboard */}
             <div className="mt-8 bg-gradient-to-br from-slate-950 via-slate-950 to-amber-950/20 border border-amber-500/20 p-5 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-5 text-left relative overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-amber-500 via-amber-600 to-amber-700" />
               <div className="space-y-1">
@@ -9251,8 +9251,8 @@ export default function HomePage() {
                       </h4>
                       <p className="text-[11px] text-slate-400 mt-0.5">
                         {lang === "hi" 
-                          ? "मंच की दीर्घकालिक स्थिरता और मजदूरी सुरक्षा संकेतकों का वास्तविक समय विवरण।" 
-                          : "Real-time metrics demonstrating scalable operations without exploiting workers."}
+                          ? "मंच की दीर्घकालिक स्थिरता और मजदूरी सुरक्षा संकेतकों का सिम्युलेटेड विवरण।" 
+                          : "Simulated business metrics modelling scalable platform operations and worker-first fee workflows."}
                       </p>
                     </div>
                   </div>
@@ -9299,8 +9299,8 @@ export default function HomePage() {
                   <p className="leading-relaxed">
                     <strong>{lang === "hi" ? "स्थिरता विवरण:" : "Sustainability Note:"}</strong>{" "}
                     {lang === "hi"
-                      ? "पारदर्शी सूक्ष्म-शुल्क (₹२९ प्रति सेटलमेंट) मॉडल बिना किसी शोषण के लेबरअड्डा को आत्मनिर्भर और स्केलेबल बनाता है। यह सुनिश्चित करता है कि श्रमिक की मजदूरी से ₹१ भी कम न किया जाए।"
-                      : "Transparent micro-fee model enables scalable operations without exploiting workers. By receiving fee entirely from contractor post-job, we guarantee 100% of agreed daily wage goes directly to worker's pocket."}
+                      ? "इस सिम्युलेटेड शुल्क मॉडल में, प्लेटफ़ॉर्म शुल्क ठेकेदार को सौंपा गया है और श्रमिक की तरफ से कोई प्लेटफ़ॉर्म कटौती मॉडल नहीं की गई है।"
+                      : "In this simulated fee model, the platform fee is assigned to the contractor and no worker-side platform deduction is modelled."}
                   </p>
                 </div>
 
@@ -9497,8 +9497,8 @@ export default function HomePage() {
                     <span className="font-bold text-blue-400 block">3. {lang === "hi" ? "क्रॉस-सब्सिडी स्केल" : "Cross-Subsidized Scalability"}</span>
                     <p className="text-[11px] leading-relaxed text-slate-400">
                       {lang === "hi"
-                        ? "प्रीमियम ट्रेडों से प्राप्त शुल्क सामान्य श्रमिकों के मुफ्त डिजिटल प्रशिक्षण और निशुल्क बुनियादी सुविधाओं के वित्तपोषण में काम आता है।"
-                        : "Premium trade fees directly fund free digital training classes and infrastructure for general labourers."}
+                        ? "मॉडल में, प्रीमियम ट्रेडों से प्राप्त शुल्क सामान्य श्रमिकों के लिए डिजिटल प्रशिक्षण और प्लेटफ़ॉर्म सहायता में मदद कर सकता है।"
+                        : "In the model, premium trade fees could help fund digital training and platform support for general labourers."}
                     </p>
                   </div>
                 </div>
@@ -12076,7 +12076,7 @@ export default function HomePage() {
                 {lang === "hi" ? "श्रमिक एवं ट्रेड पोर्टल लॉगिन (डेमो)" : "Worker & Trade Portal Login (Demo)"}
               </h3>
               <p className="text-xs text-slate-400 mt-1">
-                {lang === "hi" ? "सुरक्षित सत्यापन लिंक पहचान प्रणाली।" : "Secure verification link authentication gateway."}
+                {lang === "hi" ? "डेमो एक्सेस हेतु प्रोटोटाइप प्रमाणीकरण वर्कफ़्लो।" : "Prototype authentication workflow for demo access."}
               </p>
             </div>
 
@@ -12240,7 +12240,7 @@ export default function HomePage() {
                     <CheckCircle2 className="w-6 h-6" />
                   </div>
                   <h4 className="text-lg font-bold text-white">
-                    {lang === "hi" ? "सफलतापूर्वक लॉगिन हो गया!" : "Secure Authorization Successful!"}
+                    {lang === "hi" ? "डेमो प्राधिकरण सफल!" : "Demo Authorization Successful!"}
                   </h4>
                   <p className="text-xs text-slate-400 font-mono">
                     {loggedInUser?.name} ({loggedInUser?.role.toUpperCase()})
@@ -12959,7 +12959,7 @@ export default function HomePage() {
                   </div>
 
                   <p className="text-xs text-slate-200 leading-relaxed italic bg-slate-950/60 p-4 rounded-xl border border-amber-500/15">
-                    &quot;LabourAdda converts India&apos;s fragmented informal labour market into a verified, AI-assisted, trust-linked and data-driven digital labour infrastructure.&quot;
+                    &quot;LabourAdda demonstrates how fragmented informal labour-market workflows could be supported through AI-assisted, trust-linked and data-driven digital infrastructure.&quot;
                   </p>
 
                   <div className="space-y-3.5 pt-2">
