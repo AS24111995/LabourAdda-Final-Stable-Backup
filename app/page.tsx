@@ -1031,7 +1031,7 @@ export default function HomePage() {
   const [newProfDesc, setNewProfDesc] = useState("");
   const [adminStatusMsg, setAdminStatusMsg] = useState("");
   
-  // National Labour Intelligence Dashboard State
+  // Labour Intelligence Dashboard (Prototype) State
   const [showLabourIntel, setShowLabourIntel] = useState(false);
 
   // Location Selector Modal State
@@ -2018,14 +2018,14 @@ export default function HomePage() {
     {
       step: 8,
       id: "national-passport-registry-monitor",
-      titleEn: "National Labour Registry",
-      titleHi: "राष्ट्रीय श्रम पासपोर्ट रजिस्ट्री",
-      descEn: "Integrated nationwide monitoring of biometric verification logs, fraud blocks, and identity security registries.",
-      descHi: "बायोमेट्रिक सत्यापन लॉग, धोखाधड़ी अवरोधों और पहचान सुरक्षा रजिस्ट्रियों की एकीकृत देशव्यापी निगरानी।",
-      impactEn: "Deters identity duplication and guarantees robust record security.",
-      impactHi: "पहचान के दोहरेपन को रोकता है और उच्च स्तरीय रिकॉर्ड सुरक्षा की गारंटी देता है।",
-      voiceEn: "The National Labour Passport Registry demonstrates identity verification, fraud detection, and nationwide skill tracking.",
-      voiceHi: "राष्ट्रीय श्रम पासपोर्ट रजिस्ट्री देशव्यापी स्तर पर क्रेडेंशियल सत्यापन और धोखाधड़ी नियंत्रण की लाइव निगरानी करती है।"
+      titleEn: "Digital Labour Passport Registry (Demo)",
+      titleHi: "डिजिटल श्रम पासपोर्ट रजिस्ट्री (प्रोटोटाइप)",
+      descEn: "Simulated monitoring of prototype verification, fraud-detection, and skill-record workflows.",
+      descHi: "प्रोटोटाइप सत्यापन, धोखाधड़ी रोकथाम और कौशल रिकॉर्ड वर्कफ़्लो की सिम्युलेटेड निगरानी।",
+      impactEn: "Deters identity duplication and demonstrates robust record security workflows.",
+      impactHi: "पहचान के दोहरेपन को रोकने और सुरक्षित रिकॉर्ड वर्कफ़्लो का प्रदर्शन करता है।",
+      voiceEn: "The Digital Labour Passport Registry demonstrates prototype identity verification, fraud detection, and skill-record workflows.",
+      voiceHi: "डिजिटल श्रम पासपोर्ट रजिस्ट्री प्रोटोटाइप स्तर पर पहचान सत्यापन और धोखाधड़ी रोकथाम वर्कफ़्लो का प्रदर्शन करती है।"
     },
     {
       step: 9,
@@ -2036,8 +2036,8 @@ export default function HomePage() {
       descHi: "सक्रिय ट्रेडों, जिला अनुपालन और क्षेत्रीय मांगों को प्रबंधित करने के लिए केंद्रीय निगरानी विश्लेषण और प्रशासनिक नियंत्रण।",
       impactEn: "Empowers rural and urban governance bodies to plan infrastructure dynamically.",
       impactHi: "ग्रामीण और शहरी शासन निकायों को गतिशील रूप से बुनियादी ढांचे की योजना बनाने की शक्ति देता है।",
-      voiceEn: "The Admin Intelligence Console displays real-time national analytics, district intelligence, and live infrastructure monitoring.",
-      voiceHi: "व्यवस्थापक कंसोल राष्ट्रीय विश्लेषण, जिला स्तर की खुफिया जानकारी और लाइव बुनियादी ढांचे की निगरानी प्रदर्शित करता है।"
+      voiceEn: "The Admin Intelligence Console displays simulated platform analytics, sample district intelligence, and workflow monitoring.",
+      voiceHi: "व्यवस्थापक कंसोल सिम्युलेटेड प्लेटफॉर्म विश्लेषण, सैंपल जिला स्तर की खुफिया जानकारी और वर्कफ़्लो निगरानी प्रदर्शित करता है।"
     }
   ];
 
@@ -2629,8 +2629,8 @@ export default function HomePage() {
               onClick={() => {
                 setShowLabourIntel(true);
                 handleVoiceSpeak(
-                  "राष्ट्रीय लेबर इंटेलिजेंस डैशबोर्ड खोला जा रहा है।", 
-                  "Opening National Labour Intelligence Dashboard..."
+                  "श्रम इंटेलिजेंस प्रोटोटाइप डैशबोर्ड खोला जा रहा है।", 
+                  "Opening Labour Intelligence Dashboard (Prototype)..."
                 );
               }}
               className="px-5 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 rounded-xl text-xs font-bold font-mono transition shadow-lg shrink-0 flex items-center gap-1.5 cursor-pointer uppercase tracking-wider"
@@ -8223,23 +8223,23 @@ export default function HomePage() {
               <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-amber-500 via-amber-600 to-amber-700" />
               <div className="space-y-1">
                 <span className="text-[9px] font-mono text-amber-500 font-black tracking-widest block uppercase">
-                  {lang === "hi" ? "राष्ट्रीय श्रम इंटेलिजेंस" : "National Labour Intelligence"}
+                  {lang === "hi" ? "श्रम इंटेलिजेंस (प्रोटोटाइप)" : "Labour Intelligence (Prototype)"}
                 </span>
                 <h4 className="text-base font-bold text-white font-mono flex items-center gap-2">
                   <TrendingUp className="w-5 h-5 text-amber-500" />
-                  {lang === "hi" ? "राष्ट्रीय लेबर इंटेलिजेंस डैशबोर्ड" : "National Labour Intelligence Dashboard"}
+                  {lang === "hi" ? "श्रम इंटेलिजेंस डैशबोर्ड (प्रोटोटाइप)" : "Labour Intelligence Dashboard (Prototype)"}
                 </h4>
                 <p className="text-xs text-slate-300 max-w-2xl leading-relaxed">
                   {lang === "hi" 
-                    ? "भारत के डिजिटल लेबर इन्फ्रास्ट्रक्चर के जिला-वार मांग संकेतों, कौशल अंतराल और श्रम गतिशीलता को ट्रैक करें।"
-                    : "Track district-wise demand signals, skill gaps, and labour mobility across India’s digital labour infrastructure."}
+                    ? "सिम्युलेटेड जिला-वार मांग संकेतों, कौशल अंतराल और श्रम गतिशीलता अंतर्दृष्टि को ट्रैक करें।"
+                    : "Track simulated district-wise demand signals, skill gaps, and labour mobility insights."}
                 </p>
               </div>
               <button
                 type="button"
                 onClick={() => {
                   setShowLabourIntel(true);
-                  handleVoiceSpeak("राष्ट्रीय लेबर इंटेलिजेंस डैशबोर्ड खोला जा रहा है।", "Opening National Labour Intelligence Dashboard...");
+                  handleVoiceSpeak("श्रम इंटेलिजेंस प्रोटोटाइप डैशबोर्ड खोला जा रहा है।", "Opening Labour Intelligence Dashboard (Prototype)...");
                 }}
                 className="px-5 py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 rounded-xl text-xs font-bold font-mono transition shadow-lg shrink-0 flex items-center gap-2 cursor-pointer uppercase"
               >
@@ -9094,27 +9094,27 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* National Labour Intelligence - Admin Panel Launch Banner */}
+            {/* Labour Intelligence - Admin Panel Launch Banner */}
             <div className="mb-6 p-4 bg-gradient-to-r from-amber-500/10 via-amber-600/15 to-transparent border border-amber-500/20 rounded-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <div className="text-left">
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
-                  <span className="text-[10px] font-mono text-amber-400 font-bold uppercase tracking-wider">National Infrastructure Visualizer</span>
+                  <span className="text-[10px] font-mono text-amber-400 font-bold uppercase tracking-wider">Labour Intelligence Visualizer (Demo)</span>
                 </div>
                 <h4 className="text-sm font-bold text-white font-mono mt-1">
-                  {lang === "hi" ? "राष्ट्रीय लेबर इंटेलिजेंस डैशबोर्ड" : "National Labour Intelligence Dashboard"}
+                  {lang === "hi" ? "श्रम इंटेलिजेंस डैशबोर्ड (प्रोटोटाइप)" : "Labour Intelligence Dashboard (Prototype)"}
                 </h4>
                 <p className="text-[11px] text-slate-300 mt-0.5">
                   {lang === "hi" 
-                    ? "भारत के सत्यापित अनौपचारिक कार्यबल के लिए वास्तविक समय अंतर्दृष्टि।" 
-                    : "Real-time simulated insights for India’s verified informal workforce."}
+                    ? "अनौपचारिक श्रम बाजारों के लिए सिम्युलेटेड कार्यबल एनालिटिक्स और क्षेत्रीय अंतर्दृष्टि।" 
+                    : "Simulated workforce analytics and regional market insights for informal labour trades."}
                 </p>
               </div>
               <button
                 type="button"
                 onClick={() => {
                   setShowLabourIntel(true);
-                  handleVoiceSpeak("राष्ट्रीय लेबर इंटेलिजेंस डैशबोर्ड खोला जा रहा है।", "Opening National Labour Intelligence Dashboard...");
+                  handleVoiceSpeak("श्रम इंटेलिजेंस प्रोटोटाइप डैशबोर्ड खोला जा रहा है।", "Opening Labour Intelligence Dashboard (Prototype)...");
                 }}
                 className="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-slate-950 rounded-xl text-xs font-bold font-mono transition shadow-lg flex items-center gap-2 shrink-0 cursor-pointer"
               >
@@ -9275,7 +9275,7 @@ export default function HomePage() {
                   <div className="bg-slate-950 p-4 rounded-xl border border-slate-850">
                     <span className="text-[9px] text-slate-500 block font-mono uppercase tracking-wider">{lang === "hi" ? "पूर्ण सेटलमेंट" : "Completed Settlements"}</span>
                     <span className="text-lg font-black text-white font-mono mt-1 block">{prompt14AdminRevenue.completedCount}</span>
-                    <span className="text-[8px] text-slate-500 mt-0.5 block font-mono">Audited receipts</span>
+                    <span className="text-[8px] text-slate-500 mt-0.5 block font-mono">Logged receipts (Demo)</span>
                   </div>
                   <div className="bg-slate-950 p-4 rounded-xl border border-slate-850">
                     <span className="text-[9px] text-slate-500 block font-mono uppercase tracking-wider">{lang === "hi" ? "औसत मंच शुल्क" : "Avg Platform Fee"}</span>
@@ -9504,7 +9504,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              {/* PROMPT-16: NATIONAL PASSPORT REGISTRY MONITOR */}
+              {/* PROMPT-16: PASSPORT REGISTRY MONITOR */}
               <div id="national-passport-registry-monitor" className="mt-10 border-t border-slate-800 pt-8 text-left space-y-6">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                   <div className="flex items-center gap-2.5">
@@ -9513,12 +9513,12 @@ export default function HomePage() {
                     </div>
                     <div>
                       <h4 className="text-base font-extrabold text-white font-sans tracking-tight">
-                        {lang === "hi" ? "राष्ट्रीय श्रम पासपोर्ट रजिस्ट्री" : "National Labour Passport Registry"}
+                        {lang === "hi" ? "डिजिटल श्रम पासपोर्ट रजिस्ट्री (प्रोटोटाइप)" : "Digital Labour Passport Registry (Prototype)"}
                       </h4>
                       <p className="text-xs text-slate-400 mt-0.5">
                         {lang === "hi"
-                          ? "पहचान सत्यापन और धोखाधड़ी का पता लगाने की प्रोटोटाइप निगरानी।"
-                          : "Monitoring prototype identity verification and nation-wide spoofing detection layers."}
+                          ? "पहचान सत्यापन और धोखाधड़ी रोकथाम वर्कफ़्लो की प्रोटोटाइप निगरानी।"
+                          : "Simulated monitoring of prototype identity verification and fraud-prevention workflows."}
                       </p>
                     </div>
                   </div>
@@ -9597,7 +9597,7 @@ export default function HomePage() {
                   </div>
 
                   <div className="bg-slate-900/40 p-3 rounded-xl border border-slate-850 text-[10px] text-slate-500 font-mono leading-normal">
-                    🛡️ <strong>Demo Compliance Note:</strong> All registry values, fraud flagging patterns, and detection vectors are high-fidelity simulation components representing potential national infrastructure architecture. No real government APIs are contacted.
+                    🛡️ <strong>Demo Compliance Note:</strong> All registry values, fraud flagging patterns, and detection vectors are high-fidelity simulation components representing prototype platform architecture. No real government APIs are contacted.
                   </div>
                 </div>
               </div>
@@ -12002,7 +12002,7 @@ export default function HomePage() {
 
                   <div className="space-y-2">
                     <h4 className="text-xl font-extrabold text-white">
-                      {lang === "hi" ? "राष्ट्रीय डिजिटल पंजीकरण संपन्न!" : "National Digital Registration Successful!"}
+                      {lang === "hi" ? "डिजिटल पंजीकरण संपन्न (डेमो)!" : "Digital Registration Successful (Demo)!"}
                     </h4>
                     <p className="text-xs text-slate-400 max-w-md mx-auto">
                       {lang === "hi" 
@@ -12073,7 +12073,7 @@ export default function HomePage() {
               </button>
               <h3 className="text-lg font-bold text-white font-mono flex items-center gap-2">
                 <UserCheck className="w-4 h-4 text-amber-500" />
-                {lang === "hi" ? "राष्ट्रीय श्रमिक पोर्टल लॉगिन" : "National Trade Portal Login"}
+                {lang === "hi" ? "श्रमिक एवं ट्रेड पोर्टल लॉगिन (डेमो)" : "Worker & Trade Portal Login (Demo)"}
               </h3>
               <p className="text-xs text-slate-400 mt-1">
                 {lang === "hi" ? "सुरक्षित सत्यापन लिंक पहचान प्रणाली।" : "Secure verification link authentication gateway."}
@@ -12273,7 +12273,7 @@ export default function HomePage() {
         </div>
       )}
 
-      {/* 4. National Labour Intelligence Dashboard Modal Overlay */}
+      {/* 4. Labour Intelligence Dashboard (Prototype) Modal Overlay */}
       {showLabourIntel && (
         <div id="national-labour-intel-modal" className="fixed inset-0 z-50 bg-slate-950/98 overflow-y-auto flex flex-col antialiased">
           
@@ -12288,16 +12288,16 @@ export default function HomePage() {
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
                   <span className="text-[9px] font-mono text-amber-500 font-bold uppercase tracking-widest bg-amber-500/10 px-2 py-0.5 rounded">
-                    {lang === "hi" ? "राष्ट्रीय श्रम इंटेलिजेंस लेयर" : "National Labour Intelligence Layer"}
+                    {lang === "hi" ? "श्रम इंटेलिजेंस प्रोटोटाइप लेयर" : "Labour Intelligence Prototype Layer"}
                   </span>
                 </div>
                 <h2 className="text-xl font-extrabold text-white font-mono mt-1">
-                  {lang === "hi" ? "राष्ट्रीय लेबर इंटेलिजेंस डैशबोर्ड" : "National Labour Intelligence Dashboard"}
+                  {lang === "hi" ? "श्रम इंटेलिजेंस डैशबोर्ड (प्रोटोटाइप)" : "Labour Intelligence Dashboard (Prototype)"}
                 </h2>
                 <p className="text-xs text-slate-300 mt-0.5">
                   {lang === "hi" 
-                    ? "भारत के सत्यापित अनौपचारिक कार्यबल के लिए वास्तविक समय सिम्युलेटेड अंतर्दृष्टि।" 
-                    : "Real-time simulated insights for India’s verified informal workforce."}
+                    ? "अनौपचारिक श्रम बाजारों के लिए सिम्युलेटेड कार्यबल एनालिटिक्स और क्षेत्रीय अंतर्दृष्टि।" 
+                    : "Simulated workforce analytics and regional market insights for informal labour trades."}
                 </p>
               </div>
             </div>
@@ -12308,8 +12308,8 @@ export default function HomePage() {
               <button
                 type="button"
                 onClick={() => handleVoiceSpeak(
-                  `राष्ट्रीय लेबर इंटेलिजेंस डैशबोर्ड। कुल पंजीकृत कामगार १ करोड़ ४८ लाख। सत्यापित डिजिटल पासपोर्ट ८२ लाख ४० हजार। राष्ट्रीय ट्रस्ट सूचकांक ९१ प्रतिशत है।`,
-                  `National Labour Intelligence Dashboard. Registered workers: 1.48 Crore. Verified digital passports: 82.4 Lakh. National trust index is 91 percent.`
+                  `श्रम इंटेलिजेंस प्रोटोटाइप डैशबोर्ड। सिम्युलेटेड कुल पंजीकृत कामगार १ करोड़ ४८ लाख। सिम्युलेटेड डिजिटल पासपोर्ट ८२ लाख ४० हजार। प्लेटफॉर्म ट्रस्ट सूचकांक ९१ प्रतिशत है।`,
+                  `Labour Intelligence Prototype Dashboard. Simulated registered workers: 1.48 Crore. Simulated digital passports: 82.4 Lakh. Platform trust index is 91 percent.`
                 )}
                 className="p-2.5 bg-amber-500/15 hover:bg-amber-500 text-amber-400 hover:text-slate-950 rounded-xl border border-amber-500/35 transition cursor-pointer flex items-center gap-1.5 text-xs font-mono font-bold"
                 title="आवाज़ से डैशबोर्ड पढ़ें / Listen to Dashboard Summary"
@@ -12345,8 +12345,8 @@ export default function HomePage() {
                 <Info className="w-4 h-4 text-amber-400 shrink-0" />
                 <p className="text-xs text-slate-400">
                   {lang === "hi" 
-                    ? "सिम्युलेटर मोड सक्रिय: डेटा हर २४ घंटे में अपडेट होता है। राज्य अनुसार फिल्टर करके देखें।"
-                    : "Simulated Data Engine: Records updated every 24h. Use filter to drill down."}
+                    ? "सिम्युलेटर डेटा इंजन: सैंपल रिकॉर्ड्स प्रदर्शन के लिए सिम्युलेटेड २४ घंटे के रिफ्रेश चक्र पर आधारित हैं। राज्य अनुसार फिल्टर करें।"
+                    : "Simulated Data Engine: Sample records follow a simulated 24-hour refresh cycle for demonstration. Use filter to drill down."}
                 </p>
               </div>
 
@@ -12394,35 +12394,35 @@ export default function HomePage() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-amber-500/5 rounded-full blur-2xl group-hover:bg-amber-500/10 transition" />
                 <span className="text-[10px] font-mono text-slate-500 uppercase tracking-widest block">{lang === "hi" ? "इस महीने पोस्ट नौकरियां" : "Jobs Posted (Monthly)"}</span>
                 <p className="text-2xl font-black text-white font-mono mt-2 tracking-tight">18.6 Lakh</p>
-                <span className="text-[10px] text-amber-500 font-mono mt-1 block">१८.६ लाख (Direct Demand)</span>
+                <span className="text-[10px] text-amber-500 font-mono mt-1 block">१८.६ लाख (Simulated / Modelled Demand)</span>
               </div>
 
               <div className="bg-slate-900 border border-slate-800/80 p-5 rounded-2xl relative overflow-hidden group hover:border-amber-500/20 transition duration-200">
                 <div className="absolute top-0 right-0 w-24 h-24 bg-amber-500/5 rounded-full blur-2xl group-hover:bg-amber-500/10 transition" />
                 <span className="text-[10px] font-mono text-slate-500 uppercase tracking-widest block">{lang === "hi" ? "सृजित रोजगार दिवस" : "Employment Days Created"}</span>
                 <p className="text-2xl font-black text-white font-mono mt-2 tracking-tight">48.1 Lakh</p>
-                <span className="text-[10px] text-amber-500 font-mono mt-1 block">४८.१ लाख कार्य दिवस</span>
+                <span className="text-[10px] text-amber-500 font-mono mt-1 block">४८.१ लाख कार्य दिवस (Simulated)</span>
               </div>
 
               <div className="bg-slate-900 border border-slate-800/80 p-5 rounded-2xl relative overflow-hidden group hover:border-amber-500/20 transition duration-200">
                 <div className="absolute top-0 right-0 w-24 h-24 bg-amber-500/5 rounded-full blur-2xl group-hover:bg-amber-500/10 transition" />
                 <span className="text-[10px] font-mono text-slate-500 uppercase tracking-widest block">{lang === "hi" ? "औसत मजदूरी पारदर्शिता लाभ" : "Wage Transparency Gain"}</span>
                 <p className="text-2xl font-black text-emerald-400 font-mono mt-2 tracking-tight">+18.4%</p>
-                <span className="text-[10px] text-emerald-500 font-mono mt-1 block">१८.४% वृद्धि (Middlemen Eliminated)</span>
+                <span className="text-[10px] text-emerald-500 font-mono mt-1 block">१८.४% Modelled Improvement (Simulated)</span>
               </div>
 
               <div className="bg-slate-900 border border-slate-800/80 p-5 rounded-2xl relative overflow-hidden group hover:border-amber-500/20 transition duration-200">
                 <div className="absolute top-0 right-0 w-24 h-24 bg-amber-500/5 rounded-full blur-2xl group-hover:bg-amber-500/10 transition" />
                 <span className="text-[10px] font-mono text-slate-500 uppercase tracking-widest block">{lang === "hi" ? "कवर किए गए जिले" : "Districts Covered"}</span>
                 <p className="text-2xl font-black text-white font-mono mt-2 tracking-tight">742</p>
-                <span className="text-[10px] text-amber-500 font-mono mt-1 block">७४२ जिले (All India Coverage)</span>
+                <span className="text-[10px] text-amber-500 font-mono mt-1 block">742 Districts (Modelled Scope)</span>
               </div>
 
               <div className="bg-slate-900 border border-slate-800/80 p-5 rounded-2xl relative overflow-hidden group hover:border-amber-500/20 transition duration-200">
                 <div className="absolute top-0 right-0 w-24 h-24 bg-amber-500/5 rounded-full blur-2xl group-hover:bg-amber-500/10 transition" />
                 <span className="text-[10px] font-mono text-slate-500 uppercase tracking-widest block">{lang === "hi" ? "सक्रिय राज्य और यूटी" : "Active States / UTs"}</span>
                 <p className="text-lg font-black text-white font-mono mt-2 leading-tight">28 States<br/>& 8 UTs</p>
-                <span className="text-[10px] text-amber-500 font-mono mt-1 block">२८ राज्य / ८ केंद्र शासित प्रदेश</span>
+                <span className="text-[10px] text-amber-500 font-mono mt-1 block">28 States & 8 UTs (Coverage Model)</span>
               </div>
 
             </div>
@@ -12436,7 +12436,7 @@ export default function HomePage() {
                   <div className="flex items-center gap-2">
                     <ShieldCheck className="w-4 h-4 text-emerald-400" />
                     <span className="text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-widest">
-                      {lang === "hi" ? "राष्ट्रीय आत्मनिर्भरता मेट्रिक्स" : "NATIONAL SELF-SUSTAINABILITY INDEX"}
+                      {lang === "hi" ? "प्लेटफॉर्म आत्मनिर्भरता मॉडल" : "PLATFORM SELF-SUSTAINABILITY MODEL"}
                     </span>
                   </div>
                   <h3 className="text-xl font-bold text-white font-sans">
@@ -12444,8 +12444,8 @@ export default function HomePage() {
                   </h3>
                   <p className="text-xs text-slate-400 leading-relaxed">
                     {lang === "hi" 
-                      ? "लेबरअड्डा के सामाजिक प्रभाव और वित्तीय आत्मनिर्भरता को संतुलित करने वाली वास्तविक समय की रेटिंग।" 
-                      : "A real-time rating measuring LabourAdda's balance of social impact & financial self-sufficiency."}
+                      ? "लेबरअड्डा के सामाजिक प्रभाव और वित्तीय आत्मनिर्भरता को संतुलित करने वाला सिम्युलेटेड मॉडल।" 
+                      : "A simulated model measuring LabourAdda's projected balance of social impact & financial self-sufficiency."}
                   </p>
                   
                   <div className="pt-2 flex items-baseline gap-2">
@@ -12468,9 +12468,9 @@ export default function HomePage() {
                   </div>
 
                   <div className="bg-slate-900/80 p-3.5 rounded-xl border border-slate-800 text-left space-y-1">
-                    <span className="text-[9px] text-slate-500 font-mono uppercase tracking-wider block">{lang === "hi" ? "सत्यापित सेटलमेंट ट्रेल" : "Verified Settlement Trail"}</span>
-                    <span className="text-sm font-bold text-white font-mono block">100% {lang === "hi" ? "सत्यापित" : "Audited"}</span>
-                    <span className="text-[8px] text-emerald-500 block font-mono">Tamper-proof receipts</span>
+                    <span className="text-[9px] text-slate-500 font-mono uppercase tracking-wider block">{lang === "hi" ? "डिजिटल सेटलमेंट ट्रेल" : "Digital Settlement Trail"}</span>
+                    <span className="text-sm font-bold text-white font-mono block">100% {lang === "hi" ? "सिम्युलेटेड" : "Simulated"}</span>
+                    <span className="text-[8px] text-emerald-500 block font-mono">Structured e-receipts</span>
                   </div>
 
                   <div className="bg-slate-900/80 p-3.5 rounded-xl border border-slate-800 text-left space-y-1">
@@ -12507,7 +12507,7 @@ export default function HomePage() {
                           {lang === "hi" ? "जिलावार श्रम मांग सूचकांक" : "District-Wise Labour Demand Index"}
                         </h3>
                         <p className="text-[11px] text-slate-400 mt-0.5">
-                          {lang === "hi" ? "स्थानीय स्तर पर उच्च मांग वाले ट्रेड" : "Real-time demand signals from core industrial zones."}
+                          {lang === "hi" ? "प्रमुख क्षेत्रीय औद्योगिक समूहों के सैंपल मांग संकेत" : "Sample demand signals across key regional industrial clusters."}
                         </p>
                       </div>
                     </div>
@@ -12679,12 +12679,12 @@ export default function HomePage() {
                           {lang === "hi" ? "विश्वास और औपचारिकरण परत" : "Trust & Formalization Layer"}
                         </h3>
                         <p className="text-[11px] text-slate-400 mt-0.5">
-                          {lang === "hi" ? "सुरक्षा, आधार जुड़ाव और रेटिंग संकेतक" : "National verified tracking for secure hiring contracts."}
+                          {lang === "hi" ? "सुरक्षा, पहचान सत्यापन (डेमो) और रेटिंग संकेतक" : "Simulated verification signals and trust metrics for direct hiring contracts."}
                         </p>
                       </div>
                     </div>
                     <div className="bg-amber-500/10 border border-amber-500/20 text-amber-400 font-mono text-xs font-black px-2.5 py-1 rounded">
-                      National Trust Index: 91%
+                      Platform Trust Index: 91% (Simulated)
                     </div>
                   </div>
 
@@ -12726,7 +12726,7 @@ export default function HomePage() {
                           {lang === "hi" ? "श्रम गतिशीलता खुफिया" : "Labour Mobility Intelligence"}
                         </h3>
                         <p className="text-[11px] text-slate-400 mt-0.5">
-                          {lang === "hi" ? "ग्रामीण से शहरी रोजगार गलियारे और मौसमी पलायन" : "Tracking interstate corridors and seasonal migration clusters."}
+                          {lang === "hi" ? "मॉडल किए गए अंतर-राज्यीय भर्ती गलियारे और मौसमी गतिशीलता पैटर्न" : "Modelled interstate hiring corridors and seasonal mobility patterns."}
                         </p>
                       </div>
                     </div>
@@ -12743,7 +12743,10 @@ export default function HomePage() {
                     </div>
 
                     <div className="space-y-2 border-t border-slate-850 pt-3">
-                      <span className="text-[9px] font-mono text-amber-400 font-bold uppercase tracking-wider block">{lang === "hi" ? "सक्रिय प्रवास गलियारे / CORRIDORS" : "Active Migration Corridors"}</span>
+                      <div className="flex items-center justify-between">
+                        <span className="text-[9px] font-mono text-amber-400 font-bold uppercase tracking-wider block">{lang === "hi" ? "प्रवास गलियारे (मॉडल)" : "Migration Corridors (Model)"}</span>
+                        <span className="text-[8px] font-mono text-slate-500">Modelled mobility examples — simulated prototype data</span>
+                      </div>
                       
                       {[
                         { from: "Bihar", to: "Delhi NCR", active: "82k/mo" },
@@ -12777,7 +12780,7 @@ export default function HomePage() {
                           {lang === "hi" ? "एआई अंतर्दृष्टि और पूर्वानुमान" : "AI Insights & Forecasting"}
                         </h3>
                         <p className="text-[11px] text-slate-400 mt-0.5">
-                          {lang === "hi" ? "सत्यापित डेटा मॉडल आधारित स्वचालित भविष्यवाणियां" : "Machine-learned pattern identification from current datasets."}
+                          {lang === "hi" ? "सिम्युलेटेड मार्केट वैक्टर पर आधारित एल्गोरिथम प्रवृत्ति अनुमान" : "Algorithmic trend projections based on simulated market vectors."}
                         </p>
                       </div>
                     </div>
@@ -12789,7 +12792,7 @@ export default function HomePage() {
                       { label: "District requiring urgent workforce (त्वरित कार्यबल आवश्यकता जिला)", val: "Gorakhpur", desc: "Critical infrastructure pipelines facing seasonal deficit." },
                       { label: "Most stable worker category (सबसे स्थिर कामगार श्रेणी)", val: "Mason", desc: "Highest year-round contract retention rate (82%)." },
                       { label: "Highest wage growth category (उच्चतम मजदूरी वृद्धि श्रेणी)", val: "Welder", desc: "Specialized metal infrastructure project demand." },
-                      { label: "Best financial inclusion opportunity (वित्तीय समावेशन अवसर)", val: "UPI-linked daily wage workers", desc: "Instant micropayments increase bankable record generation." },
+                      { label: "Best financial inclusion opportunity (वित्तीय समावेशन अवसर)", val: "Digital-payment-ready wage workflows (Concept)", desc: "Prototype digital payment records could support future financial-history workflows." },
                       { label: "Highest formalization opportunity (औपचारिकरण अवसर)", val: "Agricultural labour", desc: "Seasonal off-cycle shift matching directly with local MSMEs." }
                     ].map((insight, idx) => (
                       <div key={idx} className="bg-slate-950/40 border border-slate-850 p-3 rounded-xl space-y-1 text-left">
@@ -12842,7 +12845,7 @@ export default function HomePage() {
                         </div>
                         <div className="text-right">
                           <span className="text-sm font-black text-amber-500 block">{item.avg}</span>
-                          <span className="text-[9px] text-slate-500 block uppercase">Real-Time Index</span>
+                          <span className="text-[9px] text-slate-500 block uppercase">Simulated Index</span>
                         </div>
                       </div>
                     ))}
@@ -12861,7 +12864,7 @@ export default function HomePage() {
                           {lang === "hi" ? "कौशल-से-मजदूरी मानचित्रण सांख्यिकी" : "Skill-to-Wage Mapping Statistics"}
                         </h3>
                         <p className="text-[11px] text-slate-400 mt-0.5">
-                          {lang === "hi" ? "सत्यापित कौशल प्रमाणन के आधार पर प्रीमियम मूल्य निर्धारण" : "Premium pricing based on verified skill levels and certifications."}
+                          {lang === "hi" ? "कौशल मूल्यांकन और प्रोटोटाइप पासपोर्ट रिकॉर्ड के आधार पर अनुमानित मजदूरी अंतर" : "Estimated wage differentials based on skill assessment and prototype passport records."}
                         </p>
                       </div>
                     </div>
@@ -12915,7 +12918,7 @@ export default function HomePage() {
                           {lang === "hi" ? "भारत के लिए इसका महत्व" : "Why This Matters for India"}
                         </h3>
                         <p className="text-[11px] text-slate-400 mt-0.5">
-                          {lang === "hi" ? "सकारात्मक सामाजिक और आर्थिक प्रभाव के मुख्य बिंदु" : "Strategic alignment with national informal economy formalization goals."}
+                          {lang === "hi" ? "सकारात्मक सामाजिक और आर्थिक प्रभाव के मुख्य बिंदु" : "Conceptual model for informal trade formalization and wage transparency."}
                         </p>
                       </div>
                     </div>
@@ -12927,8 +12930,8 @@ export default function HomePage() {
                       { title: "Reduces exploitation", desc: "बिचौलियों और शोषण को समाप्त करना" },
                       { title: "Enables direct hiring", desc: "सीधी सुरक्षित भर्ती प्रक्रिया" },
                       { title: "Improves wage transparency", desc: "उचित मजदूरी पारदर्शिता बढ़ाना" },
-                      { title: "Builds portable worker identity", desc: "पोर्टेबल राष्ट्रीय डिजिटल लेबर पासपोर्ट" },
-                      { title: "Supports financial inclusion", desc: "बैंक और वित्तीय योजनाओं से जोड़ना" },
+                      { title: "Builds portable worker identity", desc: "पोर्टेबल डिजिटल लेबर पासपोर्ट (प्रोटोटाइप)" },
+                      { title: "Supports financial inclusion (Concept)", desc: "डिजिटल वित्तीय रिकॉर्ड मॉडल (संकल्पना)" },
                       { title: "Helps MSMEs access verified labour", desc: "एमएसएमई को सत्यापित श्रमिक प्रदान करना" },
                       { title: "Creates district-level intelligence", desc: "जिला स्तर पर श्रम खुफिया का सृजन" }
                     ].map((item, idx) => (
@@ -12964,7 +12967,7 @@ export default function HomePage() {
                     
                     <div className="space-y-2.5">
                       {[
-                        { num: "1", hi: "श्रमिक को पोर्टेबल राष्ट्रीय डिजिटल पहचान मिलती है।", en: "Worker gets portable verified digital identity." },
+                        { num: "1", hi: "श्रमिक को पोर्टेबल डिजिटल पहचान का प्रोटोटाइप मिलता है।", en: "Worker gets portable verified digital identity." },
                         { num: "2", hi: "ठेकेदार को सत्यापित और कुशल भर्ती विकल्प मिलते हैं।", en: "Contractor gets friction-free, verified local hiring." },
                         { num: "3", hi: "जिला स्तर पर श्रम मांग खुफिया अंतर्दृष्टि प्रदान करने के लिए डिज़ाइन किया गया।", en: "Designed to provide district-level labour demand intelligence." }
                       ].map((outcome, idx) => (
@@ -12992,7 +12995,7 @@ export default function HomePage() {
           <div className="bg-slate-900 border-t border-slate-800 px-4 py-4 md:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2 text-xs text-slate-500 font-mono">
               <ShieldCheck className="w-4 h-4 text-amber-500" />
-              <span>National Impact Infrastructure Simulation. Zero External API Dependency.</span>
+              <span>Platform Impact & Analytics Simulation. Zero External API Dependency.</span>
             </div>
             <button
               onClick={() => {
@@ -13234,8 +13237,8 @@ export default function HomePage() {
 
               <div className="bg-slate-950/60 p-4 rounded-2xl border border-slate-950 text-slate-300 text-sm leading-relaxed">
                 {lang === "hi" 
-                  ? "यह निर्देशित वॉकथ्रू केवल ५ मिनट के भीतर लेबरअड्डा की संपूर्ण डिजिटल श्रम अवसंरचना (पासपोर्ट, क्यूआर कोड सत्यापन, अनुबंध, दैनिक सेटलमेंट और राष्ट्रीय खुफिया प्रणाली) का प्रदर्शन करेगा।"
-                  : "This guided demo will explain the complete digital labour platform (passports, secure QR checking, smart contracts, daily settlements, and national analytics) in under 5 minutes."}
+                  ? "यह निर्देशित वॉकथ्रू केवल ५ मिनट के भीतर लेबरअड्डा की संपूर्ण डिजिटल श्रम अवसंरचना (पासपोर्ट, क्यूआर कोड सत्यापन, अनुबंध, दैनिक सेटलमेंट और प्लेटफ़ॉर्म खुफिया प्रणाली) का प्रदर्शन करेगा।"
+                  : "This guided demo will explain the complete digital labour platform (passports, secure QR checking, smart contracts, daily settlements, and simulated platform analytics) in under 5 minutes."}
               </div>
 
               <div className="flex flex-col gap-3">
@@ -13380,8 +13383,8 @@ export default function HomePage() {
                   {
                     titleEn: "Transparent Wage",
                     titleHi: "पारदर्शी मजदूरी",
-                    descEn: "100% wage credit to workers' verified accounts.",
-                    descHi: "सौ प्रतिशत मजदूरी सीधे कामगारों के बैंक खातों में।"
+                    descEn: "Simulated wage-credit workflow for worker accounts (Demo).",
+                    descHi: "श्रमिक खातों के लिए सिम्युलेटेड मजदूरी-क्रेडिट वर्कफ़्लो (डेमो)।"
                   },
                   {
                     titleEn: "Digital Contract",
@@ -13396,8 +13399,8 @@ export default function HomePage() {
                     descHi: "सजीव भुगतान निपटान और आधिकारिक डिजिटल रसीद।"
                   },
                   {
-                    titleEn: "National Registry",
-                    titleHi: "राष्ट्रीय श्रम रजिस्ट्री",
+                    titleEn: "Passport Registry (Demo)",
+                    titleHi: "श्रम पासपोर्ट रजिस्ट्री (डेमो)",
                     descEn: "Central secure register monitoring credential logs.",
                     descHi: "सत्यापन रिकॉर्ड की सुरक्षित केंद्रीय प्रबंधन प्रणाली।"
                   },
@@ -13478,7 +13481,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
             <p className="text-xs text-slate-400 font-semibold font-mono">LabourAdda v2.0 Platform</p>
-            <p className="text-[10px] text-slate-600 mt-1">Engineered for direct accountability, wage transparency, and zero-exploitation of trade labour.</p>
+            <p className="text-[10px] text-slate-600 mt-1">Engineered for direct accountability, wage transparency, and fair trade labour practices.</p>
           </div>
           <div className="flex gap-4">
             <span className="text-[9px] text-slate-500 uppercase tracking-widest font-mono border border-slate-800/80 px-2 py-1 rounded">
