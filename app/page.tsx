@@ -1958,62 +1958,62 @@ export default function HomePage() {
     {
       step: 3,
       id: "passport-card-column",
-      titleEn: "Digital Labour Passport",
-      titleHi: "डिजिटल लेबर पासपोर्ट",
-      descEn: "A permanent, portable labour passport with verified skill histories, biometric trust scores, and local ward authorization.",
-      descHi: "सत्यापित कौशल इतिहास, बायोमेट्रिक विश्वास स्कोर और स्थानीय वार्ड प्राधिकरण के साथ एक स्थायी, पोर्टेबल लेबर पासपोर्ट।",
-      impactEn: "Provides workers with a verifiable digital identity and financial credibility records.",
-      impactHi: "कामगारों को एक सत्यापित डिजिटल पहचान और वित्तीय विश्वसनीयता रिकॉर्ड प्रदान करता है।",
-      voiceEn: "Every registered worker receives a Permanent Labour Passport detailing verified skills and trust scores.",
-      voiceHi: "प्रत्येक पंजीकृत कामगार को स्थायी डिजिटल लेबर पासपोर्ट मिलता है जिसमें उनके कौशल और विश्वसनीयता अंक दर्ज होते हैं।"
+      titleEn: "Digital Labour Passport (Prototype)",
+      titleHi: "डिजिटल लेबर पासपोर्ट (प्रोटोटाइप)",
+      descEn: "A portable prototype worker profile demonstrating sample skill records, work history, and trust signals for hiring workflows.",
+      descHi: "एक पोर्टेबल प्रोटोटाइप श्रमिक प्रोफ़ाइल, जो भर्ती वर्कफ़्लो के लिए नमूना कौशल रिकॉर्ड, कार्य इतिहास और ट्रस्ट संकेत प्रदर्शित करती है।",
+      impactEn: "Demonstrates how workers could maintain a reusable digital profile containing sample identity, skill, and work-record information.",
+      impactHi: "यह दर्शाता है कि श्रमिक नमूना पहचान, कौशल और कार्य-रिकॉर्ड जानकारी वाली पुनः उपयोग योग्य डिजिटल प्रोफ़ाइल कैसे रख सकते हैं।",
+      voiceEn: "This prototype Digital Labour Passport demonstrates sample skill records, work history, and trust signals for hiring workflows.",
+      voiceHi: "यह प्रोटोटाइप डिजिटल लेबर पासपोर्ट भर्ती वर्कफ़्लो के लिए नमूना कौशल रिकॉर्ड, कार्य इतिहास और ट्रस्ट संकेत प्रदर्शित करता है।"
     },
     {
       step: 4,
       id: "qr-verification-console-section",
-      titleEn: "Secure QR Verification",
-      titleHi: "सुरक्षित क्यूआर सत्यापन",
-      descEn: "Employers and contractors verify worker credentials instantly using secure physical-to-digital QR code scanning.",
-      descHi: "नियोक्ता और ठेकेदार भौतिक से डिजिटल क्यूआर कोड स्कैनिंग का उपयोग करके तुरंत कामगारों के करेटेंशियल्स का सत्यापन करते हैं।",
-      impactEn: "Eliminates physical spoofing, credentials fraud, and manual background checks.",
-      impactHi: "भौतिक हेरफेर, क्रेडेंशियल धोखाधड़ी और मैन्युअल पृष्ठभूमि जांच को समाप्त करता है।",
-      voiceEn: "Contractors can instantly verify a worker's identity, trust score, and skills using our secure QR verification engine.",
-      voiceHi: "ठेकेदार हमारे सुरक्षित क्यूआर कोड सत्यापन इंजन के माध्यम से कामगार की पहचान और कौशल का तुरंत सत्यापन कर सकते हैं।"
+      titleEn: "QR Verification Demo",
+      titleHi: "क्यूआर सत्यापन डेमो",
+      descEn: "Demonstrates a QR-based prototype workflow for reviewing sample worker identity, skill-record and trust-signal information.",
+      descHi: "नमूना श्रमिक पहचान, कौशल रिकॉर्ड और ट्रस्ट संकेतों की समीक्षा के लिए एक क्यूआर-आधारित प्रोटोटाइप वर्कफ़्लो प्रदर्शित करता है।",
+      impactEn: "Demonstrates prototype fraud-deterrence and credential review workflows.",
+      impactHi: "प्रोटोटाइप धोखाधड़ी-रोकथाम और क्रेडेंशियल समीक्षा वर्कफ़्लो का प्रदर्शन करता है।",
+      voiceEn: "This QR verification demo demonstrates how contractors could review sample worker identity, skill records, and trust signals through a prototype QR workflow.",
+      voiceHi: "यह क्यूआर सत्यापन डेमो प्रदर्शित करता है कि ठेकेदार एक प्रोटोटाइप क्यूआर वर्कफ़्लो के माध्यम से नमूना श्रमिक पहचान, कौशल रिकॉर्ड और ट्रस्ट संकेतों की समीक्षा कैसे कर सकते हैं।"
     },
     {
       step: 5,
       id: "national-hiring-workspace",
-      titleEn: "Middleman-Free Hiring",
-      titleHi: "बिचौलिया-मुक्त नियुक्ति",
-      descEn: "Hire and book verified workers instantly. Set coordinates, negotiate fairly, and deploy workforce directly.",
-      descHi: "सत्यापित कामगारों को तुरंत काम पर रखें और बुक करें। निर्देशांक सेट करें, उचित बातचीत करें, और कार्यबल को सीधे तैनात करें।",
-      impactEn: "Reduces search time from days to seconds with 100% direct recruitment.",
-      impactHi: "100% प्रत्यक्ष भर्ती के साथ खोज के समय को कई दिनों से घटाकर सेकंड में कर देता है।",
-      voiceEn: "Contractors can book workers instantly without middlemen, ensuring complete wage transparency.",
-      voiceHi: "ठेकेदार बिचौलियों के बिना कामगारों को तुरंत काम पर रख सकते हैं, जिससे पूर्ण वेतन पारदर्शिता सुनिश्चित होती है।"
+      titleEn: "Direct Hiring Workspace (Demo)",
+      titleHi: "डायरेक्ट हायरिंग वर्कस्पेस (डेमो)",
+      descEn: "The prototype hiring workspace demonstrates direct worker discovery, booking workflows, and indicative wage visibility for contractors.",
+      descHi: "प्रोटोटाइप हायरिंग वर्कस्पेस ठेकेदारों के लिए सीधे श्रमिक खोज, बुकिंग वर्कफ़्लो और सांकेतिक मजदूरी दृश्यता प्रदर्शित करता है।",
+      impactEn: "Demonstrates direct hiring discovery and transparent wage visibility workflows.",
+      impactHi: "प्रत्यक्ष भर्ती खोज और पारदर्शी मजदूरी दृश्यता वर्कफ़्लो का प्रदर्शन करता है।",
+      voiceEn: "This prototype hiring workspace demonstrates worker discovery, booking steps, and indicative wage information for direct hiring workflows.",
+      voiceHi: "यह प्रोटोटाइप हायरिंग वर्कस्पेस प्रत्यक्ष भर्ती वर्कफ़्लो के लिए श्रमिक खोज, बुकिंग चरण और सांकेतिक मजदूरी जानकारी प्रदर्शित करता है।"
     },
     {
       step: 6,
       id: "digital-contract-desk-section",
-      titleEn: "Smart Digital Contracts",
-      titleHi: "स्मार्ट डिजिटल अनुबंध",
-      descEn: "A digitally signed work contract establishing legally compliant daily wages, hours, accommodation, meals, and accident coverage.",
-      descHi: "एक डिजिटल रूप से हस्ताक्षरित कार्य अनुबंध जो दैनिक वेतन, घंटे, आवास, भोजन और दुर्घटना सुरक्षा को कानूनी रूप से स्थापित करता है।",
-      impactEn: "Prevents exploitation and formalizes work conditions automatically.",
-      impactHi: "शोषण को रोकता है और काम की परिस्थितियों को स्वचालित रूप से औपचारिक रूप देता है।",
-      voiceEn: "An instant digital agreement secures daily wage, work duration, meals, accommodation, and accident insurance guidelines.",
-      voiceHi: "एक त्वरित डिजिटल अनुबंध दैनिक मजदूरी, काम की अवधि, भोजन, आवास और दुर्घटना सुरक्षा बीमा को सुरक्षित करता है।"
+      titleEn: "Digital Work Agreement (Demo)",
+      titleHi: "डिजिटल कार्य समझौता (डेमो)",
+      descEn: "A sample digital work-agreement workflow demonstrating wage, work-duration, meal, accommodation, and other job-term records.",
+      descHi: "एक नमूना डिजिटल कार्य-समझौता वर्कफ़्लो जो मजदूरी, कार्य अवधि, भोजन, आवास और अन्य कार्य शर्तों के रिकॉर्ड प्रदर्शित करता है।",
+      impactEn: "Demonstrates how structured digital agreements could improve clarity of work terms.",
+      impactHi: "यह दर्शाता है कि संरचित डिजिटल समझौते कार्य शर्तों की स्पष्टता को कैसे बेहतर बना सकते हैं।",
+      voiceEn: "This demo digital work agreement records sample wage, work-duration, meal, accommodation, and other job terms for prototype hiring workflows.",
+      voiceHi: "यह डेमो डिजिटल कार्य समझौता प्रोटोटाइप भर्ती वर्कफ़्लो के लिए नमूना मजदूरी, कार्य अवधि, भोजन, आवास और अन्य कार्य शर्तों को रिकॉर्ड करता है।"
     },
     {
       step: 7,
       id: "settlement-engine-section",
-      titleEn: "Instant Settlement Engine",
-      titleHi: "तत्काल सेटलमेंट इंजन",
-      descEn: "Ensures 100% daily wage protection with low micro-platform fees and automated receipt generation.",
-      descHi: "न्यूनतम माइक्रो-प्लेटफ़ॉर्म शुल्क और स्वचालित रसीद जनरेशन के साथ 100% दैनिक मजदूरी सुरक्षा सुनिश्चित करता है।",
-      impactEn: "Eliminates payment defaults, builds credit scores, and ensures financial safety.",
-      impactHi: "भुगतान चूक को समाप्त करता है, क्रेडिट स्कोर बनाता है, और वित्तीय सुरक्षा सुनिश्चित करता. है।",
-      voiceEn: "Our Settlement Engine ensures direct and secure daily payments, transparent micro-platform fees, and instant receipts.",
-      voiceHi: "हमारा निपटान इंजन दैनिक भुगतान, पारदर्शी मंच शुल्क और तत्काल रसीद जनरेशन सुनिश्चित करता है।"
+      titleEn: "Settlement & Receipt Simulation",
+      titleHi: "सेटलमेंट और रसीद सिमुलेशन",
+      descEn: "This simulated settlement workflow demonstrates wage calculations, prototype platform-fee breakdowns, and sample digital receipts. No real payment or banking transaction is performed.",
+      descHi: "यह सिम्युलेटेड सेटलमेंट वर्कफ़्लो मजदूरी गणना, प्रोटोटाइप प्लेटफ़ॉर्म-शुल्क विवरण और नमूना डिजिटल रसीदें प्रदर्शित करता है। कोई वास्तविक भुगतान या बैंकिंग लेनदेन नहीं किया जाता है।",
+      impactEn: "Demonstrates simulated transparent wage calculations, platform fee allocation, and sample receipts.",
+      impactHi: "सिम्युलेटेड पारदर्शी मजदूरी गणना, प्लेटफ़ॉर्म शुल्क आवंटन और नमूना रसीदों का प्रदर्शन करता है।",
+      voiceEn: "This simulated settlement workflow demonstrates wage calculations, prototype platform-fee breakdowns, and sample digital receipts. No real payment or banking transaction is performed.",
+      voiceHi: "यह सिम्युलेटेड सेटलमेंट वर्कफ़्लो मजदूरी गणना, प्रोटोटाइप प्लेटफ़ॉर्म-शुल्क विवरण और नमूना डिजिटल रसीदें प्रदर्शित करता है। कोई वास्तविक भुगतान या बैंकिंग लेनदेन नहीं किया जाता है।"
     },
     {
       step: 8,
@@ -4937,7 +4937,7 @@ export default function HomePage() {
                           {set.status === "Completed" && (
                             <div className="flex items-center gap-2 text-emerald-400 font-bold text-xs">
                               <ShieldCheck className="w-4 h-4" />
-                              <span>{lang === "hi" ? "सत्यापित सेटलमेंट ✓ (मजदूरी शत प्रतिशत सुरक्षित)" : "Verified Settlement ✓ (100% Wage Protected)"}</span>
+                              <span>{lang === "hi" ? "सत्यापित सेटलमेंट ✓ (नमूना मजदूरी रिकॉर्ड)" : "Verified Settlement ✓ (Sample Wage Record)"}</span>
                             </div>
                           )}
                         </div>
@@ -5038,7 +5038,7 @@ export default function HomePage() {
 
                           <div className="bg-slate-900 p-3.5 rounded-xl border border-slate-850 space-y-3.5 text-xs font-mono">
                             <div className="flex justify-between items-center text-slate-400">
-                              <span>{lang === "hi" ? "श्रमिक की दैनिक मजदूरी (१००% सुरक्षित)" : "Worker Wage (100% Protected)"}:</span>
+                              <span>{lang === "hi" ? "श्रमिक की दैनिक मजदूरी (नमूना गणना)" : "Worker Wage (Sample Calculation)"}:</span>
                               <span className="text-emerald-400 font-bold">₹{activeWageVal}.00</span>
                             </div>
                             <div className="flex justify-between items-center text-slate-400">
@@ -11306,7 +11306,7 @@ export default function HomePage() {
                           {lang === "hi" ? "नियोक्ता डिजिटल पासपोर्ट पूर्वावलोकन" : "Digital Employer Passport Preview"}
                         </h4>
                         <p className="text-xs text-slate-400 mt-1">
-                          {lang === "hi" ? "पंजीकरण समाप्त करने से पहले अपना डिजिटल आईडी क्रेडेंशियल सत्यापित करें।" : "Review your permanent digital labour deployment passport card before final activation."}
+                          {lang === "hi" ? "पंजीकरण समाप्त करने से पहले अपना डिजिटल आईडी क्रेडेंशियल पूर्वावलोकन देखें।" : "Review your prototype digital labour deployment passport card before final activation."}
                         </p>
                       </div>
 
@@ -11448,7 +11448,7 @@ export default function HomePage() {
                           setRegisterStep("success");
                           handleVoiceSpeak(
                             `बधाई हो, ${finalName}! आपका डिजिटल नियोक्ता क्रेडेंशियल पासपोर्ट सक्रिय कर दिया गया है।`, 
-                            `Congratulations, ${finalName}! Your permanent digital employer credentials passport has been successfully activated.`
+                            `Congratulations, ${finalName}! Your digital employer credentials passport has been successfully activated.`
                           );
                         }}
                         className="w-full min-h-[48px] bg-emerald-500 hover:bg-emerald-600 text-slate-950 rounded-xl font-extrabold transition flex flex-col items-center justify-center py-1.5"
